@@ -1,0 +1,145 @@
+﻿<UserControl x:Class="ControlWorkstation.Control.CustomChart"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:toolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+             xmlns:vsm="clr-namespace:System.Windows;assembly=WPFToolkit"
+             xmlns:control="clr-namespace:ControlWorkstation.Control"
+             mc:Ignorable="d" ToolTip="{Binding XPath=@title}">
+    <UserControl.Resources>
+        <Style x:Key="lineDataPointStyle" TargetType="toolkit:LineDataPoint">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="DarkGray" Offset="0.75" />
+                        <GradientStop Color="LightGray" Offset="0.5" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="DependentValueStringFormat" Value="{}{0:f1}"/>
+            <Setter Property="IndependentValueStringFormat" Value="{}{0:hh\:mm\:ss}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="toolkit:LineDataPoint">
+                        <Grid HorizontalAlignment="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Text="{TemplateBinding FormattedDependentValue}"/>
+                            <Ellipse Grid.Row="1" Fill="LightGray" Stroke="DarkGray" StrokeThickness="1" Width="7" Height="7" Margin="0,0,0,-10">
+                                <ToolTipService.ToolTip>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock Text="{TemplateBinding FormattedDependentValue}"/>
+                                        <TextBlock Text="{TemplateBinding FormattedIndependentValue}"/>
+                                    </StackPanel>
+                                </ToolTipService.ToolTip>
+                                <!--Ellipse.Effect>
+                                    <DropShadowEffect Color="Black" Opacity="0.3" Direction="45"/>
+                                </Ellipse.Effect-->
+                            </Ellipse>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="areaDataPointStyle" TargetType="toolkit:AreaDataPoint">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="DarkGray" Offset="0.75" />
+                        <GradientStop Color="LightGray" Offset="0.5" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="Visibility" Value="Collapsed"/>
+            <Setter Property="Width" Value="3"/>
+            <Setter Property="Height" Value="3"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="toolkit:AreaDataPoint">
+                        <Ellipse Fill="LightGray" Stroke="DarkGray" StrokeThickness="1">
+                            <ToolTipService.ToolTip>
+                                <StackPanel Orientation="Vertical">
+                                    <ContentControl Content="{TemplateBinding FormattedDependentValue}"/>
+                                    <ContentControl Content="{TemplateBinding FormattedIndependentValue}"/>
+                                </StackPanel>
+                            </ToolTipService.ToolTip>
+                        </Ellipse>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <toolkit:Chart Name="chart" Margin="10,0,10,0" BorderThickness="0" Background="Transparent">
+        <toolkit:Chart.TitleStyle>
+            <Style TargetType="Control">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </Style>
+        </toolkit:Chart.TitleStyle>
+        <toolkit:Chart.LegendStyle>
+            <Style TargetType="Control">
+                <Setter Property="Visibility" Value="Collapsed"/>
+                <Setter Property="Width" Value="0"/>
+                <Setter Property="Height" Value="0"/>
+            </Style>
+        </toolkit:Chart.LegendStyle>
+        <toolkit:Chart.Axes>
+            <toolkit:LinearAxis Orientation="Y" Interval="1">
+                <toolkit:LinearAxis.AxisLabelStyle>
+                    <Style TargetType="toolkit:AxisLabel">
+                        <Setter Property="StringFormat" Value="{}{0:f1}"/>
+                    </Style>
+                </toolkit:LinearAxis.AxisLabelStyle>
+                <!--toolkit:LinearAxis.Title>
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                        <TextBlock Text="{x:Static control:ViewModel.Title}"/>
+                        <TextBlock Text=", ["/>
+                        <TextBlock Text="{x:Static control:ViewModel.Unit}"/>
+                        <TextBlock Text="]"/>
+                    </StackPanel>
+                </toolkit:LinearAxis.Title-->
+            </toolkit:LinearAxis>
+            <!--toolkit:DateTimeAxis Orientation="X" IntervalType="Minutes">
+                <toolkit:DateTimeAxis.AxisLabelStyle>
+                    <Style TargetType="toolkit:DateTimeAxisLabel">
+                        <Setter Property="StringFormat" Value="{}{0:hh:mm:ss}"/>
+                    </Style>
+                </toolkit:DateTimeAxis.AxisLabelStyle>
+            </toolkit:DateTimeAxis-->
+        </toolkit:Chart.Axes>
+        <!--toolkit:LineSeries
+            DependentValueBinding="{Binding Mode=TwoWay, XPath=@value}"
+            IndependentValueBinding="{Binding Mode=TwoWay, XPath=@fix}"
+            ItemsSource="{Binding XPath=Data/Item}"
+            IsSelectionEnabled="False">
+        </toolkit:LineSeries-->
+        <toolkit:LineSeries BorderThickness="0"
+            DataPointStyle="{StaticResource lineDataPointStyle}"
+            DependentValueBinding="{Binding Path=Value}"
+            IndependentValueBinding="{Binding Path=Fix}"
+            ItemsSource="{Binding}" IsSelectionEnabled="False">
+            <toolkit:LineSeries.LegendItemStyle>
+                <Style TargetType="{x:Type toolkit:LegendItem}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </Style>
+            </toolkit:LineSeries.LegendItemStyle>
+        </toolkit:LineSeries>
+        <toolkit:AreaSeries BorderThickness="0"
+            DataPointStyle="{StaticResource areaDataPointStyle}"
+            DependentValueBinding="{Binding Path=Value}"
+            IndependentValueBinding="{Binding Path=Fix}"
+            ItemsSource="{Binding}" IsSelectionEnabled="False">
+            <toolkit:AreaSeries.LegendItemStyle>
+                <Style TargetType="{x:Type toolkit:LegendItem}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </Style>
+            </toolkit:AreaSeries.LegendItemStyle>
+        </toolkit:AreaSeries>
+    </toolkit:Chart>
+</UserControl>

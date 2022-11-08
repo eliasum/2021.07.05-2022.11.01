@@ -1,0 +1,1848 @@
+﻿INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='1']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='2']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='3']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='4']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='5']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='6']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='7']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='8']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='9']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='10']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='11']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='12']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='13']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='14']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='15']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='16']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='17']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='18']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='19']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='20']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Embedded']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Embedded']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Photocathode']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Photocathode']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Shield']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Shield']/Voltage/@format","N0");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Illuminator/Item[@key='1']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Illuminator/Item[@key='2']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+INSERT INTO public."Dictionary" ("XPath", "Format") 
+VALUES ("ControlWorkstation/Equipment/Slot/Item[@key='21']/Illuminator/Item[@key='3']/Amperage/@format","F1");
+
+Allowance/@format","N0");
+

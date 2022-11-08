@@ -1,0 +1,14 @@
+﻿<Window x:Class="JournalApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" xmlns:my="clr-namespace:Journal;assembly=Journal">
+
+    <Window.Resources>
+        <XmlDataProvider x:Key="provider" Source="Resources/checkup.xml" IsInitialLoadEnabled="True" IsAsynchronous="False" XPath="//Journal/Item" />
+    </Window.Resources>
+
+    <my:Journal DataContext="{Binding Source={StaticResource provider}}" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Name="journal1"/>
+</Window>

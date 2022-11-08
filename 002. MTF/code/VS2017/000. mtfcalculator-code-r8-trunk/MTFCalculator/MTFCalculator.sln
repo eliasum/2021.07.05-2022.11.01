@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTFCalculator", "MTFCalculator\MTFCalculator.csproj", "{FBDBF909-D295-453A-8A08-F86D06AF3926}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{615BC0FC-7C4F-4431-BE3C-253FAA00CBF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBDBF909-D295-453A-8A08-F86D06AF3926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDBF909-D295-453A-8A08-F86D06AF3926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDBF909-D295-453A-8A08-F86D06AF3926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDBF909-D295-453A-8A08-F86D06AF3926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{615BC0FC-7C4F-4431-BE3C-253FAA00CBF6}.Debug|Any CPU.ActiveCfg = Debug
+		{615BC0FC-7C4F-4431-BE3C-253FAA00CBF6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

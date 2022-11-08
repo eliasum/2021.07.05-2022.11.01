@@ -1,0 +1,43 @@
+﻿<!--2021.08.12 17:07 IMM-->
+    
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ULControlUsing"
+        xmlns:ULControlLibrary="clr-namespace:ULControlLibrary;assembly=ULControlLibrary" x:Class="ULControlUsing.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!--подгружаем XML-данные в Window.DataContext-->
+    <Window.DataContext>
+        <XmlDataProvider IsInitialLoadEnabled="True" IsAsynchronous="False">
+            <x:XData>
+                <!--начало XML-данных-->
+                <!--Конфигурационные значения основных параметров изделия-->
+                <Product xmlns="" title="Проверяемое изделие">
+                    <Settings title="Изделие">
+                        <Brand title="Тип" description="Торговая марка">
+                            <Shield title="Тип экрана" description="Выбрать другой тип экрана изделия">
+                                <Item key="Simple" title="Простой" description="Изделие с простым типом экрана" />
+                                <Item key="Invert" title="Инвертный" description="Изделие с инвертным типом экрана" />
+                            </Shield>
+                            <Item key="1" title="АО" description="" />
+                            <Item key="2" title="ООО" description="" />
+                        </Brand>
+                        <ULtype title="УЛ ВОЭ" exposition="90" factor="0.2857" />
+                        <ULtype title="УЛ Мт. ст" exposition="45" factor="0.5824" />
+                    </Settings>
+                </Product>
+                <!--конец XML-данных-->
+            </x:XData>
+        </XmlDataProvider>
+    </Window.DataContext>
+
+    <Grid DataContext="{Binding XPath=Product}">
+
+        <ULControlLibrary:ULControl DataContext="{Binding XPath=Settings}"/>
+
+    </Grid>
+</Window>

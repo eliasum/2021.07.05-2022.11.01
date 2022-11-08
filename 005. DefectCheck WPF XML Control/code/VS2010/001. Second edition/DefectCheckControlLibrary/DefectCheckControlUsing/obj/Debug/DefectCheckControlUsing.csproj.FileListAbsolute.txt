@@ -1,0 +1,36 @@
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlUsing.exe.config
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlUsing.exe
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlUsing.pdb
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlLibrary.dll
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\ULControlLibrary.dll
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlLibrary.pdb
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.csprojResolveAssemblyReference.cache
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\MainWindow.g.cs
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\App.g.cs
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing_MarkupCompile.cache
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing_MarkupCompile.lref
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\MainWindow.baml
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.g.resources
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.Properties.Resources.resources
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.csproj.GenerateResource.Cache
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.exe
+D:\Work\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.pdb
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlUsing.exe.config
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.exe
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.pdb
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlUsing.exe
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlUsing.pdb
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlLibrary.dll
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\ULControlLibrary.dll
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\Xceed.Wpf.Toolkit.dll
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\bin\Debug\DefectCheckControlLibrary.pdb
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.csprojResolveAssemblyReference.cache
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\MainWindow.g.cs
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\App.g.cs
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing_MarkupCompile.cache
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing_MarkupCompile.lref
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\MainWindow.baml
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.g.resources
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.Properties.Resources.resources
+d:\Rep\2021.07.05-XXX.XX.XX\006. DefectCheck WPF XML Control\solution\code\VS2010\001. Second edition\DefectCheckControlLibrary\DefectCheckControlUsing\obj\Debug\DefectCheckControlUsing.csproj.GenerateResource.Cache

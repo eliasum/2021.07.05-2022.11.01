@@ -1,0 +1,64 @@
+﻿<Configuration key="_036CE061.Communicator" title="Коммуникатор" description="Коммуникатор для обмена сообщениями между ПО и оборудованием}">
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+            <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+              <Item key="serialport" title="Последовательный порт" description="Последовательный порт RS232">
+                <Modbus title="RS232" description="Последовательный порт">
+                  <Item key="COM2">
+                    <Board title="Электронный модуль" description="Электронный модуль оборудования">
+                      <Item key="_045СЕ108" title="045.СЕ.108" description="Электронная плата: 045.СЕ.108">
+                        <Adress title="Адрес" description="Адрес электронной платы">
+                          <Item key="01" title="Адрес № {@key}" description="Адрес электронной платы № {@key}">
+                            <Channel title="Канал" description="Канал электронной платы">
+                              <Item key="1" title="Канал № {@key}" description="Канал электронной платы № {@key}">
+                                <Voltage title="Напряжение" type="integer" value="" default="0" symbol="U =" unit="В" description="Значение напряжения">
+                                  <Allowance title="Допуск" const="1" unit="%" description="Значение допуска для очистки от шума" />
+                                  <Limit title="Предел" description="Предельное значение">
+                                    <Item key="1">
+                                      <Minimum title="Минимум" const="0" description="Минимально предельное значение" />
+                                      <Maximum title="Максимум" const="200" description="Максимально предельное значение" />
+                                    </Item>
+                                  </Limit>
+                                </Voltage>
+								<Chart11>
+                                    <Widget title="Виджет">
+                                      <Test title="Тест" />
+                                    </Widget>
+                                  </Chart11>
+                                <Amperage title="Ток" type="float" value="" unit="мкА" description="Значение тока">
+                                  <Allowance title="Допуск" const="1" unit="%" description="Значение допуска для очистки от шума" />
+                                  <Limit title="Предел" description="Предельное значение">
+                                    <Item key="1">
+                                      <Minimum title="Минимум" const="0" description="Минимально предельное значение" />
+                                      <Maximum title="Максимум" const="1,8" description="Максимально предельное значение" />
+                                    </Item>
+                                    <Item key="2">
+                                      <Minimum title="Минимум" const="1,8" description="Минимально предельное значение" />
+                                      <Maximum title="Максимум" const="20" description="Максимально предельное значение" />
+                                    </Item>
+                                  </Limit>
+                                </Amperage>
+								<Chart22>
+                                    <Widget title="Виджет">
+                                      <Test title="Тест" />
+                                    </Widget>
+                                  </Chart22>
+                              </Item>
+                            </Channel>
+                          </Item>
+                        </Adress>
+                      </Item>
+                    </Board>
+                  </Item>
+                </Modbus>
+              </Item>
+            </Communication>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

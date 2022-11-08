@@ -1,0 +1,45 @@
+﻿<Window x:Class="UpDownApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:UpDownLib;assembly=UpDownLib"
+        Title="Пример демонстрирующий привязку WPF-формы к XML-данным"
+        WindowStartupLocation="CenterScreen" Height="100" Width="500">
+
+    <Window.DataContext>
+        <XmlDataProvider IsInitialLoadEnabled="True" IsAsynchronous="False">
+            <x:XData>
+
+                <Configuration title="Конфигурация программного обеспечения" xmlns="">
+                    <Equipment title="Оборудование установки">
+                        <Parameter title="Параметр" description="Параметр оборудования">
+                            <Amperage default="5" title="Ток" description="Значение тока" symbol="I" format="F2" unit="мА">
+                                <Step value=".05" title="Шаг значения" description="Шаг значения напряжения"/>
+                                <Limit title="Предельные значения" description="Предельные значения тока">
+                                    <Minimum value="0" title="Минимум" description="Минимальнеое предельные значения" symbol="Imin"/>
+                                    <Maximum value="10" title="Максимум" description="Максимальное предельные значения" symbol="Imax"/>
+                                </Limit>
+                            </Amperage>
+                            <Voltage default="220" title="Напряжение" description="Значение напряжения" symbol="U" format="N0" unit="В">
+                                <Step value="1" title="Шаг значения" description="Шаг значения напряжения"/>
+                                <Limit title="Предельные значения" description="Предельные значения тока">
+                                    <Minimum value="0" title="Минимум" description="Минимальнеое предельные значения" symbol="Umin"/>
+                                    <Maximum value="250" title="Максимум" description="Максимальное предельные значения" symbol="Umax"/>
+                                </Limit>
+                            </Voltage>
+                        </Parameter>
+                    </Equipment>
+                </Configuration>
+
+            </x:XData>
+        </XmlDataProvider>
+    </Window.DataContext>
+
+    <StackPanel DataContext="{Binding XPath=Configuration/Equipment/Parameter}"
+                HorizontalAlignment="Center" VerticalAlignment="Center">
+
+        <StackPanel Orientation="Vertical">
+                <my:UpDownTerm DataContext="{Binding XPath=Amperage}"/>
+                <my:UpDownTerm DataContext="{Binding XPath=Voltage}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

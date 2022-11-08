@@ -1,0 +1,15 @@
+<!--Конфигурационные значения основных параметров изделия-->
+<Product xmlns="" title="Проверяемое изделие">
+  <Settings title="Изделие">
+    <Brand title="Тип" description="Торговая марка">
+      <Shield title="Тип экрана" description="Выбрать другой тип экрана изделия">
+        <Item key="Simple" title="Простой" description="Изделие с простым типом экрана" />
+        <Item key="Invert" title="Инвертный" description="Изделие с инвертным типом экрана" />
+      </Shield>
+      <Item key="1" title="АО" description="" />
+      <Item key="2" title="ООО" description="" />
+    </Brand>
+	<ULtype title="УЛ ВОЭ" exposition="90" factor="0.2857" />
+	<ULtype title="УЛ Мт. ст" exposition="45" factor="0.5824" />
+  </Settings>
+</Product>

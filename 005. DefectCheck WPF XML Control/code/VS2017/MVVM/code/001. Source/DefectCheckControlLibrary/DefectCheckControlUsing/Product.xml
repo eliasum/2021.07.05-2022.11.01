@@ -1,0 +1,100 @@
+<Product xmlns="" title="Проверяемое изделие">
+<Settings title="Изделие">
+	<Phosphor title="Люминофор" description="Люминофор изделия">
+		<Type title="Тип" description="Тип люминофора">
+			<Item key="1" title="Тип1" description="">
+			</Item>
+			<Item key="2" title="Тип2" description="">
+			</Item>
+		</Type>
+	</Phosphor>
+	<Defect title="Дефект" description="Дефект изделия">
+		<Type title="Тип" description="Тип дефекта">
+      <Item key="01" title="Настройка00"/>
+      <Item key="02" title="Настройка01"/>
+      <Item key="03" title="Настройка02"/>
+      <Item key="04" title="Настройка03"/>
+      <Item key="05" title="Настройка04"/>
+      <Item key="06" title="Настройка05"/>
+      <Item key="07" title="Настройка06"/>
+      <Item key="08" title="Настройка07"/>
+      <Item key="09" title="Настройка08"/>
+      <Item key="10" title="Настройка09"/>
+		</Type>
+	</Defect>
+	<Resume title="Резюме" description="Группа">
+		<Type title="Тип" description="Тип резюме">
+			<Item key="1" title="Годен"/>
+			<Item key="2" title="Брак"/>
+		</Type>
+	</Resume>
+	<Slot title="Позиция" description="Позиция изделия" number="№ УЛ">
+		<Item key="01" phosphor="Тип1" resume ="Годен">
+			<Defect>
+        <!--
+        <Item key="2" />
+        <Item key="7" />
+        <Item key="11"/>
+        -->
+      </Defect>
+		</Item>
+    <Item key="02" phosphor="Тип2" resume ="Брак">
+      <Defect>
+        <!--
+        <Item key="2" />
+        <Item key="7" />
+        <Item key="11"/>
+        -->
+      </Defect>
+    </Item>
+    <Item key="03" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="04" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="05" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="06" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="07" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="08" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="09" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="10" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="11" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="12" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="13" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="14" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="15" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="16" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="17" phosphor="" resume ="">
+      <Defect />
+    </Item>
+    <Item key="18" phosphor="" resume ="">
+      <Defect />
+    </Item>
+	</Slot>
+</Settings>
+</Product>

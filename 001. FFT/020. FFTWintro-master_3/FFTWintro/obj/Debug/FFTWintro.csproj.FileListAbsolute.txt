@@ -1,0 +1,16 @@
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\FFTWintro-master\FFTWintro\bin\Debug\libfftw3-3.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\FFTWintro-master\FFTWintro\bin\Debug\FFTWintro.exe.config
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\FFTWintro-master\FFTWintro\bin\Debug\FFTWintro.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\FFTWintro-master\FFTWintro\bin\Debug\FFTWintro.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\FFTWintro-master\FFTWintro\obj\Debug\FFTWintro.csprojAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\FFTWintro-master\FFTWintro\obj\Debug\FFTWintro.csproj.CoreCompileInputs.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\FFTWintro-master\FFTWintro\obj\Debug\FFTWintro.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\FFTWintro-master\FFTWintro\obj\Debug\FFTWintro.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\020. FFTWintro-master_3\FFTWintro\bin\Debug\libfftw3-3.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\020. FFTWintro-master_3\FFTWintro\bin\Debug\FFTWintro.exe.config
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\020. FFTWintro-master_3\FFTWintro\bin\Debug\FFTWintro.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\020. FFTWintro-master_3\FFTWintro\bin\Debug\FFTWintro.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\020. FFTWintro-master_3\FFTWintro\obj\Debug\FFTWintro.csprojAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\020. FFTWintro-master_3\FFTWintro\obj\Debug\FFTWintro.csproj.CoreCompileInputs.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\020. FFTWintro-master_3\FFTWintro\obj\Debug\FFTWintro.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\020. FFTWintro-master_3\FFTWintro\obj\Debug\FFTWintro.pdb

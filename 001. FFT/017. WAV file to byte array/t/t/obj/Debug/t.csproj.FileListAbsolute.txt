@@ -1,0 +1,10 @@
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\bin\Debug\t.exe.config
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\bin\Debug\t.exe
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\bin\Debug\t.pdb
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\bin\Debug\NAudio.dll
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\bin\Debug\NAudio.xml
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\obj\Debug\t.csprojAssemblyReference.cache
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\obj\Debug\t.csproj.CoreCompileInputs.cache
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\obj\Debug\t.csproj.CopyComplete
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\obj\Debug\t.exe
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\017. WAV file to byte array\t\t\obj\Debug\t.pdb

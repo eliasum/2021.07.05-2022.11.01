@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journal", "Journal\Journal.csproj", "{F547E39A-67FA-43DC-8E84-EF67C2D3AB4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JournalApp", "JournalApp\JournalApp.csproj", "{9DECF85E-1127-4AF9-B998-7E190217AB5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F547E39A-67FA-43DC-8E84-EF67C2D3AB4D}.Debug|x86.ActiveCfg = Debug|x86
+		{F547E39A-67FA-43DC-8E84-EF67C2D3AB4D}.Debug|x86.Build.0 = Debug|x86
+		{F547E39A-67FA-43DC-8E84-EF67C2D3AB4D}.Release|x86.ActiveCfg = Release|x86
+		{F547E39A-67FA-43DC-8E84-EF67C2D3AB4D}.Release|x86.Build.0 = Release|x86
+		{9DECF85E-1127-4AF9-B998-7E190217AB5F}.Debug|x86.ActiveCfg = Debug|x86
+		{9DECF85E-1127-4AF9-B998-7E190217AB5F}.Debug|x86.Build.0 = Debug|x86
+		{9DECF85E-1127-4AF9-B998-7E190217AB5F}.Release|x86.ActiveCfg = Release|x86
+		{9DECF85E-1127-4AF9-B998-7E190217AB5F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

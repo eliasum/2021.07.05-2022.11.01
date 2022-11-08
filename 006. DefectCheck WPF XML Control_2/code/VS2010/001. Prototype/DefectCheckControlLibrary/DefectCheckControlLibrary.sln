@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefectCheckControlLibrary", "DefectCheckControlLibrary\DefectCheckControlLibrary.csproj", "{59E1596F-DBC9-4D48-B5BC-1586AFE046B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefectCheckControlUsing", "DefectCheckControlUsing\DefectCheckControlUsing.csproj", "{52D57D7D-C7CB-4A18-924F-C3FC352C3EC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59E1596F-DBC9-4D48-B5BC-1586AFE046B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E1596F-DBC9-4D48-B5BC-1586AFE046B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E1596F-DBC9-4D48-B5BC-1586AFE046B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E1596F-DBC9-4D48-B5BC-1586AFE046B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D57D7D-C7CB-4A18-924F-C3FC352C3EC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D57D7D-C7CB-4A18-924F-C3FC352C3EC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D57D7D-C7CB-4A18-924F-C3FC352C3EC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D57D7D-C7CB-4A18-924F-C3FC352C3EC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

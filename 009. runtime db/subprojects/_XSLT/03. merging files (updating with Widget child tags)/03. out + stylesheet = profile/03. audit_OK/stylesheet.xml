@@ -1,0 +1,44 @@
+﻿<Profile>
+  <Configuration key="_036CE061.Communicator">
+    <Scale>
+      <Communication>
+        <Item key="database">
+          <Postgres>
+            <Item key="localhost:5432:_036CE061.Runtime">
+              <Communication>
+                <Item key="serialport">
+                  <Modbus>
+                    <Item key="COM2">
+                      <Board>
+                        <Item key="_045СЕ108">
+                          <Adress>
+                            <Item key="01">
+                              <Channel>
+                                <Item key="1">
+                                  <Chart11>
+                                    <Widget title="Виджет">
+                                      <Test title="Тест" />
+                                    </Widget>
+                                  </Chart11>
+                                  <Chart22>
+                                    <Widget title="Виджет">
+                                      <Test title="Тест" />
+                                    </Widget>
+                                  </Chart22>
+                                </Item>
+                              </Channel>
+                            </Item>
+                          </Adress>
+                        </Item>
+                      </Board>
+                    </Item>
+                  </Modbus>
+                </Item>
+              </Communication>
+            </Item>
+          </Postgres>
+        </Item>
+      </Communication>
+    </Scale>
+  </Configuration>
+</Profile>

@@ -1,0 +1,1 @@
+SELECT xpath('*/@*', '<a><b test="1" ></b></a>');

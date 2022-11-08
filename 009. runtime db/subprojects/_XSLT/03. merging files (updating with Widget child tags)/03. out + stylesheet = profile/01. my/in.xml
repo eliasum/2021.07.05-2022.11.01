@@ -1,0 +1,41 @@
+﻿<conf title="co" attr01="val01">
+  <c attr02="val02">
+    <Item key="db" attr03="val03">
+    <m1 />
+      <s attr04="val04">
+        <m2 attr04="val04"/>
+        <Item key="1" attr05="val05">
+          <m3 />
+          <sp>
+            <Chart>
+                <Widget title="widget12">
+                    <Test title="test1" />
+                </Widget>
+            </Chart>
+          </sp>
+        </Item>
+        <m4 />
+        <Item key="2">
+          <sp attr05="val06">
+            <m5 />
+            <Chart>
+                <Widget title="widget32">
+                    <Test title="test3" />
+                </Widget>
+            </Chart>
+          </sp>
+        </Item>
+        <Item key="3" attr06="val07">
+          <sp>
+            <Chart>
+                <Widget title="widget54">
+                    <Test title="test6" />
+                </Widget>
+            </Chart>
+          </sp>
+        </Item>
+        <m6 attr07="val07" />
+      </s>
+    </Item>
+  </c>
+</conf>

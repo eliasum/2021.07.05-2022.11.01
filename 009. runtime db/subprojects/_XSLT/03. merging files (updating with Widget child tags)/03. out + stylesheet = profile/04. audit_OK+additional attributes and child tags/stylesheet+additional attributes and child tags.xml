@@ -1,0 +1,52 @@
+﻿<Profile title="Профиль пользователя">
+  <Configuration key="_036CE061.Communicator">
+    <Scale>
+      <Communication>
+        <Item key="database">
+          <Postgres>
+            <Item key="localhost:5432:_036CE061.Runtime">
+              <Communication>
+                <Item key="serialport">
+                  <Modbus>
+                    <Item key="COM2">
+                      <Board>
+                        <Item key="_045СЕ108">
+                          <Adress>
+                            <Item key="01">
+                              <Channel>
+                                <Item key="1">
+                                  <Chart11>
+                                    <Widget title="Виджет11" attr1="val11" attr2="val21">
+                                      <Test1 title="Тест11" attr3="val31" attr4="val41" />
+                                      <Test2 title="Тест21" attr5="val51" attr6="val61">
+                                        <Tag1 title="Tag11" attr9="val91" attr10="val101" />
+                                      </Test2>
+                                      <Test3 title="Тест31" attr7="val71" attr8="val81" />
+                                    </Widget>
+                                  </Chart11>
+                                  <Chart22>
+                                    <Widget title="Виджет22" attr1="val12" attr2="val22">
+                                      <Test1 title="Тест12" attr3="val32" attr4="val42" />
+                                      <Test2 title="Тест22" attr5="val52" attr6="val62">
+                                        <Tag1 title="Tag12" attr9="val92" attr10="val102" />
+                                      </Test2>
+                                      <Test3 title="Тест32" attr7="val72" attr8="val82" />
+                                    </Widget>
+                                  </Chart22>
+                                </Item>
+                              </Channel>
+                            </Item>
+                          </Adress>
+                        </Item>
+                      </Board>
+                    </Item>
+                  </Modbus>
+                </Item>
+              </Communication>
+            </Item>
+          </Postgres>
+        </Item>
+      </Communication>
+    </Scale>
+  </Configuration>
+</Profile>

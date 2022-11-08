@@ -1,0 +1,375 @@
+Microsoft Windows [Version 10.0.19042.1348]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Windows\system32>cd C:\Program Files\PostgreSQL\13\bin
+
+C:\Program Files\PostgreSQL\13\bin>
+C:\Program Files\PostgreSQL\13\bin>psql -U postgres -d runtime -a -f "D:\TEMP\runtime.sql"
+Пароль пользователя postgres:
+п>ї
+-- PostgreSQL database dump
+--"%PROGRAM_PATH%\PostgresPro\13\bin\psql" --username=postgres -d postgres -f D:\TEMP\runtime.sql
+\connect runtime
+Вы подключены к базе данных "runtime" как пользователь "postgres".
+SET statement_timeout = 0;
+psql:D:/TEMP/runtime.sql:5: ОШИБКА:  ошибка синтаксиса (примерное положение: "п>ї")
+СТРОКА 1: п>ї
+          ^
+SET lock_timeout = 0;
+SET
+SET client_encoding = 'UTF8';
+SET
+SET standard_conforming_strings = on;
+SET
+SET check_function_bodies = false;
+SET
+SET client_min_messages = warning;
+SET
+SET row_security = off;
+SET
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+CREATE EXTENSION
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+COMMENT
+
+SET search_path = public, pg_catalog;
+SET
+SET default_tablespace = '';
+SET
+SET default_with_oids = false;
+SET
+
+CREATE TABLE table_Glossary (
+    key integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    configuration text NOT NULL,
+    communication text,
+    allowance float NOT NULL,
+    tablename character(15) NOT NULL,
+    CONSTRAINT "glossary_key" PRIMARY KEY (key)
+);
+psql:D:/TEMP/runtime.sql:27: Р?РЁР?Р'Р?Р?:  Р?С'Р?Р?С?РчР?РёРч "table_glossary" С?Р¶Рч С?С?С%РчС?С'Р?С?РчС'
+COMMENT ON TABLE table_Glossary IS 'РЎР>Р?Р?Р°С?С? Р?Р>С? РёР?Р?РчС"РёРєР°С┼РёРё РїРчС?РчР?РчР?Р?С<С:';
+COMMENT
+COMMENT ON COLUMN table_Glossary.key IS 'Р?Р?РёРєР°Р>С?Р?С<Р№ РєР>С?С╪ РїРчС?РчР?РчР?Р?Р?Р№ Р?Р>С? С?Р?С?Р·Рё С? Р?С?С?Р?РёР?Рё С'Р°С?Р>РёС┼Р°Р?Рё';
+COMMENT
+COMMENT ON COLUMN table_Glossary.configuration IS 'XPath - РїС?С'С? Рє РїРчС?РчР?РчР?Р?Р?Р№ Р? XML-РєР?Р?С"РёР?С?С?Р°С┼РёР?Р?Р?Р?Р? С"Р°Р№Р>Рч Р?Р>С? Р?Р?';
+COMMENT
+COMMENT ON COLUMN table_Glossary.communication IS 'XPath - РїС?С'С? Рє РїРчС?РчР?РчР?Р?Р?Р№ Р? XML-РєР?Р?С"РёР?С?С?Р°С┼РёР?Р?Р?Р?Р? С"Р°Р№Р>Рч Р?Р>С? РєР?Р?Р?С?Р?РёРєР°С┼РёР№';
+COMMENT
+COMMENT ON COLUMN table_Glossary.allowance IS 'Р"Р?РїС?С?Рє Р?Р° РёР·Р?РчР?РчР?РёРч РїРчС?РчР?РчР?Р?Р?Р№';
+COMMENT
+COMMENT ON COLUMN table_Glossary.tablename IS 'Р?Р?С? С'Р°Р+Р>РёС┼С< Р? РєР?С'Р?С?Р?Р№ С:С?Р°Р?С?С'С?С? Р·Р?Р°С╪РчР?РёС? РїРчС?РчР?РчР?Р?Р?Р№';
+COMMENT
+
+COPY table_Glossary (configuration, allowance, name) FROM stdin;
+psql:D:/TEMP/runtime.sql:35: Р?РЁР?Р'Р?Р?:  С?С'Р?Р>Р+РчС┼ "name" Р? С'Р°Р+Р>РёС┼Рч "table_glossary" Р?Рч С?С?С%РчС?С'Р?С?РчС'
+    ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='2']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='3']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='4']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='5']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='6']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='7']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='8']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='9']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='10']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='11']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='12']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='13']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='14']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='15']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='16']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='17']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='18']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='19']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='20']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='21']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='22']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='23']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='24']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='25']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='26']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='27']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='28']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='29']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Photocathode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Photocathode']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Microchannelplate1']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Microchannelplate1']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Microchannelplate12']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Microchannelplate12']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Microchannelplate2']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Microchannelplate2']/Voltage 3 table_Number
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Anode']/Amperage 3 table_Float
+ControlWorkstation/Equipment/Slot/Item[@key='30']/Supply/Item[@key='Anode']/Voltage 3 table_Number
+
+\.
+psql:D:/TEMP/runtime.sql:337: ошибка: неверная команда \.
+
+psql:D:/TEMP/runtime.sql:338: Р?РЁР?Р'Р?Р?:  Р?С?РёР+РєР° С?РёР?С'Р°РєС?РёС?Р° (РїС?РёР?РчС?Р?Р?Рч РїР?Р>Р?Р¶РчР?РёРч: "ControlWorkstation")
+СТРОКА 1: ControlWorkstation/Equipment/Slot/Item[@key='1']/Supply/Item...
+       ^
+
+C:\Program Files\PostgreSQL\13\bin>

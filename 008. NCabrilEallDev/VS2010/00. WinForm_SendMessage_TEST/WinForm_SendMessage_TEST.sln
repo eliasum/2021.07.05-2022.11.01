@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm_SendMessage_TEST", "WinForm_SendMessage_TEST\WinForm_SendMessage_TEST.csproj", "{3828E1F7-5FFC-42C5-9D7E-279431076CCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3828E1F7-5FFC-42C5-9D7E-279431076CCD}.Debug|x86.ActiveCfg = Debug|x86
+		{3828E1F7-5FFC-42C5-9D7E-279431076CCD}.Debug|x86.Build.0 = Debug|x86
+		{3828E1F7-5FFC-42C5-9D7E-279431076CCD}.Release|x86.ActiveCfg = Release|x86
+		{3828E1F7-5FFC-42C5-9D7E-279431076CCD}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

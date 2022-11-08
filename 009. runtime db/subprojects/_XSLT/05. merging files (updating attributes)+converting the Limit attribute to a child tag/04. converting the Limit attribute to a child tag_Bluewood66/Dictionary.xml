@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary>
+	<Adress title="Адрес" description="Адрес электронной платы"/>
+	<Channel title="Канал" description="Канал электронной платы"/>
+	<Voltage title="Напряжение" value="" symbol="U =" unit="[В]" description="Значение напряжения"/>
+	<Allowance title="Допуск" unit="%" const="?" description="Значение допуска для очистки от шума"/>
+	<Limit title="Предел" description="Предельное значение">
+		<Template>
+		  <Minimum title="Минимум"  const="?" description="Минимально предельное значение" />
+		  <Maximum title="Максимум"  const="?" description="Максимально предельное значение" />
+		</Template>
+	</Limit>
+</Dictionary>

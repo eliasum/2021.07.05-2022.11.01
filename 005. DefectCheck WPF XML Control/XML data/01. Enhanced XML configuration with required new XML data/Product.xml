@@ -1,0 +1,61 @@
+<!--Конфигурационные значения основных параметров изделия-->
+<Product xmlns="" title="Проверяемое изделие">
+	<Settings title="Изделие">
+		<Brand title="Тип" description="Торговая марка">
+			<Shield title="Тип экрана" description="Выбрать другой тип экрана изделия">
+				<Item key="Simple" title="Простой" description="Изделие с простым типом экрана" />
+				<Item key="Invert" title="Инвертный" description="Изделие с инвертным типом экрана" />
+			</Shield>
+			<Item key="1" title="АО" description=""/>
+			<Item key="2" title="ООО" description=""/>
+		</Brand>
+		<Phosphor title="Люминофор" description="(!) Узнать у технолога ТТ 031.СЕ.307" select="0" number="#######">
+			<Type title="Тип" description="Тип люминофора" select="0">
+				<Item key="1" title="ВОЭ" description="(!) Узнать у технолога ТТ 031.СЕ.307">
+					<Camcoder title="Видеокамера" description="Настройки видеокамеры">
+						<Exposition value="90" title="Выдержка" description="Выдержка видеокамеры" unit="мс"/>
+						<Gain value="0.2857" title="Усиление" description="Усиление видеокамеры" unit="%"/>
+					</Camcoder>
+				</Item>
+				<Item key="2" title="Мт.ст" description="(!) Узнать у технолога ТТ 031.СЕ.307">
+					<Camcoder title="Видеокамера" description="Настройки видеокамеры">
+						<Exposition value="45" title="Выдержка" description="Выдержка видеокамеры" unit="мс"/>
+						<Gain value="0.5824" title="Усиление" description="Усиление видеокамеры" unit="%"/>
+					</Camcoder>
+				</Item>
+			</Type>
+		</Phosphor>
+		<DefectType>
+			<Item code="1">нер.стр.</Item>
+			<Item code="2">точ.нер</Item>
+			<Item code="3">св пол</Item>
+			<Item code="4">свп</Item>
+			<Item code="5">свт</Item>
+			<Item code="6">сер п</Item>
+			<Item code="7">сер т</Item>
+			<Item code="8">полоса</Item>
+			<Item code="9">тт</Item>
+			<Item code="10">скопл. ТТ</Item>
+			<Item code="11">тт с ореол</Item>
+			<Item code="12">цар</Item>
+			<Item code="13">тт ВОЭ</Item>
+			<Item code="14">тем.пол ВОЭ</Item>
+			<Item code="15">нер ВОЭ</Item>
+			<Item code="16">серость ВОЭ</Item>
+			<Item code="17">хром</Item>
+			<Item code="18">прочее</Item>
+			<Item code="19">Нерав. ОП</Item>
+			<Item code="20">затек</Item>
+			<Item code="21">Пятно Ал</Item>
+			<Item code="22">Треск ВОЭ</Item>
+			<Item code="23">Скол ВОЭ</Item>
+			<Item code="24">Ворс</Item>
+			<Item code="25">Без высоты</Item>
+		</DefectType>	
+		<Result>
+			<Item code="1" description="">Годен</Item>
+			<Item code="2" description="">Брак</Item>
+		</Result>
+		<Position value="##" Phosphor="#######" DefectType="##" Result="##" description="" />
+	</Settings>
+</Product>

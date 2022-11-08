@@ -1,0 +1,29 @@
+<Configuration key="_036CE061.Communicator" title="Коммуникатор" description="Коммуникатор для обмена сообщениями между ПО и оборудованием}">
+  <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+    <Item key="database" title="СУБД" description="Система управления базами данных">
+      <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+        <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+          <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+            <Item key="pipe" title="Именованный конвейер" description="Сетевой протокол прикладного уровня для удалённого доступа, а также для межпроцессного взаимодействия">
+              <RS232 key="" title="RS232" description="Последовательный порт">
+                <Item key="localhost:COM2">
+                  <Board title="Электронный модуль" description="Электронный модуль оборудования">
+                    <Item key="_045CE108" title="_045CE108" description="Электронная плата: _045CE108">
+                      <Adress title="Адрес" description="Адрес электронной платы">
+                        <Template key="01-24" title="Адрес № @key" description="Адрес электронной платы № @key">
+                          <Channel title="Канал" description="Канал электронной платы">
+                            <Template key="1-5" title="Канал № @key" description="Канал электронной платы № @key" />
+                          </Channel>
+                        </Template>
+                      </Adress>
+                    </Item>
+                  </Board>
+                </Item>
+              </RS232>
+            </Item>
+          </Communication>
+        </Item>
+      </Postgres>
+    </Item>
+  </Communication>
+</Configuration>

@@ -1,0 +1,40 @@
+<Profile title="Профиль пользователя">
+  <Configuration key="_036CE061.Communicator">
+    <Scale>
+      <Communication>
+        <Item key="database">
+          <Postgres>
+            <Item key="localhost:5432:_036CE061.Runtime">
+              <Communication>
+                <Item key="serialport">
+                  <Modbus>
+                    <Item key="COM2">
+                      <Board>
+                        <Item key="_045СЕ87">
+                          <Adress>
+                            <Item key="31">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Настройка 435353535"/>
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Настройка" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Amperage>
+                                </Item>
+                              </Channel>
+                            </Item>
+                          </Adress>
+                        </Item>
+                      </Board>
+                    </Item>
+                  </Modbus>
+                </Item>
+              </Communication>
+            </Item>
+          </Postgres>
+        </Item>
+      </Communication>
+    </Scale>
+  </Configuration>
+</Profile>

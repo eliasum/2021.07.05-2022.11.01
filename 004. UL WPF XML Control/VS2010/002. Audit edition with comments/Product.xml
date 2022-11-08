@@ -1,0 +1,29 @@
+<!--Конфигурационные значения основных параметров изделия-->
+<Product xmlns="" title="Проверяемое изделие">
+	<Settings title="Изделие">
+		<Brand title="Тип" description="Торговая марка">
+			<Shield title="Тип экрана" description="Выбрать другой тип экрана изделия">
+				<Item key="Simple" title="Простой" description="Изделие с простым типом экрана" />
+				<Item key="Invert" title="Инвертный" description="Изделие с инвертным типом экрана" />
+			</Shield>
+			<Item key="1" title="АО" description=""/>
+			<Item key="2" title="ООО" description=""/>
+		</Brand>
+		<Phosphor title="Люминофор" description="(!) Узнать у технолога ТТ 031.СЕ.307" select="0">
+			<Type title="Тип" description="Тип люминофора" select="0">
+				<Item key="1" title="ВОЭ" description="(!) Узнать у технолога ТТ 031.СЕ.307">
+					<Camcoder title="Видеокамера" description="Настройки видеокамеры">
+						<Exposition value="90" title="Выдержка" description="Выдержка видеокамеры" unit="мс"/>
+						<Gain value="0.2857" title="Усиление" description="Усиление видеокамеры" unit="%"/>
+					</Camcoder>
+				</Item>
+				<Item key="2" title="Мт.ст" description="(!) Узнать у технолога ТТ 031.СЕ.307">
+					<Camcoder title="Видеокамера" description="Настройки видеокамеры">
+						<Exposition value="45" title="Выдержка" description="Выдержка видеокамеры" unit="мс"/>
+						<Gain value="0.5824" title="Усиление" description="Усиление видеокамеры" unit="%"/>
+					</Camcoder>
+				</Item>
+			</Type>
+		</Phosphor>
+	</Settings>
+</Product>

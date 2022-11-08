@@ -1,0 +1,72 @@
+﻿<Configuration key="_036CE061.Communicator" title="Коммуникатор" description="Коммуникатор для обмена сообщениями между ПО и оборудованием}">
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+            <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+              <Item key="serialport" title="Последовательный порт" description="Последовательный порт RS232">
+                <Modbus title="RS232" description="Последовательный порт">
+                  <Item key="COM2">
+                    <Board title="Электронный модуль" description="Электронный модуль оборудования">
+                      <Item key="_045СЕ108" title="045.СЕ.108" description="Электронная плата: 045.СЕ.108">
+                        <Adress title="Адрес" description="Адрес электронной платы">
+                          <Item key="01" title="Адрес № {@key}" description="Адрес электронной платы № {@key}">
+                            <Channel title="Канал" description="Канал электронной платы">
+                              <Item key="1" title="Канал № {@key}" description="Канал электронной платы № {@key}">
+                                <Voltage title="Напряжение" type="integer" value="" default="0" symbol="U =" unit="В" description="Значение напряжения">
+                                  <Allowance title="Допуск" const="1" unit="%" description="Значение допуска для очистки от шума" />
+                                  <Limit title="Предел" description="Предельное значение">
+                                    <Item key="1">
+                                      <Minimum title="Минимум" const="0" description="Минимально предельное значение" />
+                                      <Maximum title="Максимум" const="200" description="Максимально предельное значение" />
+                                    </Item>
+                                  </Limit>
+                                </Voltage>
+								<Chart11 title11="Chart11">
+								  <Widget title="Виджет11" attr1="val11" attr2="val21">
+									<Test1 title="Тест11" attr3="val31" attr4="val41" />
+									<Test2 title="Тест21" attr5="val51" attr6="val61">
+									  <Tag1 title="Tag11" attr9="val91" attr10="val101" />
+									</Test2>
+									<Test3 title="Тест31" attr7="val71" attr8="val81" />
+								  </Widget>
+                                  </Chart11>
+                                <Amperage title="Ток" type="float" value="" unit="мкА" description="Значение тока">
+                                  <Allowance title="Допуск" const="1" unit="%" description="Значение допуска для очистки от шума" />
+                                  <Limit title="Предел" description="Предельное значение">
+                                    <Item key="1">
+                                      <Minimum title="Минимум" const="0" description="Минимально предельное значение" />
+                                      <Maximum title="Максимум" const="1,8" description="Максимально предельное значение" />
+                                    </Item>
+                                    <Item key="2">
+                                      <Minimum title="Минимум" const="1,8" description="Минимально предельное значение" />
+                                      <Maximum title="Максимум" const="20" description="Максимально предельное значение" />
+                                    </Item>
+                                  </Limit>
+                                </Amperage>
+								<Chart22 title22="Chart22">
+								  <Widget title="Виджет22" attr1="val12" attr2="val22">
+									<Test1 title="Тест12" attr3="val32" attr4="val42" />
+									<Test2 title="Тест22" attr5="val52" attr6="val62">
+									  <Tag1 title="Tag12" attr9="val92" attr10="val102" />
+									</Test2>
+									<Test3 title="Тест32" attr7="val72" attr8="val82" />
+								  </Widget>
+                                  </Chart22>
+                              </Item>
+                            </Channel>
+                          </Item>
+                        </Adress>
+                      </Item>
+                    </Board>
+                  </Item>
+                </Modbus>
+              </Item>
+            </Communication>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

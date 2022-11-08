@@ -1,0 +1,3 @@
+	-- cmd.exe --
+
+pg_dump -U postgres -h localhost runtime >> sqlfile.sql

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration key="_036CE061.Communicator" title="Коммуникатор" description="Коммуникатор для обмена сообщениями между ПО и оборудованием">
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+            <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+              <Item key="serialport" title="Последовательный порт" description="Последовательный порт RS232">
+                <Modbus title="RS232" description="Последовательный порт">
+                  <Item key="COM2" baudRate="115200" title="COM2" description="Последовательный порт">
+                    <Board title="Электронный модуль" description="Электронный модуль оборудования">
+                      <Item key="_045СЕ87" title="045.СЕ.87" description="Электронный модуль: 045.СЕ.87">
+                        <Adress title="Адрес" description="Адрес электронной платы">
+                          <Item key="31" title="Адрес № 31" description="Адрес электронной платы № 31">
+                            <Channel title="Канал" description="Канал электронной платы">
+                              <Item key="1" title="Канал № 1" description="Канал электронной платы № 1">
+                                <Locking const="E0" title="Блокировка" description="Блокировка канала электронной платы" />
+                                <Reaction const="200" title="Время реакции" description="Времени реакции канала для уставки заданного значения тока" />
+                                <Voltage>
+                                  <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                                  <Limit title="Предел" description="Предельное значение">
+                                    <Item key="1">
+                                      <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                                      <Maximum const="24" title="Максимум" description="Максимально предельное значение" />
+                                    </Item>
+                                  </Limit>
+                                  <Widget title="Настройка 435353535" />
+                                </Voltage>
+                                <Amperage>
+                                  <Holding const="50" title="Ток удержания" description="Значение тока удержания" />
+                                  <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                                  <Limit title="Предел" description="Предельное значение">
+                                    <Item key="1">
+                                      <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                                      <Maximum const="500" title="Максимум" description="Максимально предельное значение" />
+                                    </Item>
+                                  </Limit>
+                                  <Widget title="Настройка" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                </Amperage>
+                              </Item>
+                            </Channel>
+                          </Item>
+                        </Adress>
+                      </Item>
+                    </Board>
+                  </Item>
+                </Modbus>
+              </Item>
+            </Communication>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

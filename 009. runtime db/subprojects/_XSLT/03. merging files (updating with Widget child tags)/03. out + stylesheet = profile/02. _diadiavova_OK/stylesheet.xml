@@ -1,0 +1,286 @@
+﻿<Profiler title="Профиль пользователя">
+  <Communication>
+    <Item key="database">
+      <Postgres>
+        <Item key="localhost:5432:_036CE061.Runtime">
+          <Equipment key="_036CE061">
+            <Scale>
+              <Slot>
+                <Item key="1">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="2">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="3">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="4">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="5">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="6">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="7">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="8">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="9">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="10">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="11">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="12">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="13">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="14">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="15">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="16">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="17">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="18">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="19">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="20">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="21">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="22">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="23">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="24">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="25">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="26">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="27">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="28">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="29">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="30">
+                  <Supply>
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Test title="Тест" />
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+              </Slot>
+            </Scale>
+          </Equipment>
+        </Item>
+      </Postgres>
+    </Item>
+  </Communication>
+</Profiler>

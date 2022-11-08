@@ -1,0 +1,3 @@
+cd C:\Program Files\PostgreSQL\13\bin
+
+psql -U postgres -d runtime -a -f "D:\TEMP\runtime.sql" 

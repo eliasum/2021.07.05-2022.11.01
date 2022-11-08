@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="ClassLibrary1.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:toolkit="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+             mc:Ignorable="d">
+    <!--
+    2021.08.11 11:18 IMM
+    
+    1. DockPanel позволяет пристыковывать содержащиеся в ней элементы во всех четырех 
+    направлениях (к верху, к низу, справа и слева).
+    2. ToolTip - Представляет элемент управления, создающий всплывающее окно, отображающее
+    информацию об элементе интерфейса. Информация берется из атрибута @description того тега
+    (<Amperage /> или <Voltage />), который возвращается из Window.DataContext через запрос 
+    XPath=Amperage или XPath=Voltage.
+    3. XPath - запрос к XML документу, позволяющий выбирать элементы, соответствующие 
+    определенному селектору. В данном случае @description - выбор атрибута description текущего
+    узла, где после знака @ указывается название атрибута. Привязка к текущему узлу
+    осуществляется через свойство Window.DataContext, внутренним значением которого
+    являются XML-данные, поставляемые через XmlDataProvider.
+    4. XmlDataProvider - класс поставщик, который предлагает быстрый и простой способ извлечения
+    XML-данных из отдельного файла, местоположения в Интернете или ресурса приложения, 
+    а также обеспечения их доступности элементам приложения. При работе с XmlDataProvider
+    используется свойство Binding.XPath. Это позволяет погружаться в XML-разметку
+    настолько глубоко, насколько нужно.
+    5. FrameworkElement Класс - предоставляет набор свойств, событий и методов уровня платформы
+    WPF для элементов Windows Presentation Foundation (WPF). Этот класс представляет 
+    предоставленную реализацию уровня платформы WPF, созданную на базе API уровня ядра WPF,
+    которые определяются UIElement.
+    6. FrameworkElement.DataContext Свойство - Получает или задает контекст данных для элемента,
+    участвующего в привязке данных. Значением свойства является объект, используемый в качестве 
+    контекста данных; в данном случае это объект класса XmlDataProvider, получающий встроенные 
+    в XAML XML-данные.
+    -->
+    <DockPanel MaxHeight="25" ToolTip="{Binding XPath=@description}"
+                VerticalAlignment="Center" HorizontalAlignment="Stretch" >
+        <!--
+        TextBlock для вывода символа тега <Amperage /> или <Voltage /> из атрибута symbol с помощью
+        запроса XPath=@symbol.
+        -->
+        <TextBlock Text="{Binding XPath=@symbol}"/>
+        
+        <!-- TextBlock для вывода символа "=". -->
+        <TextBlock Margin="3,0,3,0" Text="="/>
+        
+        <!--
+        1. Элемент DecimalUpDown для вывода значения атрибута value тега <Amperage /> или 
+        <Voltage /> с помощью запроса XPath=@value.
+        2. Режим привязки TwoWay: оба объекта - приёмник и источник могут изменять привязанные
+        свойства друг друга.
+        3. Обновление привязки - UpdateSourceTrigger. Односторонняя привязка от источника к 
+        приемнику практически мгновенно изменяет свойство приемника. Но если мы используем 
+        двустороннюю привязку (TwoWay) в случае с текстовыми полями, то при изменении 
+        приемника свойство источника не изменяется мгновенно. Свойство UpdateSourceTrigger 
+        класса Binding задает, как будет присходить обновление. Это свойство принимает значение
+        перечисления UpdateSourceTrigger PropertyChanged - источник привязки обновляется сразу 
+        после обновления свойства в приемнике.
+        4. DecimalUpDown FormatString - формат выводимых данных. Информация берется через запрос 
+        @format из атрибута format того тега (<Amperage /> или <Voltage />), который возвращается 
+        из Window.DataContext через запрос XPath=Amperage или XPath=Voltage.
+        -->
+        <toolkit:DecimalUpDown Margin="3,0,3,0" Focusable="True"
+                               Value="{Binding XPath=@default, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                               FormatString="{Binding XPath=@format}"
+                               Minimum="{Binding XPath=Limit/Minimum/@value}"
+                               Maximum="{Binding XPath=Limit/Maximum/@value}"
+                               Increment="{Binding XPath=Step/@value}"/>
+
+        <!-- TextBlock для вывода символа "[". -->
+        <TextBlock Text="["/>
+        
+        <!--
+        Единица измерения данных. Информация берется через запрос @unit из атрибута unit
+        того тега (<Amperage /> или <Voltage />), который возвращается из 
+        Window.DataContext через запрос XPath=Amperage или XPath=Voltage.
+        -->
+        <TextBlock Text="{Binding XPath=@unit}"/>
+
+        <!-- TextBlock для вывода символа "]". -->
+        <TextBlock Text="]"/>
+    </DockPanel>
+</UserControl>

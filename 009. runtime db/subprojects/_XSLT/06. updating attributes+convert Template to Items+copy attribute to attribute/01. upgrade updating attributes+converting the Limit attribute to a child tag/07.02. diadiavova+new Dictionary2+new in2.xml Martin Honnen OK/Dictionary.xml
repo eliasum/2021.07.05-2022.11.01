@@ -1,0 +1,24 @@
+<Macro>
+  <Item key="Element">
+    <Channel title="Канал" description="Канал электронной платы" />
+    <Locking title="Блокировка" const="?" description="Блокировка канала электронной платы" />
+    <Adress title="Адрес" description="Адрес электронной платы" />
+    <Reaction title="Время реакции" const="?" description="Времени реакции канала для уставки заданного значения тока" />
+    <Holding title="Ток удержания" const="?" description="Значение тока удержания" />
+    <Amperage title="Ток" description="Значение тока" symbol="I" unit="[А]" />
+    <Chart title="График" description="График заданного параметра" />
+    <Widget title="Настройка" description="Настройка виджета пользователя" />
+    <Scale title="Масштаб" description="Масштаб отображения" />
+    <Temperature title="Температура" description="Значение температуры" symbol="t" unit="[°C]" />
+    <Voltage title="Напряжение" description="Значение напряжения" symbol="U" unit="[В]" />
+  </Item>
+  <Item key="Attribute">
+    <Allowance title="Допуск" const="?" description="Значение допуска" symbol="Δ" unit="[%]" />
+    <Limit title="Предел" description="Предельное значение">
+      <Template key="?" title="{../@title} № {@key}" description="{../@description} № {@key}">
+        <Minimum title="Минимум" const="?" description="Минимально предельное значение" />
+        <Maximum title="Максимум" const="?" description="Максимально предельное значение" />
+      </Template>
+    </Limit>
+  </Item>
+</Macro>

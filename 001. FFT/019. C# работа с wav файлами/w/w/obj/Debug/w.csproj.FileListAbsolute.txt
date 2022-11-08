@@ -1,0 +1,7 @@
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\019. C# работа с wav файлами\w\w\bin\Debug\w.exe.config
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\019. C# работа с wav файлами\w\w\bin\Debug\w.exe
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\019. C# работа с wav файлами\w\w\bin\Debug\w.pdb
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\019. C# работа с wav файлами\w\w\obj\Debug\w.csprojAssemblyReference.cache
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\019. C# работа с wav файлами\w\w\obj\Debug\w.csproj.CoreCompileInputs.cache
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\019. C# работа с wav файлами\w\w\obj\Debug\w.exe
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\019. C# работа с wav файлами\w\w\obj\Debug\w.pdb

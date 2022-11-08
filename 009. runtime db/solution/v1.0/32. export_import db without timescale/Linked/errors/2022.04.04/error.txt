@@ -1,0 +1,4 @@
+ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement "SELECT (SELECT key FROM glossary WHERE communication = _xpath)"
+PL/pgSQL function _order(text,text) line 18 at assignment
+SQL-состояние: 21000

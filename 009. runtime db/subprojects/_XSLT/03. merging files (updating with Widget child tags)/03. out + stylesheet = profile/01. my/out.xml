@@ -1,0 +1,35 @@
+<p title="profile">
+  <c>
+    <Item key="db">
+      <s>
+        <Item key="1">
+          <sp>
+            <Chart>
+                <Widget title="widget12">
+                    <Test title="test1"/>
+                </Widget>
+            </Chart>
+          </sp>
+        </Item>
+        <Item key="2">
+          <sp>
+            <Chart>
+                <Widget title="widget32">
+                    <Test title="test3"/>
+                </Widget>
+            </Chart>
+          </sp>
+        </Item>
+        <Item key="3">
+          <sp>
+            <Chart>
+                <Widget title="widget54">
+                    <Test title="test6"/>
+                </Widget>
+            </Chart>
+          </sp>
+        </Item>
+      </s>
+    </Item>
+  </c>
+</p>

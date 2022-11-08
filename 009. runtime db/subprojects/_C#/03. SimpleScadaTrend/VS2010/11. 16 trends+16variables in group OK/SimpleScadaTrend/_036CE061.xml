@@ -1,0 +1,1046 @@
+<Configuration key="_036CE061.ControlWorkstation" title="АРМ" description="Автоматизированное рабочее место">
+  <Menu title="Меню" description="Пользовательское меню">
+    <View title="Вид">
+      <Column title="Колонка" />
+      <Row title="Строка" />
+      <Expand title="Развернуть" />
+      <Colapse title="Свернуть" />
+    </View>
+  </Menu>
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" />
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+            <Equipment key="_036CE061" title="Установка _036CE061" description="Установка _036CE061">
+              <Automode title="Авторежим" description="Режим автоматизированной проверки изделия на установке">
+                <Command title="Команда" description="Команда автоматизированного режима">
+                  <Item key="run" title="Запустить" description="Запустить автоматизированный режим" />
+                  <Item key="abort" title="Прервать" description="Прервать автоматизированный режим" />
+                  <Item key="pause" title="Пауза" description="Притормозить автоматизированный режим" />
+                  <Item key="continue" title="Продолжить" description="Продолжить автоматизированный режим" />
+                  <Item key="designer" title="Редактор" description="Редактировать автоматизированный режим" />
+                </Command>
+              </Automode>
+              <Termodat title="" description="">
+                <Command title="Команда" description="Команда управления температурой для ручного режима">
+                  <Item key="" title="Нагрев" description="">
+                    <Temperature title="Температура" description="Значение температуры" type="float" value="" default="25" format="F1" symbol="t =" unit="[℃]">
+                      <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      <Limit title="Предел" description="Предельное значение">
+                        <Item key="1">
+                          <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                          <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                        </Item>
+                      </Limit>
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" select="2" readonly="false" />
+                    </Temperature>
+                    <Delta title="Скорость" description="" type="float" value="" default="1.5" format="F1" symbol="v =" unit="[℃/мин]"/>
+                  </Item>
+                  <Item key="" title="Выдержка" description="" />
+                  <Item key="" title="Остывание" description="" />
+                </Command>
+              </Termodat>
+              <Slot title="Позиция изделия" description="Позиция для посадочного места изделия">
+                <Item key="1" title="Поз.№ 1" description="Позиция №1 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный " description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="Item[@key='photocathode']/Amperage/@title">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="Item[@key='photocathode']/Voltage/@title">
+                            <Color title="Цвет" value="DeepPink" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="2" title="Поз.№ 2" description="Позиция №2 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный " description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="Item[@key='microchannelplate1']/Amperage/@title">
+                            <Color title="Цвет" value="DarkOrange" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="Item[@key='microchannelplate1']/Voltage/@title">
+                            <Color title="Цвет" value="Gold" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="3" title="Поз.№ 3" description="Позиция №3 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный " description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="Item[@key='microchannelplate12']/Amperage/@title">
+                            <Color title="Цвет" value="DarkKhaki" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="Item[@key='microchannelplate12']/Voltage/@title">
+                            <Color title="Цвет" value="Violet" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="4" title="Поз.№ 4" description="Позиция №4 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный " description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="Item[@key='microchannelplate2']/Amperage/@title">
+                            <Color title="Цвет" value="SlateBlue" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="Item[@key='microchannelplate2']/Voltage/@title">
+                            <Color title="Цвет" value="Lime" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="5" title="Поз.№ 5" description="Позиция №5 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный " description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="Item[@key='photocathode']/Amperage/@title">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="Item[@key='photocathode']/Voltage/@title">
+                            <Color title="Цвет" value="DeepPink" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="6" title="Поз.№ 6" description="Позиция №6 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный " description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="Item[@key='microchannelplate1']/Amperage/@title">
+                            <Color title="Цвет" value="DarkOrange" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="Item[@key='microchannelplate1']/Voltage/@title">
+                            <Color title="Цвет" value="Gold" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="7" title="Поз.№ 7" description="Позиция №7 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный " description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="Item[@key='microchannelplate12']/Amperage/@title">
+                            <Color title="Цвет" value="DarkKhaki" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="Item[@key='microchannelplate12']/Voltage/@title">
+                            <Color title="Цвет" value="Violet" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="8" title="Поз.№ 8" description="Позиция №8 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный " description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="Item[@key='microchannelplate2']/Amperage/@title">
+                            <Color title="Цвет" value="SlateBlue" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="Item[@key='microchannelplate2']/Voltage/@title">
+                            <Color title="Цвет" value="Lime" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" column="7" row="0" />
+              </Slot>
+            </Equipment>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

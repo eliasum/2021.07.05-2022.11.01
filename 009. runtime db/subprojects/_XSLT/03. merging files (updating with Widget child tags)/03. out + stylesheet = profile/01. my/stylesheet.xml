@@ -1,0 +1,41 @@
+﻿<p title="Profile" attr01="val01">
+  <c>
+    <Item key="db">
+    <m1 />
+      <s>
+        <m2 />
+        <Item key="1">
+          <m3 />
+          <sp>
+            <Chart>
+                <Widget title="widget12">
+                    <Test title="test1" />
+                </Widget>
+            </Chart>
+          </sp>
+        </Item>
+        <m4 />
+        <Item key="2">
+          <sp>
+            <m5 />
+            <Chart>
+                <Widget title="widget32">
+                    <Test title="test3" />
+                </Widget>
+            </Chart>
+          </sp>
+        </Item>
+        <Item key="3">
+          <sp>
+            <Chart>
+                <Widget title="widget54">
+                    <Test title="test6" />
+                </Widget>
+            </Chart>
+          </sp>
+        </Item>
+        <m6 />
+      </s>
+    </Item>
+  </c>
+</p>

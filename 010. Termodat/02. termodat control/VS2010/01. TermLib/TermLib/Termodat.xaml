@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="TermLib.Termodat"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="417" d:DesignWidth="485" DataContextChanged="UserControl_DataContextChanged">
+
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <GroupBox Header="{Binding XPath=//Command/@title}" Height="100" Name="gBCommand" Width="200">
+                <ComboBox Height="23" Name="cBCommands" Width="120" ItemsSource="{Binding XPath=//Command/Item/@title}" SelectedIndex="1" SelectionChanged="cBCommands_SelectionChanged" >
+                </ComboBox>
+            </GroupBox>
+            <GroupBox Header="Выдержка" Height="100" Name="gBholding" Width="200" Panel.ZIndex="0">
+            </GroupBox>
+            <GroupBox Header="Нагрев" Height="100" Name="gBHeating" Width="200" Panel.ZIndex="1">
+            </GroupBox>
+        </StackPanel>
+
+    </StackPanel>
+
+</UserControl>

@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="DefectCheckControlLibrary.DefectCheckControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DefectCheckControlLibrary"
+             xmlns:toolkit="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+             xmlns:control="clr-namespace:ULControlLibrary;assembly=ULControlLibrary"
+             xmlns:Microsoft_Windows_Themes="http://schemas.xceed.com/wpf/xaml/toolkit"
+             mc:Ignorable="d">
+    <!--SelectedIndex="{Binding XPath=Slot/@select, Converter=}">-->
+    <UserControl.Resources>
+        <local:XmlAttributeConverter x:Key="XmlAttributeConverter" />
+        <local:BoolInverterConverter x:Key="BoolInverterConverter" />
+        
+        
+    </UserControl.Resources>
+
+    <!--
+        При загрузке формы у ComboBox будет выбран Item с индексом SelectedIndex.
+        Т.е. выбор индекса так же загружается их XML-данных, в данном случае из
+        атрибута @select тега Slot.
+        Режим привязки, т.е. свойство Mode объекта Binding, TwoWay: оба объекта -
+        приёмник и источник могут изменять привязанные свойства друг друга.
+    
+        Синтаксис через теги более пространен:
+        <ComboBox.ItemsSource>
+            <Binding XPath="Slot/Item"/>
+        </ComboBox.ItemsSource>
+    
+        FrameworkElement.DataContextChanged Событие - Происходит при изменении
+        контекста данных для элемента.
+        
+        Чтобы понять, какие данные поступают на элемент (в данном случае на ComboBox),
+        можно добавить пустой обработчик на событие DataContextChanged, поставить у его 
+        входа точку останова и при отладке добавить контрольное значение входного
+        параметра обработчика e. Это позволит узнать значение входного узла типа
+        System.Xml.XmlNode (в данном случае {Element, Name="Settings"}).
+    -->
+    <ComboBox Name="BasisCB"
+              DataContextChanged="ComboBox_DataContextChanged"
+              SelectedIndex="{Binding XPath=./Slot/@select, Mode=TwoWay}"
+              ItemsSource="{Binding XPath=./Slot/Item}"
+              Loaded="BasisCB_Loaded">
+        
+        <ComboBox.ItemTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <!--
+                    Синтаксис через теги более пространен:
+                    <TextBox IsReadOnly="True">
+                        <TextBox.Text>
+                            <Binding XPath="@key"/>
+                        </TextBox.Text>
+                    </TextBox>-->
+                    <TextBox IsReadOnly="True" 
+                             Text="{Binding XPath=@key}" />
+
+                    <!--
+                    <TextBox IsReadOnly="False">
+                        <TextBox.Text>
+                            <Binding XPath="@sn" Mode="TwoWay"/>
+                        </TextBox.Text>
+                    </TextBox>-->
+                    <TextBox Name="snTB"
+                             IsReadOnly="False" 
+                             Text="{Binding XPath=@sn, Mode=TwoWay}"
+                             PreviewTextInput="SnTB_PreviewTextInput"
+                             Loaded="SnTB_Loaded"
+                             KeyDown="SnTB_KeyDown"
+                             PreviewMouseDown="SnTB_PreviewMouseDown"/>
+
+                    <!--
+                        При загрузке формы у ComboBox будет выбран Item с индексом 
+                        SelectedIndex. Т.е. выбор индекса так же загружается их 
+                        XML-данных, в данном случае из атрибута @defect тега Item в теге Slot.
+                        Режим привязки, т.е. свойство Mode объекта Binding, TwoWay: оба 
+                        объекта - приёмник и источник могут изменять привязанные свойства
+                        друг друга.
+                    
+                        '//Defect/Type/Item/@title' - выбирает узлы от текущего узла, 
+                        соответствующего выбору, независимо от их местонахождения
+                    -->
+                    <ComboBox Name="InsideCB"
+                              ItemsSource="{Binding XPath='//Defect/Type/Item/@title'}" 
+                              DataContextChanged="ComboBox_DataContextChanged_1"
+                              SelectedIndex="{Binding XPath=@defect, Mode=TwoWay}"
+                              Loaded="InsideCB_Loaded">
+                    
+                    </ComboBox>
+                </StackPanel>
+            </DataTemplate>
+        </ComboBox.ItemTemplate>
+    </ComboBox>
+    
+</UserControl>

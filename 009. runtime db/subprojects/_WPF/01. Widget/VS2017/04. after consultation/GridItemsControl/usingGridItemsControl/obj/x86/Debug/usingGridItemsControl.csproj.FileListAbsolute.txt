@@ -1,0 +1,58 @@
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\bin\Debug\usingGridItemsControl.exe
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\bin\Debug\usingGridItemsControl.pdb
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\bin\Debug\GridItemsControlLib.dll
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\bin\Debug\GridItemsControlLib.pdb
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csprojResolveAssemblyReference.cache
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\MainWindow.baml
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\MainWindow.g.cs
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\App.g.cs
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl_MarkupCompile.cache
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.g.resources
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.Properties.Resources.resources
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csproj.GenerateResource.Cache
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.exe
+C:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\02. prot\GridItemsControlLib\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.pdb
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.exe
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.pdb
+F:\GridItemsControl\usingGridItemsControl\bin\Debug\usingGridItemsControl.exe
+F:\GridItemsControl\usingGridItemsControl\bin\Debug\usingGridItemsControl.pdb
+F:\GridItemsControl\usingGridItemsControl\bin\Debug\GridItemsControlLib.dll
+F:\GridItemsControl\usingGridItemsControl\bin\Debug\GridItemsControlLib.pdb
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csprojResolveAssemblyReference.cache
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\MainWindow.baml
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\MainWindow.g.cs
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\App.g.cs
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl_MarkupCompile.cache
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.g.resources
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.Properties.Resources.resources
+F:\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csproj.GenerateResource.Cache
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.exe
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.pdb
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\bin\Debug\usingGridItemsControl.exe
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\bin\Debug\usingGridItemsControl.pdb
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\bin\Debug\GridItemsControlLib.dll
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\bin\Debug\GridItemsControlLib.pdb
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csprojResolveAssemblyReference.cache
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\MainWindow.baml
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\MainWindow.g.cs
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\App.g.cs
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl_MarkupCompile.cache
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.g.resources
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.Properties.Resources.resources
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2010\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csproj.GenerateResource.Cache
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\bin\Debug\usingGridItemsControl.exe
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\bin\Debug\usingGridItemsControl.pdb
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\bin\Debug\GridItemsControlLib.dll
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\bin\Debug\GridItemsControlLib.pdb
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csprojAssemblyReference.cache
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\MainWindow.baml
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\MainWindow.g.cs
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\App.g.cs
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl_MarkupCompile.cache
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.g.resources
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.Properties.Resources.resources
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csproj.GenerateResource.cache
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csproj.CoreCompileInputs.cache
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.csproj.CopyComplete
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.exe
+c:\Work\010. runtime db\subprojects\_WPF\01. Widget\solution\code\VS2017\04. after consultation\GridItemsControl\usingGridItemsControl\obj\x86\Debug\usingGridItemsControl.pdb

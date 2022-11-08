@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="UpDownLib.UpDownTerm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:toolkit="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+             mc:Ignorable="d">
+
+    <DockPanel MaxHeight="25" ToolTip="{Binding XPath=@description}"
+                VerticalAlignment="Center" HorizontalAlignment="Stretch" >
+
+        <TextBlock Text="{Binding XPath=@symbol}"/>
+
+        <TextBlock Margin="3,0,3,0" Text="="/>
+
+        <toolkit:DecimalUpDown Margin="3,0,3,0" Focusable="True"
+                               Value="{Binding XPath=@default, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                               FormatString="{Binding XPath=@format}"
+                               Increment="{Binding XPath=Increment/@value}">
+            <toolkit:DecimalUpDown.Minimum>
+                <Binding XPath="Limit/Item[@key='1']/Minimum/@const"/>
+            </toolkit:DecimalUpDown.Minimum>
+            <toolkit:DecimalUpDown.Maximum>
+                <Binding XPath="Limit/Item[@key='1']/Maximum/@const"/>
+            </toolkit:DecimalUpDown.Maximum>
+        </toolkit:DecimalUpDown>
+
+        <TextBlock Text="["/>
+
+        <TextBlock Text="{Binding XPath=@unit}"/>
+
+        <TextBlock Text="]"/>
+    </DockPanel>
+</UserControl>

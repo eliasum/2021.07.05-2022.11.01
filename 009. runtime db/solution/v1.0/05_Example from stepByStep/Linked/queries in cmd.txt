@@ -1,0 +1,5 @@
+pg_dump.exe -U postgres -d testdb -f D:\TEMP\import_dump.sql
+
+cd C:\Program Files\PostgreSQL\13\bin
+
+psql -U postgres -d runtime -a -f "D:\TEMP\runtime.sql" 

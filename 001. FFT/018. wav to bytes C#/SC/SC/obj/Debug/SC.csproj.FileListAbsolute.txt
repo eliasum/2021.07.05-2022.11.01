@@ -1,0 +1,7 @@
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\018. wav to bytes C#\SC\SC\bin\Debug\SC.exe.config
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\018. wav to bytes C#\SC\SC\bin\Debug\SC.exe
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\018. wav to bytes C#\SC\SC\bin\Debug\SC.pdb
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\018. wav to bytes C#\SC\SC\obj\Debug\SC.csprojAssemblyReference.cache
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\018. wav to bytes C#\SC\SC\obj\Debug\SC.csproj.CoreCompileInputs.cache
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\018. wav to bytes C#\SC\SC\obj\Debug\SC.exe
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\018. wav to bytes C#\SC\SC\obj\Debug\SC.pdb

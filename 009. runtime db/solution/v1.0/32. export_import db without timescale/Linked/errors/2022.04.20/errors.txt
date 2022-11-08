@@ -1,0 +1,18 @@
+select * from glossary Where communication='Configuration[@key=''_036CE061.Communicator'']/Scale/Communication/Item[@key=''database'']/Postgres/Item[@key=''localhost:5432:_036CE061.Runtime'']/Communication/Item[@key=''serialport'']/Modbus/Item[@key=''COM2'']/Board/Item[@key=''_045СЕ87'']/Adress/Item[@key=''31'']/Channel/Item[@key=''1'']/Voltage'
+
+ERROR: 23514: new row for relation "_hyper_1_1_chunk" violates check constraint "constraint_1"
+
+ERROR:  new row for relation "_hyper_1_1_chunk" violates check constraint "constraint_1"
+DETAIL:  Failing row contains (1, 2022-04-19 09:47:16.863592, 0).
+CONTEXT:  SQL statement "UPDATE integer_archive SET fix = NOW() WHERE fix = (SELECT MAX(fix) FROM integer_archive WHERE key = 1) AND key = 1;"
+PL/pgSQL function _communication(text,anyelement) line 120 at EXECUTE
+SQL-состояние: 23514
+
+SELECT * FROM _communication('Configuration[@key=''_036CE061.Communicator'']/Scale/Communication/Item[@key=''database'']/Postgres/Item[@key=''localhost:5432:_036CE061.Runtime'']/Communication/Item[@key=''serialport'']/Modbus/Item[@key=''COM2'']/Board/Item[@key=''_045СЕ87'']/Adress/Item[@key=''31'']/Channel/Item[@key=''1'']/Voltage', +0.00);
+SELECT * FROM _communication('Configuration[@key=''_036CE061.Communicator'']/Scale/Communication/Item[@key=''database'']/Postgres/Item[@key=''localhost:5432:_036CE061.Runtime'']/Communication/Item[@key=''serialport'']/Modbus/Item[@key=''COM2'']/Board/Item[@key=''_045СЕ87'']/Adress/Item[@key=''31'']/Channel/Item[@key=''1'']/Amperage', +0.3);
+SELECT * FROM _communication('Configuration[@key=''_036CE061.Communicator'']/Scale/Communication/Item[@key=''database'']/Postgres/Item[@key=''localhost:5432:_036CE061.Runtime'']/Communication/Item[@key=''serialport'']/Modbus/Item[@key=''COM2'']/Board/Item[@key=''_045СЕ87'']/Adress/Item[@key=''31'']/Channel/Item[@key=''2'']/Voltage', +0.00);
+SELECT * FROM _communication('Configuration[@key=''_036CE061.Communicator'']/Scale/Communication/Item[@key=''database'']/Postgres/Item[@key=''localhost:5432:_036CE061.Runtime'']/Communication/Item[@key=''serialport'']/Modbus/Item[@key=''COM2'']/Board/Item[@key=''_045СЕ87'']/Adress/Item[@key=''31'']/Channel/Item[@key=''2'']/Amperage', +0.2);
+SELECT * FROM _communication('Configuration[@key=''_036CE061.Communicator'']/Scale/Communication/Item[@key=''database'']/Postgres/Item[@key=''localhost:5432:_036CE061.Runtime'']/Communication/Item[@key=''serialport'']/Modbus/Item[@key=''COM2'']/Board/Item[@key=''_045СЕ87'']/Adress/Item[@key=''31'']/Channel/Item[@key=''4'']/Voltage', +0);
+SELECT * FROM _communication('Configuration[@key=''_036CE061.Communicator'']/Scale/Communication/Item[@key=''database'']/Postgres/Item[@key=''localhost:5432:_036CE061.Runtime'']/Communication/Item[@key=''serialport'']/Modbus/Item[@key=''COM2'']/Board/Item[@key=''_045СЕ87'']/Adress/Item[@key=''31'']/Channel/Item[@key=''4'']/Amperage', +0.44);
+
+ERROR: 23514: new row for relation "_hyper_2_2_chunk" violates check constraint "constraint_2"

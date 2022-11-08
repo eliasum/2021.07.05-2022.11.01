@@ -1,0 +1,107 @@
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\bin\Debug\SimpleSignal.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\bin\Debug\SimpleSignal.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\bin\Debug\ZedGraph.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.csprojAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.MainForm.resources
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.Properties.Resources.resources
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.csproj.GenerateResource.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.csproj.CoreCompileInputs.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.csproj.CopyComplete
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\examples\folder\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\bin\Debug\SimpleSignal.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\bin\Debug\SimpleSignal.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\bin\Debug\NAudio.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\bin\Debug\NAudio.xml
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\obj\Debug\SimpleSignal.csprojAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\obj\Debug\SimpleSignal.MainForm.resources
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\obj\Debug\SimpleSignal.Properties.Resources.resources
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\obj\Debug\SimpleSignal.csproj.GenerateResource.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\obj\Debug\SimpleSignal.csproj.CoreCompileInputs.cache
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\obj\Debug\SimpleSignal.csproj.CopyComplete
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\obj\Debug\SimpleSignal.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\011. Как построить график по двум заданным массивам\SimpleSignal\obj\Debug\SimpleSignal.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\libfftw3-3-x64.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\libfftw3-3-x86.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\SimpleSignal.exe.config
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\SimpleSignal.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\SimpleSignal.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\NAudio.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\NAudio.xml
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\obj\Debug\SimpleSignal.csprojAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\obj\Debug\SimpleSignal.MainForm.resources
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\obj\Debug\SimpleSignal.Properties.Resources.resources
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\obj\Debug\SimpleSignal.csproj.GenerateResource.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\obj\Debug\SimpleSignal.csproj.CoreCompileInputs.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\obj\Debug\SimpleSignal.csproj.CopyComplete
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\obj\Debug\SimpleSignal.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\obj\Debug\SimpleSignal.pdb
+d:\SimpleSignal\bin\Debug\libfftw3-3-x64.dll
+d:\SimpleSignal\bin\Debug\libfftw3-3-x86.dll
+d:\SimpleSignal\bin\Debug\SimpleSignal.exe.config
+d:\SimpleSignal\bin\Debug\SimpleSignal.exe
+d:\SimpleSignal\bin\Debug\SimpleSignal.pdb
+d:\SimpleSignal\bin\Debug\FFTW.NET.dll
+d:\SimpleSignal\bin\Debug\Microsoft.Win32.Primitives.dll
+d:\SimpleSignal\bin\Debug\NAudio.dll
+d:\SimpleSignal\bin\Debug\System.AppContext.dll
+d:\SimpleSignal\bin\Debug\System.Console.dll
+d:\SimpleSignal\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+d:\SimpleSignal\bin\Debug\System.Globalization.Calendars.dll
+d:\SimpleSignal\bin\Debug\System.IO.Compression.dll
+d:\SimpleSignal\bin\Debug\System.IO.Compression.ZipFile.dll
+d:\SimpleSignal\bin\Debug\System.IO.FileSystem.dll
+d:\SimpleSignal\bin\Debug\System.IO.FileSystem.Primitives.dll
+d:\SimpleSignal\bin\Debug\System.Net.Http.dll
+d:\SimpleSignal\bin\Debug\System.Net.Sockets.dll
+d:\SimpleSignal\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+d:\SimpleSignal\bin\Debug\System.Security.Cryptography.Algorithms.dll
+d:\SimpleSignal\bin\Debug\System.Security.Cryptography.Encoding.dll
+d:\SimpleSignal\bin\Debug\System.Security.Cryptography.Primitives.dll
+d:\SimpleSignal\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+d:\SimpleSignal\bin\Debug\System.Xml.ReaderWriter.dll
+d:\SimpleSignal\bin\Debug\NAudio.xml
+d:\SimpleSignal\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+d:\SimpleSignal\obj\Debug\SimpleSignal.csprojAssemblyReference.cache
+d:\SimpleSignal\obj\Debug\SimpleSignal.MainForm.resources
+d:\SimpleSignal\obj\Debug\SimpleSignal.Properties.Resources.resources
+d:\SimpleSignal\obj\Debug\SimpleSignal.csproj.GenerateResource.cache
+d:\SimpleSignal\obj\Debug\SimpleSignal.csproj.CoreCompileInputs.cache
+d:\SimpleSignal\obj\Debug\SimpleSignal.csproj.CopyComplete
+d:\SimpleSignal\obj\Debug\SimpleSignal.exe
+d:\SimpleSignal\obj\Debug\SimpleSignal.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\FFTW.NET.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\System.AppContext.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\System.Console.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\System.IO.Compression.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\System.IO.FileSystem.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\System.Net.Http.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\System.Net.Sockets.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\System.Xml.ReaderWriter.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\014. Как построить график по двум заданным массивам_3\SimpleSignal\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\libfftw3-3-x64.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\libfftw3-3-x86.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\SimpleSignal.exe.config
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\SimpleSignal.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\SimpleSignal.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\FFTW.NET.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\NAudio.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\System.AppContext.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\System.Console.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\System.IO.Compression.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\System.IO.FileSystem.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\System.Net.Http.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\System.Net.Sockets.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\System.Xml.ReaderWriter.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\NAudio.xml
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\obj\Debug\SimpleSignal.csprojAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\obj\Debug\SimpleSignal.MainForm.resources
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\obj\Debug\SimpleSignal.Properties.Resources.resources
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\obj\Debug\SimpleSignal.csproj.GenerateResource.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\obj\Debug\SimpleSignal.csproj.CoreCompileInputs.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\obj\Debug\SimpleSignal.csproj.CopyComplete
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\obj\Debug\SimpleSignal.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\024. Как построить график по двум заданным массивам_4\SimpleSignal\obj\Debug\SimpleSignal.pdb

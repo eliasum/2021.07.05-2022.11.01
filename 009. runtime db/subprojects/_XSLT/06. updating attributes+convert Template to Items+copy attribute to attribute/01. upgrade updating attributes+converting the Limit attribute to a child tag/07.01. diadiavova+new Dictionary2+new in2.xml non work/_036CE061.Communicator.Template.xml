@@ -1,0 +1,106 @@
+<Configuration key="_036CE061.Communicator" title="Коммуникатор" description="Коммуникатор для обмена сообщениями между ПО и оборудованием}">
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+            <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+              <Item key="serialport" title="Последовательный порт" description="Последовательный порт RS232">
+                <Modbus title="RS232" description="Последовательный порт">
+                  <Item key="COM2">
+                    <Board title="Электронный модуль" description="Электронный модуль оборудования">
+                      <Item key="_045СЕ87" title="045.СЕ.87" description="Электронная плата: 045.СЕ.87">
+                        <Adress muzhik="muzhik">
+                          <Template key="31" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                            <Channel>
+                              <Template key="1,2,4" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                                <Voltage type="integer" value="" default="0" increment="1" format="N0" symbol="U =" Allowance="1">
+                                  <Limit title="Предел" description="Предельное значение">
+                                    <Minimum title="Минимум" const="0" description="Минимально предельное значение" />
+                                    <Maximum title="Максимум" const="1223" description="Максимально предельное значение" />
+                                  </Limit>
+                                  <Widget select="2" readonly="false" />
+                                </Voltage>
+                                <Amperage type="float" value="" const="200" unit="[мА]" format="F1" symbol="I =" Allowance="1">
+                                  <Limit title="Предел" description="Предельное значение">
+                                    <Template key="1" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                                      <Minimum title="Минимум" const="1212" description="Минимально предельное значение" />
+                                      <Maximum title="Максимум" const="5445" description="Максимально предельное значение"/>
+                                    </Template>
+                                  </Limit>
+                                  <Holding const="50" />
+                                  <Widget select="2" readonly="false" />
+                                </Amperage>
+                                <Reaction const="200" />
+                                <Locking const="E0" />
+                              </Template>
+                            </Channel>
+                          </Template>
+                        </Adress>
+                        <version title="Модификация" description="Версия модификации электронной платы">
+                          <Item key="MP_045СЕ87/05_1ch_22А/1000ìА." />
+                        </version>
+                      </Item>
+                      <Item key="_Termodat" title="Termodat" description="Электронная плата: Termodat">
+                        <Adress>
+                          <Template key="0A" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                            <Channel>
+                              <Template key="0170" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                                <Temperature title="Температура" type="float" value="" default="25" format="F1" symbol="t =" unit="[℃]" description="Значение рабочего напряжения">
+                                  <Allowance title="Допуск" const="1" unit="%" description="Значение допуска для очистки от шума" />
+                                  <Limit title="Предел" description="Предельное значение">
+                                    <Item key="1">
+                                      <Minimum title="Минимум" const="0" description="Минимально предельное значение" />
+                                      <Maximum title="Максимум" const="60" description="Максимально предельное значение" />
+                                    </Item>
+                                  </Limit>
+                                  <Widget select="2" readonly="false" />
+                                </Temperature>
+                              </Template>
+                            </Channel>
+                          </Template>
+                        </Adress>
+                        <version title="Модификация" description="Версия модификации электронной платы">
+                          <Item key="16F6" />
+                        </version>
+                      </Item>
+                      <Item key="_045СЕ108" title="045.СЕ.108" description="Электронная плата: 045.СЕ.108">
+                        <Adress>
+                          <Template key="01-24" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                            <Channel>
+                              <Template key="1,3,5" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                                <Voltage type="integer" value="" default="0" increment="1" format="N0" symbol="U =" Allowance="1" Limit="[0-200]">
+                                  <Widget select="2" readonly="false" />
+                                </Voltage>
+                                <Amperage type="float" value="" unit="[мкА]" format="F1" symbol="I =" Allowance="1" Limit="[0-1,8][1,8-20]">
+                                  <Widget select="2" readonly="true" />
+                                </Amperage>
+                                <Locking const="E" />
+                              </Template>
+                              <Template key="2,4" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                                <Voltage type="integer" value="" default="0" increment="1" format="N0" symbol="U =" Allowance="1" Limit="[0-1200]">
+                                  <Widget select="2" readonly="false" />
+                                </Voltage>
+                                <Amperage type="float" value="" unit="[мкА]" format="F1" symbol="I =" Allowance="1" Limit="[0-9][9-100]">
+                                  <Widget select="2" readonly="true" />
+                                </Amperage>
+                                <Locking const="E" />
+                              </Template>
+                            </Channel>
+                          </Template>
+                        </Adress>
+                        <version title="Модификация" description="Версия модификации электронной платы">
+                          <Item key="CНВ_045СЕ108/1_5-кан." />
+                        </version>
+                      </Item>
+                    </Board>
+                  </Item>
+                </Modbus>
+              </Item>
+            </Communication>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

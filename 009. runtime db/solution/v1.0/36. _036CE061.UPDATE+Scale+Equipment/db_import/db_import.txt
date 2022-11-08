@@ -1,0 +1,17 @@
+	-- SQL Shell (psql).lnk --
+
+\i c:/TEMP/sqlfile.sql
+
+	-- cmd.exe --
+	
+	-- from cmd export --
+	
+cd c:/TEMP/	
+	
+"C:\Program Files\PostgreSQL\9.6\bin\psql" -U postgres -f sqlfile.sql
+
+	-- from pgAdmin4 backup sql--
+	
+cd c:/TEMP/	
+	
+"C:\Program Files\PostgreSQL\9.6\bin\psql" -U postgres -f runtime_backup.sql

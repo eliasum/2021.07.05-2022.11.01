@@ -1,0 +1,161 @@
+﻿<UserControl x:Class="TermLib.Termodat"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TermLib.Converter"
+             xmlns:toolkit="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+             xmlns:my="clr-namespace:ClassLibrary1;assembly=ClassLibrary1"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <local:SelectedItemConverter x:Key="selectedItemConverter"/>
+        <local:VisibilityConverter x:Key="visibilityConverter"/>
+    </UserControl.Resources>
+
+    <GroupBox Header="{Binding XPath=@title}" VerticalAlignment="Center">
+
+        <StackPanel Orientation="Vertical" DataContext="{Binding XPath=//Command}">
+
+            <StackPanel Orientation="Horizontal" Margin="3 0 3 3">
+
+                <!--Верхний уровень-->
+                <!--Текст "Команда"-->
+                <TextBlock Text="{Binding XPath=@title}" Margin="0 0 5 0"/>
+
+                <!--Выбор команды-->
+                <ComboBox ItemsSource="{Binding XPath=Item/@title}"
+                      SelectedItem="{Binding XPath=@select, Mode=TwoWay,
+                        Converter={StaticResource selectedItemConverter}}" Margin="0 0 5 0">
+                </ComboBox>
+
+                <!--Кнопки "Посылка команды"-->
+                <Button Name="buttonRun" Visibility="Visible" Click="button_Click">
+                    <Button.Content>
+                        <Binding XPath="//Send/Item[@key='1']/@title"/>
+                    </Button.Content>
+                </Button>
+                <Button Name="buttonAbort" Visibility="Collapsed" Click="button_Click">
+                    <Button.Content>
+                        <Binding XPath="//Send/Item[@key='2']/@title"/>
+                    </Button.Content>
+                </Button>
+
+            </StackPanel>
+
+            <!--Нижний уровень-->
+            <!--Command1-->
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" Visibility="{Binding XPath=@select,
+                Converter={StaticResource visibilityConverter},
+                ConverterParameter=0001}">
+
+                    <Grid Margin="3 3 3 3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        
+                        <!--Температура-->
+                        <TextBlock Grid.Column="0" Grid.Row="0">
+                        <TextBlock.Text>
+                            <Binding XPath="Item[@key='0001']/Temperature/@title" />
+                        </TextBlock.Text>
+                        </TextBlock>
+
+                        <my:UserControl1 Margin="5 0 0 0" Grid.Column="0" Grid.Row="1">
+                            <my:UserControl1.DataContext>
+                                <Binding XPath="Item[@key='0001']/Temperature" />
+                            </my:UserControl1.DataContext>
+                        </my:UserControl1>
+
+                        <!--Время-->
+                        <TextBlock Margin="10 0 0 0" Grid.Column="1" Grid.Row="0">
+                        <TextBlock.Text>
+                            <Binding XPath="Item[@key='0001']/Time/@title" />
+                        </TextBlock.Text>
+                        </TextBlock>
+
+                        <my:UserControl1 Margin="10 0 0 0" Grid.Column="1" Grid.Row="1">
+                            <my:UserControl1.DataContext>
+                                <Binding XPath="Item[@key='0001']/Time" />
+                            </my:UserControl1.DataContext>
+                        </my:UserControl1>
+                    </Grid>
+
+                    <StackPanel Orientation="Horizontal" Margin="3 3 3 3">
+
+                        <!--Температура-->
+                        <TextBlock>
+                        <TextBlock.Text>
+                            <Binding XPath="Item[@key='0001']/Temperature/@title" />
+                        </TextBlock.Text>
+                        </TextBlock>
+
+                        <my:UserControl1 Margin="5 0 0 0">
+                            <my:UserControl1.DataContext>
+                                <Binding XPath="Item[@key='0001']/Temperature" />
+                            </my:UserControl1.DataContext>
+                        </my:UserControl1>
+
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="3 3 3 3">
+
+                        <!--Время-->
+                        <TextBlock>
+                        <TextBlock.Text>
+                            <Binding XPath="Item[@key='0001']/Time/@title" />
+                        </TextBlock.Text>
+                        </TextBlock>
+
+                        <my:UserControl1 Margin="5 0 0 0">
+                            <my:UserControl1.DataContext>
+                                <Binding XPath="Item[@key='0001']/Time" />
+                            </my:UserControl1.DataContext>
+                        </my:UserControl1>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+                <!--Command5-->
+                <StackPanel Orientation="Vertical" Visibility="{Binding XPath=@select,
+                Converter={StaticResource visibilityConverter},
+                ConverterParameter=0005}">
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="  Уставка     "/>
+                        <my:UserControl1 DataContext="{Binding XPath=Item[3]/Temperature}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="  Скорость  "/>
+                        <my:UserControl1 DataContext="{Binding XPath=Item[3]/Rate}"/>
+                    </StackPanel>
+
+                </StackPanel>
+
+                <!--Command6-->
+                <StackPanel Orientation="Vertical" Visibility="{Binding XPath=@select,
+                Converter={StaticResource visibilityConverter},
+                ConverterParameter=0006}">
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="  Уставка     "/>
+                        <my:UserControl1 DataContext="{Binding XPath=Item[4]/Temperature}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="  Скорость  "/>
+                        <my:UserControl1 DataContext="{Binding XPath=Item[4]/Rate}"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </GroupBox>
+
+</UserControl>

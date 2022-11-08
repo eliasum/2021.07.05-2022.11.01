@@ -1,0 +1,49 @@
+<Configuration key="_036CE061.ControlWorkstation">
+  <Communication>
+    <Item key="database">
+      <Postgres>
+        <Item key="localhost:5432:_036CE061.Runtime">
+          <Equipment key="_036CE061">
+            <Mode>
+              <Item key="run" />
+              <Item key="break" />
+            </Mode>
+            <Scale>
+              <Slot>
+                <Item key="1">
+                  <Mode>
+                    <Item key="run" />
+                    <Item key="break" />
+                  </Mode>
+                  <Product>
+                    <SerialNumber />
+                    <Info />
+                  </Product>
+                  <Supply>
+                    <Item key="photocathode">
+                      <Amperage>
+                        <Allowance />
+                      </Amperage>
+                      <Voltage>
+                        <Allowance />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График значения параметра">
+						<Widget title="Виджет" attr1="val1" attr2="val2">
+							<Test1 title="Тест1" attr3="val3" attr4="val4"/>
+							<Test2 title="Тест2" attr5="val5" attr6="val6">
+								<Tag1 title="Tag1" attr9="val9" attr10="val10"/>
+							</Test2>
+							<Test3 title="Тест3" attr7="val7" attr8="val8"/>
+						</Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+              </Slot>
+            </Scale>
+          </Equipment>
+        </Item>
+      </Postgres>
+    </Item>
+  </Communication>
+</Configuration>

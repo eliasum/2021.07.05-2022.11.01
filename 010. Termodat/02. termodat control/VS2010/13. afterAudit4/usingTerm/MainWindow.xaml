@@ -1,0 +1,18 @@
+﻿<Window x:Class="usingTerm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" xmlns:myT="clr-namespace:TermLib;assembly=TermLib"
+        Closed="Window_Closed">
+
+    <Window.Resources>
+        <XmlDataProvider x:Key="provider" 
+                         Source="_036CE061.Communicator.xml" 
+                         IsInitialLoadEnabled="True" 
+                         IsAsynchronous="False" 
+                         XPath="//Item[@key='_Termodat']" />
+    </Window.Resources>
+    <myT:Termodat DataContext="{Binding Source={StaticResource provider}}" 
+                     HorizontalAlignment="Center" 
+                     VerticalAlignment="Center"
+                     Name="Termodat1"/>
+</Window>

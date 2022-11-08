@@ -1,0 +1,1 @@
+install-Package Npgsql -Version 2.2.7

@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="ClassLibrary1.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:toolkit="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+             mc:Ignorable="d">
+<DockPanel>
+        <DockPanel.Resources>
+            <XmlDataProvider x:Key="InventoryData">
+                <x:XData>
+                    <Samples xmlns="">
+                        <File>Week</File>
+                        <File>Day</File>
+                        <Edit>Time</Edit>
+                        <Edit>Second</Edit>
+                        <Number>111</Number>
+                    </Samples>
+                </x:XData>
+            </XmlDataProvider>
+        </DockPanel.Resources>
+
+        <TextBlock Name="textBlock1" Text="{Binding Source={StaticResource InventoryData}, XPath=Samples/File}" Width="100" Height="20"/>
+        <TextBlock Name="textBlock2" Text="{Binding Source={StaticResource InventoryData}, XPath=Samples/Edit}" Width="100" Height="20"/>
+        <toolkit:DecimalUpDown Name="decimalUpDown" Margin="3,0,3,0" Focusable="True" Width="100" Height="20"
+                               Value="{Binding Source={StaticResource InventoryData}, XPath=Samples/Number}"
+                               Visibility="Visible"></toolkit:DecimalUpDown>
+    </DockPanel>
+</UserControl>

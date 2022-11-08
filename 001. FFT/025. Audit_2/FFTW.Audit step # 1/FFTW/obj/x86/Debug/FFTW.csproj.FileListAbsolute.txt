@@ -1,0 +1,41 @@
+C:\Users\Администратор\Documents\Visual Studio 2010\Projects\FFTW\FFTW\bin\Debug\FFTW.exe
+C:\Users\Администратор\Documents\Visual Studio 2010\Projects\FFTW\FFTW\bin\Debug\FFTW.pdb
+C:\Users\Администратор\Documents\Visual Studio 2010\Projects\FFTW\FFTW\obj\x86\Debug\FFTW.exe
+C:\Users\Администратор\Documents\Visual Studio 2010\Projects\FFTW\FFTW\obj\x86\Debug\FFTW.pdb
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\022. FFTW_rel_2010\FFTW\FFTW\obj\x86\Debug\FFTW.exe
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\022. FFTW_rel_2010\FFTW\FFTW\obj\x86\Debug\FFTW.pdb
+C:\Users\~alex~\Downloads\FFTW\FFTW\obj\x86\Debug\FFTW.exe
+C:\Users\~alex~\Downloads\FFTW\FFTW\obj\x86\Debug\FFTW.pdb
+C:\Users\~alex~\Downloads\FFTW\FFTW\bin\Debug\FFTW.exe
+C:\Users\~alex~\Downloads\FFTW\FFTW\bin\Debug\FFTW.pdb
+C:\Users\~alex~\Downloads\FFTW\FFTW\bin\Debug\NAudio.dll
+F:\!Задания\!Группа\Новая папка\FFTW\FFTW\obj\x86\Debug\FFTW.exe
+F:\!Задания\!Группа\Новая папка\FFTW\FFTW\obj\x86\Debug\FFTW.pdb
+F:\!Задания\!Группа\Новая папка\FFTW\FFTW\bin\Debug\FFTW.exe
+F:\!Задания\!Группа\Новая папка\FFTW\FFTW\bin\Debug\FFTW.pdb
+F:\!Задания\!Группа\Новая папка\FFTW\FFTW\bin\Debug\NAudio.dll
+F:\!Задания\!Группа\Новая папка\FFTW\FFTW\obj\x86\Debug\FFTW.csprojResolveAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\audit solution\003. testing\FFTW.Audit step # 1\FFTW\bin\Debug\FFTW.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\audit solution\003. testing\FFTW.Audit step # 1\FFTW\bin\Debug\FFTW.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\audit solution\003. testing\FFTW.Audit step # 1\FFTW\bin\Debug\NAudio.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\audit solution\003. testing\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.csprojAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\audit solution\003. testing\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.csproj.CoreCompileInputs.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\audit solution\003. testing\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.csproj.CopyComplete
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\audit solution\003. testing\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\audit solution\003. testing\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\023. Audit\FFTW.Audit step # 1\FFTW\bin\Debug\FFTW.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\023. Audit\FFTW.Audit step # 1\FFTW\bin\Debug\FFTW.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\023. Audit\FFTW.Audit step # 1\FFTW\bin\Debug\NAudio.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\023. Audit\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.csprojAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\023. Audit\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.csproj.CoreCompileInputs.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\023. Audit\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.csproj.CopyComplete
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\023. Audit\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\023. Audit\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\025. Audit_2\FFTW.Audit step # 1\FFTW\bin\Debug\FFTW.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\025. Audit_2\FFTW.Audit step # 1\FFTW\bin\Debug\FFTW.pdb
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\025. Audit_2\FFTW.Audit step # 1\FFTW\bin\Debug\NAudio.dll
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\025. Audit_2\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.csprojAssemblyReference.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\025. Audit_2\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.csproj.CoreCompileInputs.cache
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\025. Audit_2\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.csproj.CopyComplete
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\025. Audit_2\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.exe
+d:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\025. Audit_2\FFTW.Audit step # 1\FFTW\obj\x86\Debug\FFTW.pdb

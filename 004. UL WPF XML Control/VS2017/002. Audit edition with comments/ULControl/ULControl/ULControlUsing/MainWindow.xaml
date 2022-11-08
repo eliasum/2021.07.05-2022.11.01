@@ -1,0 +1,75 @@
+﻿<!--
+2021.08.16 13:18 IMM
+    
+Аудит применения ПЭУ:    
+1. Переименовал 'xmlns:ULControlLibrary' в 'xmlns:control' и перенес x:Class на следующую строку
+-->
+
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ULControlUsing"
+        
+        xmlns:control="clr-namespace:ULControlLibrary;assembly=ULControlLibrary"
+        x:Class="ULControlUsing.MainWindow"
+        mc:Ignorable="d">
+        <!--2. Убрал принудительные размеры окна формы -->
+    <Window.DataContext>
+        <XmlDataProvider IsInitialLoadEnabled="True" IsAsynchronous="False">
+            <x:XData>
+                <Product xmlns="" title="Проверяемое изделие">
+                    <Settings title="Изделие">
+                        <Brand title="Тип" description="Торговая марка">
+                            <Shield title="Тип экрана" description="Выбрать другой тип экрана изделия">
+                                <Item key="Simple" title="Простой" description="Изделие с простым типом экрана" />
+                                <Item key="Invert" title="Инвертный" description="Изделие с инвертным типом экрана" />
+                            </Shield>
+                            <Item key="1" title="АО" description=""/>
+                            <Item key="2" title="ООО" description=""/>
+                        </Brand>
+                        <!--
+                        -3. Изменил xml-данные:
+                        М: 2) Исправил ошибку: в XML- конфигурации, т.к. данные из таблицы
+                        пункта №1 ТТ 031.СЕ.307 внесены не в полном объёме.
+                        М: 3) Исправил ошибку: УЛ замена на Люминофор (! вроде мы уже об этом говорили ?)
+                        
+                        select - уровень выбора Люминофора
+                        -->
+                        <Phosphor title="Люминофор" description="(!) Узнать у технолога ТТ 031.СЕ.307" select="0">
+                            <!--select - уровень выбора Типа Люминофора-->
+                            <Type title="Тип" description="Тип люминофора" select="0">
+                                <Item key="1" title="ВОЭ" description="(!) Узнать у технолога ТТ 031.СЕ.307">
+                                    <Camcoder title="Видеокамера" description="Настройки видеокамеры">
+                                        <Exposition value="90" title="Выдержка" description="Выдержка видеокамеры" unit="мс"/>
+                                        <Gain value="0.2857" title="Усиление" description="Усиление видеокамеры" unit="%"/>
+                                    </Camcoder>
+                                </Item>
+                                <Item key="2" title="Мт.ст" description="(!) Узнать у технолога ТТ 031.СЕ.307">
+                                    <Camcoder title="Видеокамера" description="Настройки видеокамеры">
+                                        <Exposition value="45" title="Выдержка" description="Выдержка видеокамеры" unit="мс"/>
+                                        <Gain value="0.5824" title="Усиление" description="Усиление видеокамеры" unit="%"/>
+                                    </Camcoder>
+                                </Item>
+                            </Type>
+                        </Phosphor>
+                        <!--Изменённые xml-данные-->
+                    </Settings>
+                </Product>
+            </x:XData>
+        </XmlDataProvider>
+    </Window.DataContext>
+    <!--
+    4. Изменил привязку с "{Binding XPath=Product}"> на "{Binding XPath=Product/Settings}"
+    в соответствии с изменением xml-данных
+    -->
+    <Grid DataContext="{Binding XPath=Product/Settings}">
+        <!--
+        5. Было '<ULControlLibrary:ULControl DataContext="{Binding XPath=Settings}"/>', так же
+        добавил выавнивание по центру
+        -->
+        <control:ULControl DataContext="{Binding XPath=Phosphor}"
+                                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Window>

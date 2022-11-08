@@ -1,0 +1,102 @@
+<Configuration key="_036CE061.ControlWorkstation" title="АРМ оператора" description="Автоматизированное рабочее место оператора">
+  <Menu title="Меню" description="Пользовательское меню">
+    <View title="Вид">
+      <Column title="Колонка" />
+      <Row title="Строка" />
+      <Expand title="Развернуть" />
+      <Colapse title="Свернуть" />
+    </View>
+  </Menu>
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Widget scale=".25" x="0" y="0" />
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+            <Equipment key="_036CE061" title="Установка {@key}" description="Установка {@key}">
+              <Automode title="Авторежим" description="Режим автоматизированной проверки изделия на установке">
+                <File select="1" title="Файл" description="Место хранения файла техпроцесса автоматизированного режима">
+                  <Item key="1" title="Техпроцесс" description="Техпроцесс автоматизированного режима" const="Technology\Process.xml" />
+                </File>
+                <Command select="run" title="Команда" description="Команда автоматизированного режима">
+                  <Item key="run" title="Запустить" description="Запустить автоматизированный режим" />
+                  <Item key="abort" title="Прервать" description="Прервать автоматизированный режим" />
+                  <Item key="pause" title="Пауза" description="Притормозить автоматизированный режим" />
+                  <Item key="continue" title="Продолжить" description="Продолжить автоматизированный режим" />
+                  <Item key="designer" title="Редактор" description="Редактировать автоматизированный режим" />
+                </Command>
+                <Widget>
+                  <Item key="technologydesigner" title="АРМ технолога" description="Автоматизированное рабочее место технолога">
+                    <Toolbox title="Инструментарий" description="Инструментарий для создания и редактирования техпроцесса">
+                      <Item key="automode" title="Авторежим" description="" />
+                      <Item key="equipment" title="Оборудование" description="" />
+                      <Item key="primitive" title="Приметив" description="" />
+                      <Property title="Свойства" description="Свойства активности" />
+                    </Toolbox>
+                    <Process title="Техпроцесс" description="Техпроцесс для автоматизированного режима">
+                      <Item key="designer" title="Дизанер" description="Дизанер техпроцесса" />
+                      <Item key="xaml" title="XAML" description="Техпроцесс, как текст с разметкой в формате XAML" />
+                    </Process>
+                    <Debugger title="Отладчик" description="Отладчик техпроцесса для автоматизированного режима">
+                      <Item key="jurnal" title="Журнал отладчика" description="Журнал отладчика техпроцесса" />
+                    </Debugger>
+                  </Item>
+                </Widget>
+              </Automode>
+              <Termodat>
+                <Widget>
+                  <Command title="Команда" description="Команда от оператора">
+                    <Item key="1" title="Исполнить" description="Исполнить команду" />
+                    <Item key="2" title="Отменить" description="Отменить команду" />
+                  </Command>
+                </Widget>
+              </Termodat>
+              <Slot title="Позиция" description="Позиция для посадочного места изделия">
+                <Template key="1-30" title="Поз.№ {@key}" description="Позиция № {@key} посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" Allowance="1" value="" type="float" format="F1" />
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" Allowance="1" value="" type="integer" format="N0" default="0" />
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" Allowance="1" value="" type="float" format="F1" />
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" Allowance="1" value="" type="integer" format="N0" default="0" />
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" Allowance="1" value="" type="float" format="F1" />
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" Allowance="1" value="" type="integer" format="N0" default="0" />
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" Allowance="1" value="" type="float" format="F1" />
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" Allowance="1" value="" type="integer" format="N0" default="0" />
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" Allowance="1" value="" type="float" format="F1" />
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" Allowance="1" value="" type="integer" format="N0" default="0" />
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget>
+                        <Pen title="Перо">
+                          <Template key="../../../../Amperage,../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Template>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Template>
+                <Widget column="7" row="0" />
+              </Slot>
+            </Equipment>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

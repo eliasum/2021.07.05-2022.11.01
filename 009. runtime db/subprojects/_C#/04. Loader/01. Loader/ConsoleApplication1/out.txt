@@ -1,0 +1,181 @@
+﻿1: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Termodat/Command/Item[@key='1']/Temperature
+2: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Termodat/Command/Item[@key='1']/Delta
+3: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='photocathode']/Amperage
+4: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='photocathode']/Voltage
+5: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='microchannelplate1']/Amperage
+6: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='microchannelplate1']/Voltage
+7: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='microchannelplate12']/Amperage
+8: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='microchannelplate12']/Voltage
+9: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='microchannelplate2']/Amperage
+10: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='microchannelplate2']/Voltage
+11: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='anode']/Amperage
+12: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='1']/Supply/Item[@key='anode']/Voltage
+13: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='photocathode']/Amperage
+14: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='photocathode']/Voltage
+15: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='microchannelplate1']/Amperage
+16: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='microchannelplate1']/Voltage
+17: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='microchannelplate12']/Amperage
+18: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='microchannelplate12']/Voltage
+19: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='microchannelplate2']/Amperage
+20: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='microchannelplate2']/Voltage
+21: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='anode']/Amperage
+22: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='2']/Supply/Item[@key='anode']/Voltage
+23: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='photocathode']/Amperage
+24: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='photocathode']/Voltage
+25: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='microchannelplate1']/Amperage
+26: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='microchannelplate1']/Voltage
+27: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='microchannelplate12']/Amperage
+28: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='microchannelplate12']/Voltage
+29: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='microchannelplate2']/Amperage
+30: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='microchannelplate2']/Voltage
+31: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='anode']/Amperage
+32: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='3']/Supply/Item[@key='anode']/Voltage
+33: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='photocathode']/Amperage
+34: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='photocathode']/Voltage
+35: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='microchannelplate1']/Amperage
+36: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='microchannelplate1']/Voltage
+37: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='microchannelplate12']/Amperage
+38: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='microchannelplate12']/Voltage
+39: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='microchannelplate2']/Amperage
+40: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='microchannelplate2']/Voltage
+41: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='anode']/Amperage
+42: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='4']/Supply/Item[@key='anode']/Voltage
+43: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='photocathode']/Amperage
+44: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='photocathode']/Voltage
+45: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='microchannelplate1']/Amperage
+46: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='microchannelplate1']/Voltage
+47: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='microchannelplate12']/Amperage
+48: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='microchannelplate12']/Voltage
+49: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='microchannelplate2']/Amperage
+50: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='microchannelplate2']/Voltage
+51: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='anode']/Amperage
+52: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='5']/Supply/Item[@key='anode']/Voltage
+53: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='photocathode']/Amperage
+54: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='photocathode']/Voltage
+55: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='microchannelplate1']/Amperage
+56: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='microchannelplate1']/Voltage
+57: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='microchannelplate12']/Amperage
+58: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='microchannelplate12']/Voltage
+59: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='microchannelplate2']/Amperage
+60: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='microchannelplate2']/Voltage
+61: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='anode']/Amperage
+62: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='6']/Supply/Item[@key='anode']/Voltage
+63: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='photocathode']/Amperage
+64: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='photocathode']/Voltage
+65: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='microchannelplate1']/Amperage
+66: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='microchannelplate1']/Voltage
+67: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='microchannelplate12']/Amperage
+68: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='microchannelplate12']/Voltage
+69: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='microchannelplate2']/Amperage
+70: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='microchannelplate2']/Voltage
+71: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='anode']/Amperage
+72: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='7']/Supply/Item[@key='anode']/Voltage
+73: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='photocathode']/Amperage
+74: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='photocathode']/Voltage
+75: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='microchannelplate1']/Amperage
+76: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='microchannelplate1']/Voltage
+77: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='microchannelplate12']/Amperage
+78: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='microchannelplate12']/Voltage
+79: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='microchannelplate2']/Amperage
+80: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='microchannelplate2']/Voltage
+81: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='anode']/Amperage
+82: Configuration[@key='_036CE061.ControlWorkstation']/Scale/Communication/Item[@key='database']/Postgres/Item[@key='localhost:5432:_036CE061.Runtime']/Equipment/Slot/Item[@key='8']/Supply/Item[@key='anode']/Voltage
+Подключение открыто
+0: 28.06.2022 17:35:41
+0: 28.06.2022 17:35:41
+0: 28.06.2022 17:36:10
+0: 28.06.2022 17:38:41
+0: 28.06.2022 17:38:41
+0: 28.06.2022 17:39:26
+1: 28.06.2022 17:35:41
+1: 28.06.2022 17:35:41
+1: 28.06.2022 17:36:10
+1: 28.06.2022 17:38:41
+1: 28.06.2022 17:38:41
+1: 28.06.2022 17:39:26
+2: 28.06.2022 17:35:41
+2: 28.06.2022 17:35:41
+2: 28.06.2022 17:36:10
+2: 28.06.2022 17:38:41
+2: 28.06.2022 17:38:41
+2: 28.06.2022 17:39:26
+3: 28.06.2022 17:35:41
+3: 28.06.2022 17:35:41
+3: 28.06.2022 17:36:10
+3: 28.06.2022 17:38:41
+3: 28.06.2022 17:38:41
+3: 28.06.2022 17:39:26
+4: 28.06.2022 17:35:41
+4: 28.06.2022 17:35:41
+4: 28.06.2022 17:36:10
+4: 28.06.2022 17:38:41
+4: 28.06.2022 17:38:41
+4: 28.06.2022 17:39:26
+5: 28.06.2022 17:35:41
+5: 28.06.2022 17:35:41
+5: 28.06.2022 17:36:10
+5: 28.06.2022 17:38:41
+5: 28.06.2022 17:38:41
+5: 28.06.2022 17:39:26
+6: 28.06.2022 17:35:41
+6: 28.06.2022 17:35:41
+6: 28.06.2022 17:36:10
+6: 28.06.2022 17:38:41
+6: 28.06.2022 17:38:41
+6: 28.06.2022 17:39:26
+7: 28.06.2022 17:35:41
+7: 28.06.2022 17:35:41
+7: 28.06.2022 17:36:10
+7: 28.06.2022 17:38:41
+7: 28.06.2022 17:38:41
+7: 28.06.2022 17:39:26
+8: 28.06.2022 17:35:41
+8: 28.06.2022 17:35:41
+8: 28.06.2022 17:36:10
+8: 28.06.2022 17:38:41
+8: 28.06.2022 17:38:41
+8: 28.06.2022 17:39:26
+9: 28.06.2022 17:35:41
+9: 28.06.2022 17:35:41
+9: 28.06.2022 17:36:10
+9: 28.06.2022 17:38:41
+9: 28.06.2022 17:38:41
+9: 28.06.2022 17:39:26
+10: 28.06.2022 17:35:41
+10: 28.06.2022 17:35:41
+10: 28.06.2022 17:36:10
+10: 28.06.2022 17:38:41
+10: 28.06.2022 17:38:41
+10: 28.06.2022 17:39:26
+11: 28.06.2022 17:35:41
+11: 28.06.2022 17:35:41
+11: 28.06.2022 17:36:10
+11: 28.06.2022 17:38:41
+11: 28.06.2022 17:38:41
+11: 28.06.2022 17:39:26
+12: 28.06.2022 17:35:41
+12: 28.06.2022 17:35:41
+12: 28.06.2022 17:36:10
+12: 28.06.2022 17:38:41
+12: 28.06.2022 17:38:41
+12: 28.06.2022 17:39:26
+13: 28.06.2022 17:35:41
+13: 28.06.2022 17:35:41
+13: 28.06.2022 17:36:10
+13: 28.06.2022 17:38:41
+13: 28.06.2022 17:38:41
+13: 28.06.2022 17:39:26
+14: 28.06.2022 17:35:41
+14: 28.06.2022 17:35:41
+14: 28.06.2022 17:36:10
+14: 28.06.2022 17:38:41
+14: 28.06.2022 17:38:41
+14: 28.06.2022 17:39:26
+15: 28.06.2022 17:35:41
+15: 28.06.2022 17:35:41
+15: 28.06.2022 17:36:10
+15: 28.06.2022 17:38:41
+15: 28.06.2022 17:38:41
+15: 28.06.2022 17:39:26
+Подключение закрыто...
+Программа завершила работу.

@@ -1,0 +1,24 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DefectCheckControlUsing"
+        xmlns:control="clr-namespace:DefectCheckControlLibrary;assembly=DefectCheckControlLibrary" 
+        x:Class="DefectCheckControlUsing.MainWindow"
+        mc:Ignorable="d" Loaded="Window_Loaded" Closed="Window_Closed"
+        Title="MainWindow"
+        >
+
+    <Window.Resources>
+        <XmlDataProvider x:Key="xmlData" Source="Product.xml" XPath="Product/Settings"/>
+    </Window.Resources>
+
+    <Grid>
+
+        <control:DefectCheckControl DataContext="{Binding Source={StaticResource xmlData}}"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+        />
+    </Grid>
+</Window>

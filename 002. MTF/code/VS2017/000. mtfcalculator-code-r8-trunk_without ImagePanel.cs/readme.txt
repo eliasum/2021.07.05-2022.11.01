@@ -1,0 +1,1 @@
+On the resource "https://sourceforge.net/projects/mtfcalculator/" the mtfcalculator project was found, written in C # and having some build errors. After a little tweaking, the main functionality of the project works, i.e. calculated by Fast Fourier Transform (FFT), Line Spread Function (LSF), Modulation Transfer Function (MTF). The calculated data can be saved to a .csv file 

@@ -1,0 +1,136 @@
+﻿<Configuration xmlns="" key="_036CE061.ControlWorkstation" title="АРМ" description="Автоматизированное рабочее место">
+  <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+  
+    <Item key="database" title="СУБД" description="Система управления базами данных">
+      <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+        <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+          <Equipment key="_036CE061" title="Установка {@key}" description="Установка {@key}">
+            <Mode title="Pежим" description="Режим проверки изделия на установке">
+              <Item key="run" title="Запустить" description="Запустить автоматизированный режим" />
+              <Item key="break" title="Прервать" description="Прервать автоматизированный режим" />
+            </Mode>
+            <Scale title="Масштаб" description="Масштаб отображения">
+              <Slot title="Позиция изделия" description="Позиция для посадочного места изделия">
+			  
+                <Item key="1" title="Поз.№ {@key}" description="Позиция № {@key} посадочного места изделия">
+                  <Mode title="Pежим" description="Режим проверки изделия на установке">
+                    <Item key="run" title="Запустить" description="Запустить автоматизированный режим" />
+                    <Item key="break" title="Прервать" description="Прервать автоматизированный режим" />
+                  </Mode>
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I" unit="[А]" format="F1" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U" unit="[В]" format="N0" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Voltage>
+                    </Item>
+                    
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I" unit="[А]" format="F1" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U" unit="[В]" format="N0" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Voltage>
+                    </Item>
+                    
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I" unit="[А]" format="F1" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U" unit="[В]" format="N0" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Voltage>
+                    </Item>
+                    
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I" unit="[А]" format="F1" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U" unit="[В]" format="N0" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Voltage>
+                    </Item>
+                    
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I" unit="[А]" format="F1" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U" unit="[В]" format="N0" value="">
+                        <Allowance title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" value="3" />
+                      </Voltage>
+                    </Item>
+                    
+                    <Chart>
+                      <Widget title="Виджет">
+                        <Pen title="Перо">
+                          <Item key="Item[@key='photocathode']/Amperage/@title">
+                            <Color title="Цвет" value="5"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="0"/>
+                          </Item>
+                          <Item key="Item[@key='photocathode']/Voltage/@title">
+                            <Color title="Цвет" value="15"/>
+                            <Visability title="Видимость" value="False"/>
+                            <Thickness title="Толщина" value="1"/>
+                          </Item>
+                          <Item key="Item[@key='microchannelplate1']/Amperage/@title">
+                            <Color title="Цвет" value="25"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="2"/>
+                          </Item>
+                          <Item key="Item[@key='microchannelplate1']/Voltage/@title">
+                            <Color title="Цвет" value="35"/>
+                            <Visability title="Видимость" value="False"/>
+                            <Thickness title="Толщина" value="3"/>
+                          </Item>
+                          <Item key="Item[@key='microchannelplate12']/Amperage/@title">
+                            <Color title="Цвет" value="45"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="4"/>
+                          </Item>
+                          <Item key="Item[@key='microchannelplate12']/Voltage/@title">
+                            <Color title="Цвет" value="55"/>
+                            <Visability title="Видимость" value="False"/>
+                            <Thickness title="Толщина" value="5"/>
+                          </Item>
+                          <Item key="Item[@key='microchannelplate2']/Amperage/@title">
+                            <Color title="Цвет" value="65"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="6"/>
+                          </Item>
+                          <Item key="Item[@key='microchannelplate2']/Voltage/@title">
+                            <Color title="Цвет" value="75"/>
+                            <Visability title="Видимость" value="False"/>
+                            <Thickness title="Толщина" value="0"/>
+                          </Item>
+                          <Item key="Item[@key='anode']/Amperage/@title">
+                            <Color title="Цвет" value="85"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="1"/>
+                          </Item>
+                          <Item key="Item[@key='anode']/Voltage/@title">
+                            <Color title="Цвет" value="95"/>
+                            <Visability title="Видимость" value="False"/>
+                            <Thickness title="Толщина" value="2"/>
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+              </Slot>
+            </Scale>
+          </Equipment>
+        </Item>
+      </Postgres>
+    </Item>
+  </Communication>
+</Configuration>

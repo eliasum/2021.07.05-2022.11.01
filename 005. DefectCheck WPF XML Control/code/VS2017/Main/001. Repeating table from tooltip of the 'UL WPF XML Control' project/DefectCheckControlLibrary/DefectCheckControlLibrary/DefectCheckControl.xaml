@@ -1,0 +1,102 @@
+﻿<!--
+2021.08.17 14:57 IMM
+-->
+    
+<UserControl x:Class="DefectCheckControlLibrary.DefectCheckControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DefectCheckControlLibrary"
+             mc:Ignorable="d">
+
+    <GroupBox Header="{Binding XPath=Type/Item/Camcoder/@description}"
+                  HorizontalAlignment="Center">
+
+        <DataGrid ItemsSource="{Binding XPath=Type/Item}" AutoGenerateColumns="False" Margin="0,5,0,0">
+
+            <!--Три колонки-->
+            <DataGrid.Columns>
+
+                <!--//////////////////////////////////Первая колонка//////////////////////////////////-->
+                <DataGridTextColumn Binding="{Binding XPath=@title}">
+                    <!--ВОЭ/Мт.ст-->
+
+                    <DataGridTextColumn.Header>
+
+                        <!--Заголовок столбца как тег, ранее как атрибут - Люминофор-->
+                        <TextBlock Text="{Binding XPath=@title}"
+                                       DataContextChanged="header_DataContextChanged"/>
+
+                    </DataGridTextColumn.Header>
+
+                </DataGridTextColumn>
+                <!--//////////////////////////////////Первая колонка//////////////////////////////////-->
+
+
+                <!--//////////////////////////////////Вторая колонка//////////////////////////////////-->
+                <!--Значения выдержки 90/45-->
+                <DataGridTextColumn Binding="{Binding XPath=Camcoder/Exposition/@value}">
+
+                    <DataGridTextColumn.Header>
+                        <!--
+                            Горизонтальное последовательное расположение 4-х элементов TextBlock
+                            с помощью элемента StackPanel. Любые текстовые данные должны быть
+                            расположены в элементах TextBlock
+                            -->
+                        <StackPanel Orientation="Horizontal">
+                            <!--1 - название параметра в заголовке второй колонки из атрибута @title-->
+                            <TextBlock Text="{Binding XPath=Type/Item/Camcoder/Exposition/@title}"
+                                           DataContextChanged="header_DataContextChanged"/>
+
+                            <!--2 - символы ", ["-->
+                            <TextBlock Text=", ["/>
+
+                            <!--3 - название ед. изм. в заголовке второй колонки из атрибута @unit-->
+                            <TextBlock Text="{Binding XPath=Type/Item/Camcoder/Exposition/@unit}"
+                                           DataContextChanged="header_DataContextChanged"/>
+
+                            <!--4 - символ "]"-->
+                            <TextBlock Text="]"/>
+                        </StackPanel>
+                    </DataGridTextColumn.Header>
+
+                </DataGridTextColumn>
+                <!--//////////////////////////////////Вторая колонка//////////////////////////////////-->
+
+
+                <!--//////////////////////////////////Третья колонка//////////////////////////////////-->
+                <!--Значения усиления 0.2857/0.5824-->
+                <DataGridTextColumn Binding="{Binding XPath=Camcoder/Gain/@value}">
+
+                    <DataGridTextColumn.Header>
+                        <!--
+                            Горизонтальное последовательное расположение 4-х элементов TextBlock
+                            с помощью элемента StackPanel
+                            -->
+                        <StackPanel Orientation="Horizontal">
+                            <!--1 - название параметра в заголовке третьей колонки из атрибута @title-->
+                            <TextBlock Text="{Binding XPath=Type/Item/Camcoder/Gain/@title}"
+                                           DataContextChanged="header_DataContextChanged"/>
+
+                            <!--2 - символы ", ["-->
+
+                            <TextBlock Text=", ["/>
+                            <!--3 - название ед. изм. в заголовке третьей колонки из атрибута @unit-->
+                            <TextBlock Text="{Binding XPath=Type/Item/Camcoder/Gain/@unit}"
+                                           DataContextChanged="header_DataContextChanged"/>
+
+                            <!--4 - символ "]"-->
+                            <TextBlock Text="]"/>
+                        </StackPanel>
+                    </DataGridTextColumn.Header>
+
+                </DataGridTextColumn>
+                <!--//////////////////////////////////Третья колонка//////////////////////////////////-->
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+    </GroupBox>
+</UserControl>

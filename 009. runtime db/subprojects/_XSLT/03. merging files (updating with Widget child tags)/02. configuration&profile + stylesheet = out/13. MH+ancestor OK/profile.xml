@@ -1,0 +1,1158 @@
+<Profile title="Профиль пользователя">
+  <Configuration key="_036CE061.Communicator">
+    <Scale>
+      <Communication>
+        <Item key="database">
+          <Postgres>
+            <Item key="localhost:5432:_036CE061.Runtime">
+              <Communication>
+                <Item key="serialport">
+                  <Modbus>
+                    <Item key="COM2">
+                      <Board>
+                        <Widget title="Профиль" description="Настройка виджета пользователя" column="1" />
+                        <Item key="_045СЕ87">
+                          <Adress>
+                            <Item key="31">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Widget title="Профиль" description="Настройка виджета пользователя" column="1" />
+                          </Adress>
+                        </Item>
+                        <Item key="_Termodat">
+                          <Adress>
+                            <Item key="0A">
+                              <Channel>
+                                <Item key="0170">
+                                  <Temperature>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Temperature>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Widget title="Профиль" description="Настройка виджета пользователя" column="1" />
+                          </Adress>
+                        </Item>
+                        <Item key="_045СЕ108">
+                          <Adress>
+                            <Item key="01">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="02">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="03">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="04">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="05">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="06">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="07">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="08">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="09">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="10">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="11">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="12">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="13">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="14">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="15">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="16">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="17">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="18">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="19">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="20">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="21">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="22">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="23">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                            <Item key="24">
+                              <Channel>
+                                <Item key="1">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="3">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="5">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="2">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Item key="4">
+                                  <Voltage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="false" />
+                                  </Voltage>
+                                  <Amperage>
+                                    <Widget title="Профиль" description="Настройка виджета пользователя" select="2" readonly="true" />
+                                  </Amperage>
+                                </Item>
+                                <Widget title="Профиль" description="Настройка виджета пользователя" row="1" />
+                              </Channel>
+                            </Item>
+                          </Adress>
+                        </Item>
+                      </Board>
+                    </Item>
+                  </Modbus>
+                </Item>
+              </Communication>
+            </Item>
+          </Postgres>
+        </Item>
+      </Communication>
+    </Scale>
+  </Configuration>
+</Profile>

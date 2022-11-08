@@ -1,0 +1,161 @@
+﻿<Configuration key="_036CE061.Communicator" title="Коммуникатор" description="Коммуникатор для обмена сообщениями между ПО и оборудованием">
+  <Menu title="Меню" description="Пользовательское меню">
+    <View title="Вид">
+      <Column title="Колонка" />
+      <Row title="Строка" />
+      <Expand title="Развернуть" />
+      <Colapse title="Свернуть" />
+    </View>
+  </Menu>
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" />
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+            <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+              <Item key="serialport" title="Последовательный порт" description="Последовательный порт RS232">
+                <Modbus title="RS232" description="Последовательный порт">
+                  <Item key="COM2" baudRate="115200" title="COM2" description="Последовательный порт">
+                    <Board title="Электронный модуль" description="Электронный модуль оборудования">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" column="0" row="1" />
+                      <Item key="_Termodat" title="Термодат" description="Электронный модуль: Termodat">
+                        <Adress title="Адрес" description="Адрес электронной платы">
+                          <Item key="0A" title="Адрес № 0A" description="Адрес электронной платы № 0A">
+                            <Channel title="Канал" description="Канал электронной платы">
+                              <Item key="01" title="Канал № 1" description="Канал № 1 электронной платы № 0A">
+                                <Command title="Команда" select="0006" description="Команда управления температурой для ручного режима" order="">
+                                  <Item key="0001" title="Выдержка" description="Поддержание заданной температуры в течение заданного времени">
+                                    <Sequence>
+                                      <Item key="0" description="Выключить регулирование" const="0A0601800000" />
+                                      <Item key="1" description="Номер программы регулирования с которой запускать процесс" const="0A06017B0001" />
+                                      <Item key="2" description="Номер шага программы, с которого запускать процесс" const="0A06017C0000" />
+                                      <Item key="3" description="Номер редактируемой программы" const="0A0601600001" />
+                                      <Item key="4" description="Номер редактируемого шага" const="0A0601610000" />
+                                      <Item key="5" description="Тип шага: 1 – выдержка" const="0A0601620001" />
+                                      <Item key="6" title="Время" description="Параметр 1 (время выдержки)" const="0A0601630021" />
+                                      <Item key="7" title="Уставка" description="Параметр 2 (целевая уставка в 0,1ºC)" const="0A0601640037" />
+                                      <Item key="8" description="Включить регулирование" const="0A0601800001" />
+                                    </Sequence>
+                                    <Temperature title="Температура" description="Значение температуры" type="float" value="88" default="0037" format="F1" symbol="t " unit="℃">
+                                      <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                                      <Increment value="0.5" title="Шаг значения" description="Шаг значения уставки" />
+                                      <Limit title="Предел" description="Предельное значение">
+                                        <Item key="1">
+                                          <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                                          <Maximum const="300" title="Максимум" description="Максимально предельное значение" />
+                                        </Item>
+                                      </Limit>
+                                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" select="2" readonly="false" />
+                                    </Temperature>
+                                    <Time title="Время" description="Время выдержки" type="integer" value="" default="0021" format="F1" symbol="time " unit="мин">
+                                      <Increment value="0.5" title="Шаг значения" description="Шаг значения времени" />
+                                      <Limit title="Предел" description="Предельное значение">
+                                        <Item key="1">
+                                          <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                                          <Maximum const="35" title="Максимум" description="Максимально предельное значение" />
+                                        </Item>
+                                      </Limit>
+                                    </Time>
+                                  </Item>
+                                  <Item key="0003" title="Общий Стоп" description="Остановка программ на всех каналах">
+                                    <Sequence>
+                                      <Item key="01" description="Стоп программы на канале № 1" const="0A0601800000" />
+                                      <Item key="05" description="Стоп программы на канале № 2" const="0A0605800000" />
+                                      <Item key="09" description="Стоп программы на канале № 3" const="0A0609800000" />
+                                      <Item key="0D" description="Стоп программы на канале № 4" const="0A060D800000" />
+                                    </Sequence>
+                                  </Item>
+                                  <Item key="0005" title="Нагрев" description="Увеличение температуры до заданного значения с заданной скоростью">
+                                    <Sequence>
+                                      <Item key="0" description="Выключить регулирование" const="0A0601800000" />
+                                      <Item key="1" description="Номер программы регулирования с которой запускать процесс" const="0A06017B0005" />
+                                      <Item key="2" description="Номер шага программы, с которого запускать процесс" const="0A06017C0000" />
+                                      <Item key="3" description="Номер редактируемой программы" const="0A0601600005" />
+                                      <Item key="4" description="Номер редактируемого шага" const="0A0601610000" />
+                                      <Item key="5" description="Тип шага: 5 – только нагрев" const="0A0601620005" />
+                                      <Item key="6" description="Параметр 1 (скорость (0,1ºC/ч))" const="0A0601630021" />
+                                      <Item key="7" description="Параметр 2 (целевая уставка в 0,1ºC)" const="0A0601640037" />
+                                      <Item key="8" description="Включить регулирование" const="0A0601800001" />
+                                    </Sequence>
+                                    <Temperature title="Температура" description="Значение температуры" type="float" value="" default="0037" format="F1" symbol="t " unit="℃">
+                                      <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                                      <Increment value="0.5" title="Шаг значения" description="Шаг значения уставки" />
+                                      <Limit title="Предел" description="Предельное значение">
+                                        <Item key="1">
+                                          <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                                          <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                                        </Item>
+                                      </Limit>
+                                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" select="2" readonly="false" />
+                                    </Temperature>
+                                    <Rate title="Скорость" description="Скорость нагрева" type="float" value="" default="0021" format="F1" symbol="r " unit="℃/мин">
+                                      <Increment value="0.5" title="Шаг значения" description="Шаг значения скорости" />
+                                      <Limit title="Предел" description="Предельное значение">
+                                        <Item key="1">
+                                          <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                                          <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                                        </Item>
+                                      </Limit>
+                                    </Rate>
+                                  </Item>
+                                  <Item key="0006" title="Охлаждение" description="Уменьшение температуры до заданного значения с заданной скоростью">
+                                    <Sequence>
+                                      <Item key="0" description="Выключить регулирование" const="0A0601800000" />
+                                      <Item key="1" description="Номер программы регулирования с которой запускать процесс" const="0A06017B0006" />
+                                      <Item key="2" description="Номер шага программы, с которого запускать процесс" const="0A06017C0000" />
+                                      <Item key="3" description="Номер редактируемой программы" const="0A0601600006" />
+                                      <Item key="4" description="Номер редактируемого шага" const="0A0601610000" />
+                                      <Item key="5" description="Тип шага: 6 – только охлаждение" const="0A0601620006" />
+                                      <Item key="6" description="Параметр 1 (скорость (0,1ºC/ч))" const="0A0601630037" />
+                                      <Item key="7" description="Параметр 2 (целевая уставка в 0,1ºC)" const="0A0601640037" />
+                                      <Item key="8" description="Включить регулирование" const="0A0601800001" />
+                                    </Sequence>
+                                    <Temperature title="Температура" description="Значение температуры" type="float" value="" default="0037" format="F1" symbol="t " unit="℃">
+                                      <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                                      <Increment value="0.5" title="Шаг значения" description="Шаг значения уставки" />
+                                      <Limit title="Предел" description="Предельное значение">
+                                        <Item key="1">
+                                          <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                                          <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                                        </Item>
+                                      </Limit>
+                                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" select="2" readonly="false" />
+                                    </Temperature>
+                                    <Rate title="Скорость" description="Скорость охлаждения" type="float" value="" default="0037" format="F1" symbol="r " unit="℃/мин">
+                                      <Increment value="0.5" title="Шаг значения" description="Шаг значения скорости" />
+                                      <Limit title="Предел" description="Предельное значение">
+                                        <Item key="1">
+                                          <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                                          <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                                        </Item>
+                                      </Limit>
+                                    </Rate>
+                                  </Item>
+                                  <Widget>
+                                    <Command title="Посылка команды">
+                                      <Item key="1" title="Исполнить" description="" />
+                                      <Item key="2" title="Отменить" description="" />
+                                    </Command>
+                                  </Widget>
+                                </Command>
+                              </Item>
+                            </Channel>
+                          </Item>
+                          <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" column="0" row="0" />
+                        </Adress>
+                        <Version title="Модификация" description="Версия модификации электронной платы">
+                          <Item key="16F6" />
+                        </Version>
+                      </Item>
+                    </Board>
+                  </Item>
+                </Modbus>
+              </Item>
+            </Communication>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

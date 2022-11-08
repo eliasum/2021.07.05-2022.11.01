@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="DefectCheckControlLibrary.DefectCheckControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DefectCheckControlLibrary"
+             xmlns:toolkit="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+             xmlns:control="clr-namespace:ULControlLibrary;assembly=ULControlLibrary"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <local:XmlAttributeConverter x:Key="XmlAttributeConverter" />
+        <local:BoolInverterConverter x:Key="BoolInverterConverter" />
+    </UserControl.Resources>
+    
+    <GroupBox Header="{Binding XPath='Settings/Resume/@description'}"
+                  HorizontalAlignment="Center">
+
+        <DataGrid ItemsSource="{Binding XPath='Settings/Slot/Item'}" AutoGenerateColumns="False" Margin="0,5,0,0">
+            
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Binding="{Binding XPath='@key'}">
+
+                    <DataGridTextColumn.Header>
+
+                        <TextBlock Text="{Binding XPath='Settings/Slot/@title'}"
+                                       DataContextChanged="header_DataContextChanged"/>
+                    </DataGridTextColumn.Header>
+
+                </DataGridTextColumn>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+
+                            <control:ULControl DataContext="{Binding XPath='//Phosphor'}"
+                                               HorizontalAlignment="Center" 
+                                               VerticalAlignment="Center"
+                                               Selector.IsSelected="{Binding XPath='@Phosphor'}"
+                                               />
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn.CellTemplate>
+
+                        <DataTemplate>
+
+                            <toolkit:CheckComboBox HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center" 
+                                                   ItemsSource="{Binding XPath='//Defect/Type/Item/@title', Converter={StaticResource XmlAttributeConverter}}"
+                                                   Delimiter=";"
+                                                   />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+
+                            <StackPanel>
+                                <RadioButton GroupName="{Binding XPath='@key'}" Content="{Binding XPath='//Resume/Type/Item[1]/@title'}" IsChecked="{Binding XPath='@resume'}"/>
+                                <RadioButton GroupName="{Binding XPath='@key'}" Content="{Binding XPath='//Resume/Type/Item[2]/@title'}" IsChecked="{Binding XPath='@resume', 
+                                    Converter={StaticResource BoolInverterConverter}}" />
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+    </GroupBox>
+</UserControl>

@@ -1,0 +1,237 @@
+<Configuration key="_036ce062.ControlWorkstation" title="АРМ оператора" description="Автоматизированное рабочее место оператора">
+  <Menu title="Меню" description="Пользовательское меню">
+    <View title="Вид">
+      <Column title="Колонка" />
+      <Row title="Строка" />
+      <Expand title="Развернуть" />
+      <Colapse title="Свернуть" />
+    </View>
+  </Menu>
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" />
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036ce062_runtime" login="postgres" password="postgres">
+            <Equipment key="_036ce062" title="Установка _036ce062" description="Установка _036ce062">
+              <Mode title="Pежим" description="Режим проверки изделия на установке">
+                <Item key="run" title="Запустить" description="Запустить автоматизированный режим" />
+                <Item key="break" title="Прервать" description="Прервать автоматизированный режим" />
+              </Mode>
+              <Slot title="Позиция" description="Позиция для посадочного места изделия">
+                <Item key="1" title="Поз.№ 1" description="Позиция № 1 посадочного места изделия">
+                  <Mode title="Pежим" description="Режим проверки изделия на установке">
+                    <Item key="run" title="Запустить" description="Запустить автоматизированный режим" />
+                    <Item key="break" title="Прервать" description="Прервать автоматизированный режим" />
+                  </Mode>
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Illuminator title="Источник света" description="Источник света для изделия">
+                    <Item key="1" title="СИД № 1" description="Источник света СИД № 1">
+                      <Amperage title="Ток1" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="{../../../../Item[@key='1']/Amperage/@title}">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Illuminator>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток2" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение1" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток3" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение2" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="{../../../../Item[@key='photocathode']/Amperage/@title}">
+                            <Color title="Цвет" value="IndianRed"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="0.5"/>
+                          </Item>
+                          <Item key="{../../../../Item[@key='photocathode']/Voltage/@title}">
+                            <Color title="Цвет" value="IndianRed"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="0.5"/>
+                          </Item>
+                          <Item key="{../../../../Item[@key='anode']/Amperage/@title}">
+                            <Color title="Цвет" value="IndianRed"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="0.5"/>
+                          </Item>
+                          <Item key="{../../../../Item[@key='anode']/Voltage/@title}">
+                            <Color title="Цвет" value="IndianRed"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="0.5"/>
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="2" title="Поз.№ 2" description="Позиция № 2 посадочного места изделия">
+                  <Mode title="Pежим" description="Режим проверки изделия на установке">
+                    <Item key="run" title="Запустить" description="Запустить автоматизированный режим" />
+                    <Item key="break" title="Прервать" description="Прервать автоматизированный режим" />
+                  </Mode>
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Illuminator title="Источник света" description="Источник света для изделия">
+                    <Item key="1" title="СИД № 1" description="Источник света СИД № 1">
+                      <Amperage title="Ток4" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="{../../../../Item[@key='1']/Amperage/@title}">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Illuminator>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток5" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение3" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток6" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Amperage>
+                      <Voltage title="Напряжение4" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Максимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="{../../../../Item[@key='photocathode']/Amperage/@title}">
+                            <Color title="Цвет" value="IndianRed"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="0.5"/>
+                          </Item>
+                          <Item key="{../../../../Item[@key='photocathode']/Voltage/@title}">
+                            <Color title="Цвет" value="IndianRed"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="0.5"/>
+                          </Item>
+                          <Item key="{../../../../Item[@key='anode']/Amperage/@title}">
+                            <Color title="Цвет" value="IndianRed"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="0.5"/>
+                          </Item>
+                          <Item key="{../../../../Item[@key='anode']/Voltage/@title}">
+                            <Color title="Цвет" value="IndianRed"/>
+                            <Visability title="Видимость" value="True"/>
+                            <Thickness title="Толщина" value="0.5"/>
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" column="7" row="0" />
+              </Slot>
+            </Equipment>
+          </Item>
+        </Postgres>
+        <MSSQL title="Microsoft SQL Server" description="Система управления реляционными базами данных (РСУБД), разработанная корпорацией Microsoft">
+          <Item key="NO01\SQLEXPRESS:scada"/>
+        </MSSQL>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

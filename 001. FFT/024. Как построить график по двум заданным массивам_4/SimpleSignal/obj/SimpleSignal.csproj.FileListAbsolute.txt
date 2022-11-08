@@ -1,0 +1,9 @@
+C:\Users\Jenyay\Documents\projects\zedgraph_howto\SimpleSignal\bin\Debug\SimpleSignal.exe
+C:\Users\Jenyay\Documents\projects\zedgraph_howto\SimpleSignal\bin\Debug\SimpleSignal.pdb
+C:\Users\Jenyay\Documents\projects\zedgraph_howto\SimpleSignal\bin\Debug\ZedGraph.dll
+C:\Users\Jenyay\Documents\projects\zedgraph_howto\SimpleSignal\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jenyay\Documents\projects\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.MainForm.resources
+C:\Users\Jenyay\Documents\projects\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.Properties.Resources.resources
+C:\Users\Jenyay\Documents\projects\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.csproj.GenerateResource.Cache
+C:\Users\Jenyay\Documents\projects\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.exe
+C:\Users\Jenyay\Documents\projects\zedgraph_howto\SimpleSignal\obj\Debug\SimpleSignal.pdb

@@ -1,0 +1,172 @@
+﻿<!--
+2021.08.16 13:28 IMM
+    
+Аудит библиотеки ПЭУ:     
+1. Задал количество времени отображения подсказки ToolTipService.ShowDuration   
+-->
+
+<UserControl x:Class="ULControlLibrary.ULControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ULControlLibrary"
+             
+             ToolTipService.ShowDuration="3000" 
+             mc:Ignorable="d">
+             <!--2. Убрал принудительные размеры окна формы -->
+    <!--
+    3. Подсказка формируется не у ComboBox внутри UserControl:  <ComboBox.ToolTip> (было),
+    а именно у проектируемого пользовательского интерфейса UserControl: <UserControl.ToolTip>,
+    поэтому код подсказки независим от кода ComboBox.
+    -->
+    <UserControl.ToolTip>
+        <!--
+        4. Обернул DataGrid дополнительно в GroupBox - элемент управления (УЭ), который организует
+        наборы элементов управления в отдельную группу и определяет у этой группы заголовок Header,
+        который и формирует название таблицы визуально как бы над ней. Данные о названии таблицы
+        формируются из привязки к изменённой части xml-данных.
+        
+        Ранее название таблицы выводилось с помощью метки: '<Label Content="Таблица УЛ" />'
+        -->
+        <GroupBox Header="{Binding XPath=Type/Item/Camcoder/@description}"
+                  HorizontalAlignment="Center">
+            <!--
+            5. DataGrid, формирующий таблицу, соответственно вынесен в UserControl из ComboBox. 
+            
+            В отличие от предыдущего варианта вся информация для формирования таблицы во всплывающей
+            подсказке формируется полностью из привязываемых xml-данных и DataGridTextColumn.Header
+            не присваиваются строки с заголовками столбцов таблицы, а так же привязываются 
+            соответствующие xml-данные. Т.е. полная автоматизация xaml-кода всплывающей подсказки.
+            
+            М: 5) Исправил ошибку: в XAML, т.к. напрямую данные вставлять нельзя в XAML (!), только
+            используя привязки к тегам и атрибутам в XML-конфигурации (об этом я уже говорил), 
+            пожалуйста обрати на это особое внимание.
+            
+            Итак, в таблице 2 значения Item с соответствующими атрибутами
+            (ItemsSource="{Binding XPath=Type/Item}"):
+            -->
+            <DataGrid ItemsSource="{Binding XPath=Type/Item}" AutoGenerateColumns="False" Margin="0,5,0,0">
+                
+                <!--Три колонки-->
+                <DataGrid.Columns>
+
+                    <!--//////////////////////////////////Первая колонка//////////////////////////////////-->
+                    <DataGridTextColumn Binding="{Binding XPath=@title}"><!--ВОЭ/Мт.ст-->
+                        
+                        <DataGridTextColumn.Header>
+                            
+                            <!--Заголовок столбца как тег, ранее как атрибут - Люминофор-->
+                            <TextBlock Text="{Binding XPath=@title}"
+                                       DataContextChanged="header_DataContextChanged"/>
+                            
+                        </DataGridTextColumn.Header>
+                        
+                    </DataGridTextColumn>
+                    <!--//////////////////////////////////Первая колонка//////////////////////////////////-->
+
+                    
+                    <!--//////////////////////////////////Вторая колонка//////////////////////////////////-->
+                    <!--Значения выдержки 90/45-->
+                    <DataGridTextColumn Binding="{Binding XPath=Camcoder/Exposition/@value}">
+                        
+                        <DataGridTextColumn.Header>
+                            <!--
+                            Горизонтальное последовательное расположение 4-х элементов TextBlock
+                            с помощью элемента StackPanel. Любые текстовые данные должны быть
+                            расположены в элементах TextBlock
+                            -->
+                            <StackPanel Orientation="Horizontal">
+                                <!--1 - название параметра в заголовке второй колонки из атрибута @title-->
+                                <TextBlock Text="{Binding XPath=Type/Item/Camcoder/Exposition/@title}"
+                                           DataContextChanged="header_DataContextChanged"/>
+
+                                <!--2 - символы ", ["-->
+                                <TextBlock Text=", ["/>
+                                
+                                <!--3 - название ед. изм. в заголовке второй колонки из атрибута @unit-->
+                                <TextBlock Text="{Binding XPath=Type/Item/Camcoder/Exposition/@unit}"
+                                           DataContextChanged="header_DataContextChanged"/>
+                                
+                                <!--4 - символ "]"-->
+                                <TextBlock Text="]"/>
+                            </StackPanel>
+                        </DataGridTextColumn.Header>
+                        
+                    </DataGridTextColumn>
+                    <!--//////////////////////////////////Вторая колонка//////////////////////////////////-->
+
+                    
+                    <!--//////////////////////////////////Третья колонка//////////////////////////////////-->
+                    <!--Значения усиления 0.2857/0.5824-->
+                    <DataGridTextColumn Binding="{Binding XPath=Camcoder/Gain/@value}">
+                        
+                        <DataGridTextColumn.Header>
+                            <!--
+                            Горизонтальное последовательное расположение 4-х элементов TextBlock
+                            с помощью элемента StackPanel
+                            -->
+                            <StackPanel Orientation="Horizontal">
+                                <!--1 - название параметра в заголовке третьей колонки из атрибута @title-->
+                                <TextBlock Text="{Binding XPath=Type/Item/Camcoder/Gain/@title}"
+                                           DataContextChanged="header_DataContextChanged"/>
+
+                                <!--2 - символы ", ["-->
+                                
+                                <TextBlock Text=", ["/>
+                                <!--3 - название ед. изм. в заголовке третьей колонки из атрибута @unit-->
+                                <TextBlock Text="{Binding XPath=Type/Item/Camcoder/Gain/@unit}"
+                                           DataContextChanged="header_DataContextChanged"/>
+
+                                <!--4 - символ "]"-->
+                                <TextBlock Text="]"/>
+                            </StackPanel>
+                        </DataGridTextColumn.Header>
+                        
+                    </DataGridTextColumn>
+                    <!--//////////////////////////////////Третья колонка//////////////////////////////////-->
+                    
+                </DataGrid.Columns>
+                
+            </DataGrid>
+            
+        </GroupBox>
+    </UserControl.ToolTip>
+
+    <!--//////////Собственно "лицевая часть" пользовательский элеемент управления UserControl/////////////-->
+    <StackPanel Orientation="Horizontal">
+
+        <!--
+        Значение атрибута @title тега самого верхнего уровня:
+        ULControl DataContext="{Binding XPath=Phosphor}"
+        
+        6. Обернул ComboBox дополнительно в GroupBox - элемент управления (УЭ), который организует
+        наборы элементов управления в отдельную группу и определяет у этой группы заголовок Header,
+        который и формирует название таблицы визуально как бы над ней. Данные о названии выводимого
+        параметра формируются из привязки к изменённой части xml-данных.
+        -->
+        <GroupBox Header="{Binding XPath=@title}"><!--<Phosphor title="Люминофор" ... />-->
+
+            <!--По горизонтали 2 элемента - надпись "Тип" и элемент ComboBox-->
+            <StackPanel Orientation="Horizontal" DataContext="{Binding XPath=Type}" Margin="3">
+
+                <!--Атрибут title="Тип" тега Type, входящего в тег Phosphor -->
+                <TextBlock Text="{Binding XPath=@title}" VerticalAlignment="Center" Margin="3"/>
+                
+                <!--
+                    ComboBox.SelectedIndex Свойство - Возвращает или задает индекс,
+                    указывающий текущий выделенный элемент. Текущий индекс ComboBox (текущий выделенный
+                    элемент из списка ComboBox) хранится в xml-данных:
+                
+                    4) Исправил ошибку с привязкой текущего состояния в ComboBox.SelectedIndex, которое
+                    должно хранится в XML- конфигурации, иначе смысла во всём этом мало.
+                -->
+                <ComboBox SelectedIndex="{Binding XPath=@select}" ItemsSource="{Binding XPath=Item/@title}"/>
+                
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+    <!--//////////Собственно "лицевая часть" пользовательский элеемент управления UserControl/////////////-->
+    
+</UserControl>
+    

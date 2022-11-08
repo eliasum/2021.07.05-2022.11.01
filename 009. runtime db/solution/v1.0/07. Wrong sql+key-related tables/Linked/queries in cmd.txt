@@ -1,0 +1,24 @@
+cd C:\Program Files\PostgreSQL\13\bin
+
+psql -h localhost test_database test_user
+
+\! chcp 1251
+
+> CREATE DATABASE test_database;
+> CREATE USER test_user WITH password 'qwerty';
+> GRANT ALL ON DATABASE test_database TO test_user;
+> \q
+
+CREATE EXTENSION IF NOT EXISTS timescaledb;
+
+C:\Windows\system32>net stop postgresql-x64-13
+C:\Windows\system32>net start postgresql-x64-13
+
+
+
+
+
+
+
+
+

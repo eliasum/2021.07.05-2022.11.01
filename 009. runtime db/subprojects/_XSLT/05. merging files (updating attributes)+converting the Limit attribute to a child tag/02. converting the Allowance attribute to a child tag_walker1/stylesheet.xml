@@ -1,0 +1,37 @@
+﻿<Configuration key="_036CE061.Communicator" title="Коммуникатор" description="Коммуникатор для обмена сообщениями между ПО и оборудованием}">
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+            <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+              <Item key="serialport" title="Последовательный порт" description="Последовательный порт RS232">
+                <Modbus title="RS232" description="Последовательный порт">
+                  <Item key="COM2">
+                    <Board title="Электронный модуль" description="Электронный модуль оборудования">
+                      <Item key="_045СЕ108" title="045.СЕ.108" description="Электронная плата: 045.СЕ.108">
+                        <Adress title="Адрес" description="Адрес электронной платы">
+                          <Item key="01" title="Адрес № 01" description="Адрес электронной платы № 01">
+                            <Channel title="Канал" description="Канал электронной платы">
+                              <Item key="1" title="Канал № 1" description="Канал электронной платы № 1">
+                                <Voltage Limit="[0-200][201-300][301-1000]" title="Напряжение" value="" symbol="U =" unit="[В]" description="Значение напряжения"><Allowance const="1" /></Voltage>
+                                <Amperage title="Ток" Limit="[0-200][201-3000]" type="float" value="" unit="[мкА]" format="F1" symbol="I =" description="Значение тока"><Allowance const="2" /></Amperage>
+                              </Item>
+                            </Channel>
+                          </Item>
+                        </Adress>
+                        <version title="Модификация" description="Версия модификации электронной платы">
+                          <Item key="CНВ_045СЕ108/1_5-кан." />
+                        </version>
+                      </Item>
+                    </Board>
+                  </Item>
+                </Modbus>
+              </Item>
+            </Communication>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

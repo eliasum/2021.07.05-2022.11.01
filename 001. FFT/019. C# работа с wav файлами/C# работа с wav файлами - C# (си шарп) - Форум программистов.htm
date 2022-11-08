@@ -1,0 +1,2405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="generator" content="vBulletin 3.8.11" />
+
+<meta name="keywords" content=" C# работа с wav файлами, форум, программист, delphi, делфи, программирование, ассемблер, assembler, winapi, c++, html, php" />
+<meta name="description" content=" C# работа с wav файлами C# (си шарп)" />
+
+
+<!-- CSS Stylesheet -->
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=XKn7CMbFaIXw1yWdIyPpBpyBrQTlypl5f4sFgzAWBgtkWOLm_dYfIm4xmJyRwyFg0gymE4S6DAwoqxAwf_p6YYIZA4faHeaeUEOO891ZCMA" charset="UTF-8"></script><style type="text/css" id="vbulletin_css">
+/**
+* vBulletin 3.8.11 CSS
+* Style: 'club'; Style ID: 2
+*/
+body
+{
+	background: #FFFFFF;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 5px 10px 10px 10px;
+	padding: 0px;
+}
+a:link, body_alink
+{
+	color: #1C3289;
+}
+a:visited, body_avisited
+{
+	color: #1C3289;
+}
+a:hover, a:active, body_ahover
+{
+	color: #000000;
+}
+.page
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+td, th, p, li
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background: #5C5E5C;
+	color: #000000;
+	border: 1px solid #5C5E5C;
+}
+.tcat
+{
+	background: #5C5E5C;
+	color: #E4DEE4;
+	font: bold 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tcat a:link, .tcat_alink
+{
+	color: #E4DEE4;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	color: #E4DEE4;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	color: #E4DEE4;
+	text-decoration: underline;
+}
+.thead
+{
+	background: #D4D2CC;
+	color: #000000;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.thead a:link, .thead_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.thead a:visited, .thead_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+.tfoot
+{
+	background: #5C5E5C;
+	color: #E4DEE4;
+}
+.tfoot a:link, .tfoot_alink
+{
+	color: #E4DEE4;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+	color: #E4DEE4;
+}
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+	color: #E4DEE4;
+}
+.alt1, .alt1Active
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+.alt1 a:link, .alt1_alink, .alt1Active a:link, .alt1Active_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.alt1 a:visited, .alt1_avisited, .alt1Active a:visited, .alt1Active_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.alt1 a:hover, .alt1 a:active, .alt1_ahover, .alt1Active a:hover, .alt1Active a:active, .alt1Active_ahover
+{
+	color: #4B4A4A;
+	text-decoration: underline;
+}
+.alt2, .alt2Active
+{
+	background: #D4D0C8;
+	color: #000000;
+}
+.alt2 a:link, .alt2_alink, .alt2Active a:link, .alt2Active_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.alt2 a:visited, .alt2_avisited, .alt2Active a:visited, .alt2Active_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.alt2 a:hover, .alt2 a:active, .alt2_ahover, .alt2Active a:hover, .alt2Active a:active, .alt2Active_ahover
+{
+	color: #4B4A4A;
+	text-decoration: underline;
+}
+.inlinemod
+{
+	background: #D4D2CC;
+	color: #000000;
+}
+.wysiwyg
+{
+	background: #D3D3D2;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+textarea, .bginput
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.bginput option, .bginput optgroup
+{
+	font-size: 10pt;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+select
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	font-size: 11px;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.smallfont
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #000000;
+}
+.navbar
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background: #9E9E9C;
+	color: #000000;
+}
+.fjdpth0
+{
+	background: #F7F7F7;
+	color: #000000;
+}
+.panel
+{
+	background: #D4D2CC;
+	color: #000000;
+	padding: 10px;
+	border: 2px outset;
+}
+.panelsurround
+{
+	background: #9E9E9C;
+	color: #000000;
+}
+legend
+{
+	color: #000000;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+	background: #5C5E5C;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 3px 6px 3px 6px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link, .vbmenu_control_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.vbmenu_popup
+{
+	background: #5C5E5C;
+	color: #FFFFFF;
+	border: 1px solid #D4D2CC;
+}
+.vbmenu_option
+{
+	background: #D4D2CC;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link, .vbmenu_option_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+{
+	color: #000000;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background: #FFFFCC;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+{
+	color: #000000;
+	text-decoration: none;
+}
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+.bigusername { font-size: 14pt; }
+
+/* ***** small padding on 'thead' elements ***** */
+td.thead, th.thead, div.thead { padding: 4px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** de-emphasized text */
+.shade, a.shade:link, a.shade:visited { color: #777777; text-decoration: none; }
+a.shade:active, a.shade:hover { color: #FF4400; text-decoration: underline; }
+.tcat .shade, .thead .shade, .tfoot .shade { color: #DDDDDD; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+</style>
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_important.css?v=3811" />
+
+
+<!-- / CSS Stylesheet -->
+<script type="text/javascript" src="clientscript/yui/yahoo-dom-event/yahoo-dom-event.js?v=3811"></script>
+<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=3811"></script>
+<script type="text/javascript">
+<!--
+var SESSIONURL = "";
+var SECURITYTOKEN = "1623669815-0bd5cef2f1be2d730bfb2569a489004b31f48e32";
+var IMGDIR_MISC = "images/1070/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+<script type="text/javascript" src="clientscript/vbulletin_global.js?v=3811"></script>
+<script type="text/javascript" src="clientscript/vbulletin_menu.js?v=3811"></script>
+
+
+	<link rel="alternate" type="application/rss+xml" title="Форум программистов RSS Feed" href="external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="Форум программистов - C# (си шарп) - RSS Feed" href="external.php?type=RSS2&amp;forumids=59" />
+	
+
+
+<script src="alex/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="alex/code_highlighter.js"></script>
+<script type="text/javascript">
+    codehighlighter.init();
+</script>
+<link rel="stylesheet" href="highlight/styles/programmersforum.css" />
+
+<script src="alex/search_link.js" charset="utf-8"></script>
+<script>
+    searchlink.init();
+</script><!-- Editor CSS automatically added by functions_editor.php at line 686 -->
+<!-- Editor Styles -->
+<style type="text/css" id="vbulletin_editor_css_dynamic">
+<!--
+@import url("clientscript/vbulletin_editor.css?v=3811");
+
+.vBulletin_editor {
+	background: #D4D2CC;
+	padding: 8px;
+}
+.imagebutton {
+	background: #D4D2CC;
+	color: #000000;
+	padding: 1px;
+	border: none;
+}
+.ocolor, .ofont, .osize, .osmilie, .osyscoloar, .smilietitle {
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #FFFFFF;
+}
+.popup_pickbutton {
+	border: 1px solid #FFFFFF;
+}
+.popup_feedback {
+	background: #FFFFFF;
+	color: #000000;
+	border-right: 1px solid #FFFFFF;
+}
+.popupwindow {
+	background: #FFFFFF;
+}
+#fontOut, #sizeOut, .popup_feedback div {
+	background: #FFFFFF;
+	color: #000000;
+}
+.alt_pickbutton {
+	border-left: 1px solid #D4D2CC;
+}
+.popup_feedback input, .popup_feedback div
+{
+	border: 0px solid;
+	padding: 0px 2px 0px 2px;
+	cursor: default;
+	font: 11px tahoma;
+	overflow: hidden;
+}
+-->
+</style>
+<!-- / Editor Styles -->
+	    <title> C# работа с wav файлами - C# (си шарп)  - Форум программистов</title>
+	<script type="text/javascript" src="clientscript/vbulletin_post_loader.js?v=3811"></script>
+	<style type="text/css" id="vbulletin_showthread_css">
+	<!--
+	
+	#links div { white-space: nowrap; }
+	#links img { vertical-align: middle; }
+	-->
+	</style>
+</head>
+<body onload="">
+<!-- logo -->
+<a name="top"></a>
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+<tr>
+	<td align="left"><a href="index.php"><img src="images/1070/misc/logo.gif" border="0" alt="Форум программистов" /></a></td>
+	<td align="right" id="header_right_cell">
+		<div align="center">
+                <table cellpadding="4" cellspacing="1" border="0">
+
+                <tr>
+                        <td class="vbmenu_option" title="nohilite">
+                                <form action="search.php?do=process" method="post">
+
+                                        <input type="hidden" name="do" value="process" />
+                                        <input type="hidden" name="quicksearch" value="1" />
+                                        <input type="hidden" name="childforums" value="1" />
+                                        <input type="hidden" name="exactname" value="1" />
+                                        <input type="hidden" name="s" value="" />
+                                        <input type="hidden" name="securitytoken" value="1623669815-0bd5cef2f1be2d730bfb2569a489004b31f48e32" />
+                                        <div><input type="text" class="bginput" name="query" size="25" tabindex="1001" /><input type="submit" class="button" value="Вперёд" tabindex="1004" /></div>
+                                        <div style="margin-top:8px">
+                                                <label for="rb_nb_sp0"><input type="radio" name="showposts" value="0" id="rb_nb_sp0" tabindex="1002" checked="checked" />Отобразить темы</label>
+                                                &nbsp;
+                                                <label for="rb_nb_sp1"><input type="radio" name="showposts" value="1" id="rb_nb_sp1" tabindex="1003" />Отображать сообщения</label>
+                                        </div>
+                                </form>
+                        </td>
+                </tr>
+                
+            
+                
+                </table>
+        </div>
+	</td>
+</tr>
+</table>
+<!-- /logo -->
+
+<!-- content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+
+
+
+<style>
+A { text-decoration: none; }
+A:hover { text-decoration: underline;  }
+    </style>
+<b><a href="https://programmersforum.ru/register.php">Регистрация на форуме тут</a>, о проблемах пишите сюда - alarforum@yandex.ru, проверяйте папку спам! Обязательно пройдите <a href="register.php?do=requestemail&email=">активизацию e-mail</a>, а тут можно <a href="login.php?do=lostpw">восстановить пароль</a>.
+<br><br><a href="https://programmersforum.ru/showthread.php?p=1822808">Как купить рекламу на форуме</a>
+</b>
+<br>
+<br />
+<!-- breadcrumb, login, pm info -->
+<table class="tborder" cellpadding="8" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+
+<td class="alt1" width="100%">
+		
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr valign="bottom">
+				<td><a href="#" onclick="history.back(1); return false;"><img src="images/1070/misc/navbits_start.gif" alt="Вернуться" border="0" /></a></td>
+				<td>&nbsp;</td>
+
+				<td width="100%"><span class="navbar"><a href="index.php" accesskey="1">Форум программистов</a></span> 
+	<span class="navbar">&gt; <a href="forumdisplay.php?f=55">.NET Frameworks (точка нет фреймворки)</a></span>
+
+
+	<span class="navbar">&gt; <a href="forumdisplay.php?f=59">C# (си шарп)</a></span>
+
+</td>
+			</tr>
+			<tr>
+			
+<td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><a href="/showthread.php?t=233097"><img class="inlineimg" src="images/1070/misc/navbits_finallink_ltr.gif" alt="Перезагрузить страницу" border="0" /></a> <strong>
+	 C# работа с wav файлами
+
+</strong></td>
+			</tr>
+			</table>
+		
+	</td>
+
+
+	<td class="alt2" nowrap="nowrap">
+	<div class="smallfont">
+		<strong>Добро пожаловать, <a href="member.php?u=313297">eliasum</a>.</strong><br />
+		Ваш последний визит: Вчера в <span class="time">21:34</span>
+		
+			<div><a href="private.php">Личные сообщения</a>: Новых 0, всего 0.</div>
+		
+		
+	</div>
+	</td>
+
+</tr>
+</table>
+<!-- / breadcrumb, login, pm info -->
+
+<!-- nav buttons bar -->
+<div class="tborder" style="padding:1px; border-top-width:0px">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+	<tr align="center">
+		
+			<td class="vbmenu_control"><a href="usercp.php">Мой<br>кабинет</a>
+
+
+
+
+</td>
+		
+
+
+
+	<td class="vbmenu_control">		
+<a href="search.php?do=finduser&amp;u=313297&amp;starteronly=1" rel="nofollow">Мои<br>темы</a> 
+</td>
+
+<td class="vbmenu_control">	
+
+<a href="search.php?do=finduser&amp;u=313297" rel="nofollow">Мои<br>сообщения</a>
+
+</td>
+
+		
+
+
+
+		
+		
+
+
+
+
+<td class="vbmenu_control"><a href="newthread.php?do=newthread&f=31" rel="nofollow">Задать<br>вопрос</a></td>
+
+<td class="vbmenu_control"><a href="newthread.php?do=newthread&f=29" rel="nofollow">Заплачу<br>за решение</a></td>
+
+
+<td class="vbmenu_control">
+    <a href="search.php?do=getnew" rel="nofollow" style="margin-right: 0px;">Новые<br>сообщения</a>
+</td>
+
+<td class="vbmenu_control">
+   <a href="search.php?do=getdaily" rel="nofollow" style="margin-left: 0px;">Сообщения<br>за день</a>
+</td>
+
+
+<td class="vbmenu_control"><a href="search.php" accesskey="4" rel="nofollow">Расширенный<br>поиск</a></td>
+
+<td class="vbmenu_control"><a href="misc.php?do=showrules" rel="nofollow">Правила</a></td>
+
+
+<td class="vbmenu_control" colspan="5">
+			<a href="forumdisplay.php?do=markread&amp;markreadhash=1623669815-0bd5cef2f1be2d730bfb2569a489004b31f48e32" rel="nofollow">Всё<br>прочитано</a>
+			
+		</td>
+
+
+
+		
+			<td class="vbmenu_control"><a href="login.php?do=logout&amp;logouthash=1623669815-0bd5cef2f1be2d730bfb2569a489004b31f48e32" onclick="return log_out('Вы действительно хотите выйти?')">Выход</a></td>
+		
+		</tr>
+	</table>
+</div>
+<!-- / nav buttons bar -->
+
+<br />
+
+
+
+
+
+
+<!-- NAVBAR POPUP MENUS -->
+	
+	
+	<!-- header quick search form -->
+	<div class="vbmenu_popup" id="navbar_search_menu" style="display:none;margin-top:3px" align="left">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead">Поиск по форуму</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+				<form action="search.php?do=process" method="post">
+
+					<input type="hidden" name="do" value="process" />
+					<input type="hidden" name="quicksearch" value="1" />
+					<input type="hidden" name="childforums" value="1" />
+					<input type="hidden" name="exactname" value="1" />
+					<input type="hidden" name="s" value="" />
+					<input type="hidden" name="securitytoken" value="1623669815-0bd5cef2f1be2d730bfb2569a489004b31f48e32" />
+					<div><input type="text" class="bginput" name="query" size="25" tabindex="1001" /><input type="submit" class="button" value="Вперёд" tabindex="1004" /></div>
+					<div style="margin-top:8px">
+						<label for="rb_nb_sp0"><input type="radio" name="showposts" value="0" id="rb_nb_sp0" tabindex="1002" checked="checked" />Отобразить темы</label>
+						&nbsp;
+						<label for="rb_nb_sp1"><input type="radio" name="showposts" value="1" id="rb_nb_sp1" tabindex="1003" />Отображать сообщения</label>
+					</div>
+				</form>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="vbmenu_option"><a href="search.php" accesskey="4" rel="nofollow">Расширенный поиск</a></td>
+		</tr>
+		
+		</table>
+	</div>
+	<!-- / header quick search form -->
+	
+	
+	
+	<!-- user cp tools menu -->
+	<div class="vbmenu_popup" id="usercptools_menu" style="display:none;margin-top:3px" align="left">
+		<table cellpadding="4" cellspacing="1" border="0">
+
+		<tr><td class="thead">Навигация</td></tr>
+		<tr><td class="vbmenu_option"><a href="search.php?do=getdaily">Сообщения за день</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="forumdisplay.php?do=markread&amp;markreadhash=1623669815-0bd5cef2f1be2d730bfb2569a489004b31f48e32">Все разделы прочитаны</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="#" onclick="window.open('misc.php?do=buddylist&amp;focus=1','buddylist','statusbar=no,menubar=no,toolbar=no,scrollbars=yes,resizable=yes,width=250,height=300'); return false;">Список знакомых</a></td></tr>
+		
+		
+
+		<tr><td class="thead"><a href="usercp.php">Мой кабинет</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="profile.php?do=editsignature">Редактировать подпись</a></td></tr>
+		<!--<tr><td class="vbmenu_option"><a href="profile.php?do=editavatar">Изменить аватар</a></td></tr>-->
+		<tr><td class="vbmenu_option"><a href="profile.php?do=editprofile">Редактировать данные</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="profile.php?do=editoptions">Опции</a></td></tr>
+		
+
+		<tr><td class="thead">Разное</td></tr>
+		<tr><td class="vbmenu_option"><a href="private.php" rel="nofollow">Личные сообщения</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="subscription.php" rel="nofollow">Темы с подпиской</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="member.php?u=313297">Ваш профиль</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="online.php">Кто на форуме</a></td></tr>
+		
+
+		</table>
+	</div>
+	<!-- / user cp tools menu -->
+
+	
+<!-- / NAVBAR POPUP MENUS -->
+
+<!-- PAGENAV POPUP -->
+	<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead" nowrap="nowrap">К странице...</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+			<form action="index.php" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
+				<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4" />
+				<input type="button" class="button" id="pagenav_ibtn" value="Вперёд" />
+			</form>
+			</td>
+		</tr>
+		</table>
+	</div>
+<!-- / PAGENAV POPUP -->
+
+
+
+
+<link rel="stylesheet" type="text/css" href="alex/quick_quote.css">
+<script src="alex/video_embed.js"></script>
+<script src="alex/quick_quote.js" charset="utf-8"></script>
+<script src="alex/newthread_forum_list.js" charset="utf-8"></script>
+<script src="alex/post_autosave.js" charset="utf-8"></script>
+
+<script>
+videoembed.init({
+    hideLinks: true // прятать исходные ссылки после вставки плеера
+});
+newthreadForumList.init();
+postautosave.init();
+</script>
+
+<style type="text/css">
+.css-adaptive {
+display: block;
+max-width: 100%;
+height: auto;
+}
+</style>
+
+
+<center>
+<b><a href="https://programmersforum.ru/showthread.php?p=1822808">Купить рекламу на форуме 20000 рублей в месяц</a></b>
+<br><br>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<!-- controls above postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
+<tr valign="bottom">
+	
+		<td class="smallfont"><a href="newreply.php?do=newreply&amp;noquote=1&amp;p=1212813" rel="nofollow"><img src="images/1070/buttons/reply.gif" alt="Ответ" border="0" /></a></td>
+	
+	
+</tr>
+</table>
+<!-- / controls above postbits -->
+
+
+	 	
+<!-- toolbar -->
+<table class="tborder" cellpadding="8" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control" id="threadtools" nowrap="nowrap">
+		<a href="/showthread.php?t=233097&amp;nojs=1#goto_threadtools">Опции темы</a>
+		<script type="text/javascript"> vbmenu_register("threadtools"); </script>
+	</td>
+	
+		<td class="vbmenu_control" id="threadsearch" nowrap="nowrap">
+			<a href="/showthread.php?t=233097&amp;nojs=1#goto_threadsearch">Поиск в этой теме</a>
+			<script type="text/javascript"> vbmenu_register("threadsearch"); </script>
+		</td>
+	
+	
+	
+
+	
+
+</tr>
+</table>
+<!-- / toolbar -->
+
+
+<!-- end content table -->
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- / end content table -->
+
+
+
+
+
+<div id="posts"><!-- post #1212813 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1212813" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1212813" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >
+			<!-- status icon and date -->
+
+			<a name="post1212813"><img class="inlineimg" src="images/1070/statusicon/post_old.gif" alt="Старый" border="0" /></a>
+			12.04.2013, 15:37
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+
+
+			#<a href="showpost.php?p=1212813&amp;postcount=1" target="new" rel="nofollow" id="postcount1212813" name="1"><strong>1</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="150" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			<div id="postmenu_1212813">
+				
+			        <a class="bigusername" href="member.php?u=168913">dar3dev1l26</a> 
+				<script type="text/javascript"> vbmenu_register("postmenu_1212813", true); </script>
+				
+			</div>
+			
+			<div class="smallfont">Пользователь</div>
+			
+
+
+
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+
+
+<!--дата регистрации-->
+				<div>Регистрация: 06.10.2011</div>
+	<!--сообщения-->			
+<div>Сообщений: 58</div>
+				
+
+
+<!--Отправить личное сообщение dar3dev1l26 -->
+
+
+		<a href="private.php?do=newpm&amp;u=168913" rel="nofollow">Личное сообщение</a>
+	
+
+</div>
+	</td>
+	
+	<td class="alt1" id="td_post_1212813" style="border-right: 1px solid #5C5E5C">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="images/icons/icon2.gif" alt="Стрелка" border="0" />
+				<strong>C# работа с wav файлами</strong>
+			</div>
+			<hr size="1" style="color:#5C5E5C; background-color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_1212813">
+			
+			Мне нужно применить алгоритм непосредственно к области аудиоданных wav файла, а её надо сначала извлечь. Я этим заниматься вручную (писать класс для wav файлов) не очень хочу, своей работы с алгоритмом хватает, а поскольку я новичок это чревато ошибками; в общем время тратить не хочется. Погулил я немножко, но ничего путнего не нашел, в основном люди ищут как конвертировать, проигрывать и т д.<br />
+Существует ли в .NET Framework 3.5 класс (или какая-то бесплатная библиотека с таким классом в интернете), которая может мне помочь извлекать информацию из хэдера wav файла, считывать данные из блока данных?<br />
+Буду рад любым любым советам\комментариям.
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+		<!-- edit note -->
+			<div class="smallfont">
+				<hr size="1" style="color:#5C5E5C; background-color:#5C5E5C" />
+				<em>
+					
+						Последний раз редактировалось dar3dev1l26; 12.04.2013 в <span class="time">16:16</span>.
+					
+					
+				</em>
+			</div>
+		<!-- / edit note -->
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		
+
+<img class="inlineimg" src="images/1070/statusicon/user_offline.gif" alt="dar3dev1l26 вне форума" border="0" />
+
+
+
+<!-- выдать карточку на сообщение -->
+
+
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+
+
+<!-- жалоба на сообщение -->
+		<a href="report.php?p=1212813" rel="nofollow"><img class="inlineimg" src="images/1070/buttons/report.gif" alt="Пожаловаться на это сообщение" border="0" />Пожаловаться на сообщение</a>
+
+
+
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=1212813" rel="nofollow"><img src="images/1070/buttons/quote.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=1212813" rel="nofollow" id="qr_1212813" onclick="return false"><img src="images/1070/buttons/quickreply.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+
+
+
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+
+<!-- post 1212813 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1212813_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">dar3dev1l26</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=168913">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=168913" rel="nofollow">Отправить личное сообщение для dar3dev1l26</a></td></tr>
+	
+	
+
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=168913" rel="nofollow">Найти ещё сообщения от dar3dev1l26</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="profile.php?do=addlist&amp;userlist=buddy&amp;u=168913">Добавить dar3dev1l26 в список знакомых</a></td></tr>
+	
+	
+	</table>
+</div>
+<!-- / post 1212813 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1212813 --><!-- post #1213144 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1213144" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1213144" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >
+			<!-- status icon and date -->
+
+			<a name="post1213144"><img class="inlineimg" src="images/1070/statusicon/post_old.gif" alt="Старый" border="0" /></a>
+			13.04.2013, 12:28
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+
+
+			#<a href="showpost.php?p=1213144&amp;postcount=2" target="new" rel="nofollow" id="postcount1213144" name="2"><strong>2</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="150" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			<div id="postmenu_1213144">
+				
+			        <a class="bigusername" href="member.php?u=168913">dar3dev1l26</a> 
+				<script type="text/javascript"> vbmenu_register("postmenu_1213144", true); </script>
+				
+			</div>
+			
+			<div class="smallfont">Пользователь</div>
+			
+
+
+
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+
+
+<!--дата регистрации-->
+				<div>Регистрация: 06.10.2011</div>
+	<!--сообщения-->			
+<div>Сообщений: 58</div>
+				
+
+
+<!--Отправить личное сообщение dar3dev1l26 -->
+
+
+		<a href="private.php?do=newpm&amp;u=168913" rel="nofollow">Личное сообщение</a>
+	
+
+</div>
+	</td>
+	
+	<td class="alt1" id="td_post_1213144" style="border-right: 1px solid #5C5E5C">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="images/icons/icon3.gif" alt="Лампочка" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C; background-color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_1213144">
+			
+			Написал, если у кого-то такая же проблема и лень писать, можете использовать мой код.<br />
+Класс Wav файла:<br />
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Код:</div>
+	<pre name="code"><code class="">public class WavFile
+    {        
+        public string path;
+        //-----WaveHeader-----
+        public char[] sGroupID; // RIFF
+        public uint dwFileLength; // total file length minus 8, which is taken up by RIFF
+        public char[] sRiffType;// always WAVE
+
+        //-----WaveFormatChunk-----
+        public char[] sFChunkID;         // Four bytes: &quot;fmt &quot;
+        public uint dwFChunkSize;        // Length of header in bytes
+        public ushort wFormatTag;       // 1 (MS PCM)
+        public ushort wChannels;        // Number of channels
+        public uint dwSamplesPerSec;    // Frequency of the audio in Hz... 44100
+        public uint dwAvgBytesPerSec;   // for estimating RAM allocation
+        public ushort wBlockAlign;      // sample frame size, in bytes
+        public ushort wBitsPerSample;    // bits per sample
+
+        //-----WaveDataChunk-----
+        public char[] sDChunkID;     // &quot;data&quot;
+        public uint dwDChunkSize;    // Length of header in bytes
+        public byte dataStartPos;  // audio data start position
+        
+        public WavFile()
+        {
+            path = Environment.CurrentDirectory;
+            //-----WaveHeader-----
+            dwFileLength = 0;
+            sGroupID = &quot;RIFF&quot;.ToCharArray();
+            sRiffType = &quot;WAVE&quot;.ToCharArray();
+
+            //-----WaveFormatChunk-----
+            sFChunkID = &quot;fmt &quot;.ToCharArray();
+            dwFChunkSize = 16;
+            wFormatTag = 1;
+            wChannels = 2;
+            dwSamplesPerSec = 44100;
+            wBitsPerSample = 16;
+            wBlockAlign = (ushort)(wChannels * (wBitsPerSample / 8));
+            dwAvgBytesPerSec = dwSamplesPerSec * wBlockAlign;
+
+            //-----WaveDataChunk-----
+            dataStartPos = 44;
+            dwDChunkSize = 0;
+            sDChunkID = &quot;data&quot;.ToCharArray();
+        }
+    }</code></pre>
+</div>Мне не нужно никаким образом менять данные в хэдере или менять размер wav файла, мне нужно изменить с помощью своего алгоритма значения в блоке данных. Поэтому я действую так: создаю экземпляр класса WavFile инициализирую его поля с помощью BinaryReader, потом копирую файл с помощью BinaryWriter (когда дохожу до блока данных я их перед записью редактирую). Таким образом я имею копию исходного файла, только с звуковыми отредактированными данными.<br />
+Иницализация может быть такой:<br />
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Код:</div>
+	<pre name="code"><code class="">wavFile.path = @&quot;C:\Rammstein - Kokain.wav&quot;;
+            FileStream fsr = new FileStream(wavFile.path, FileMode.Open, FileAccess.Read);
+            BinaryReader r = new BinaryReader(fsr);            
+            wavFile.sGroupID = r.ReadChars(4);   
+            wavFile.dwFileLength = r.ReadUInt32(); 
+            wavFile.sRiffType = r.ReadChars(4);    
+            wavFile.sFChunkID = r.ReadChars(4);
+            wavFile.dwFChunkSize = r.ReadUInt32();
+            wavFile.wFormatTag = r.ReadUInt16();
+            wavFile.wChannels = r.ReadUInt16();
+            wavFile.dwSamplesPerSec = r.ReadUInt32();
+            wavFile.dwAvgBytesPerSec = r.ReadUInt32();
+            wavFile.wBlockAlign = r.ReadUInt16();
+            wavFile.wBitsPerSample = r.ReadUInt16();
+            wavFile.sDChunkID = r.ReadChars(4);
+            wavFile.dwDChunkSize = r.ReadUInt32();            
+            wavFile.dataStartPos = (byte)r.BaseStream.Position;
+            r.Close();
+            fsr.Close();</code></pre>
+</div>
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		
+
+<img class="inlineimg" src="images/1070/statusicon/user_offline.gif" alt="dar3dev1l26 вне форума" border="0" />
+
+
+
+<!-- выдать карточку на сообщение -->
+
+
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+
+
+<!-- жалоба на сообщение -->
+		<a href="report.php?p=1213144" rel="nofollow"><img class="inlineimg" src="images/1070/buttons/report.gif" alt="Пожаловаться на это сообщение" border="0" />Пожаловаться на сообщение</a>
+
+
+
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=1213144" rel="nofollow"><img src="images/1070/buttons/quote.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=1213144" rel="nofollow" id="qr_1213144" onclick="return false"><img src="images/1070/buttons/quickreply.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+
+
+
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+
+<!-- post 1213144 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1213144_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">dar3dev1l26</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=168913">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=168913" rel="nofollow">Отправить личное сообщение для dar3dev1l26</a></td></tr>
+	
+	
+
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=168913" rel="nofollow">Найти ещё сообщения от dar3dev1l26</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="profile.php?do=addlist&amp;userlist=buddy&amp;u=168913">Добавить dar3dev1l26 в список знакомых</a></td></tr>
+	
+	
+	</table>
+</div>
+<!-- / post 1213144 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1213144 --><!-- post #1213145 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1213145" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1213145" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >
+			<!-- status icon and date -->
+
+			<a name="post1213145"><img class="inlineimg" src="images/1070/statusicon/post_old.gif" alt="Старый" border="0" /></a>
+			13.04.2013, 12:29
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+
+
+			#<a href="showpost.php?p=1213145&amp;postcount=3" target="new" rel="nofollow" id="postcount1213145" name="3"><strong>3</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="150" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			<div id="postmenu_1213145">
+				
+			        <a class="bigusername" href="member.php?u=168913">dar3dev1l26</a> 
+				<script type="text/javascript"> vbmenu_register("postmenu_1213145", true); </script>
+				
+			</div>
+			
+			<div class="smallfont">Пользователь</div>
+			
+
+
+
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+
+
+<!--дата регистрации-->
+				<div>Регистрация: 06.10.2011</div>
+	<!--сообщения-->			
+<div>Сообщений: 58</div>
+				
+
+
+<!--Отправить личное сообщение dar3dev1l26 -->
+
+
+		<a href="private.php?do=newpm&amp;u=168913" rel="nofollow">Личное сообщение</a>
+	
+
+</div>
+	</td>
+	
+	<td class="alt1" id="td_post_1213145" style="border-right: 1px solid #5C5E5C">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="images/icons/icon1.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C; background-color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_1213145">
+			
+			Функция записи(здесь фактически копирование, надо обработать данные внутри цикла):<br />
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Код:</div>
+	<pre name="code"><code class="">static void WriteWav()
+        {
+            FileStream fsr = new FileStream(wavFile.path, FileMode.Open, FileAccess.Read);
+            BinaryReader r = new BinaryReader(fsr);
+            string path = wavFile.path;
+            path = path.Insert(path.Length - 4, &quot;(+)&quot;);
+            FileStream fsw = null;
+            try
+            {
+                fsw = new FileStream(path, FileMode.CreateNew);
+            }
+            catch(IOException)
+            {
+                fsw = new FileStream(path, FileMode.Truncate);
+            }
+            BinaryWriter w = new BinaryWriter(fsw);
+            int pos = 0, len = (int)r.BaseStream.Length; short temp;
+            while (pos &lt; len)
+            {
+                temp = (short)r.ReadInt16();
+                //Working with the temp
+                w.Write(temp);
+                pos += 2;
+            }
+            r.Close();   w.Close();
+            fsr.Close(); fsw.Close();    
+        }</code></pre>
+</div>wavFile должен быть виден для WriteWav(). Так же я здесь не учёл много деталей,этот код будет работать для wav файлов с wFormatTag равным 1, в общем если блок данных будет начинаться не с 44 позиции, то могут быть ошибочки. Там могут быть дополнительные поля, которые Вы можете случайно изменить, если не заметите их присутствие. Если хотите работать  с множеством разных типов wav файлов, то Вам придется делать дополнительные проверки.<br />
+Пользовался <a href="http://blogs.msdn.com/b/dawate/archive/2009/06/24/intro-to-audio-programming-part-3-synthesizing-simple-wave-audio-using-c.aspx" target="_blank">http://blogs.msdn.com/b/dawate/archi...o-using-c.aspx</a>
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+		<!-- edit note -->
+			<div class="smallfont">
+				<hr size="1" style="color:#5C5E5C; background-color:#5C5E5C" />
+				<em>
+					
+						Последний раз редактировалось dar3dev1l26; 13.04.2013 в <span class="time">15:39</span>.
+					
+					
+				</em>
+			</div>
+		<!-- / edit note -->
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		
+
+<img class="inlineimg" src="images/1070/statusicon/user_offline.gif" alt="dar3dev1l26 вне форума" border="0" />
+
+
+
+<!-- выдать карточку на сообщение -->
+
+
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+
+
+<!-- жалоба на сообщение -->
+		<a href="report.php?p=1213145" rel="nofollow"><img class="inlineimg" src="images/1070/buttons/report.gif" alt="Пожаловаться на это сообщение" border="0" />Пожаловаться на сообщение</a>
+
+
+
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=1213145" rel="nofollow"><img src="images/1070/buttons/quote.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=1213145" rel="nofollow" id="qr_1213145" onclick="return false"><img src="images/1070/buttons/quickreply.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+
+
+
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+
+<!-- post 1213145 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1213145_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">dar3dev1l26</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=168913">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=168913" rel="nofollow">Отправить личное сообщение для dar3dev1l26</a></td></tr>
+	
+	
+
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=168913" rel="nofollow">Найти ещё сообщения от dar3dev1l26</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="profile.php?do=addlist&amp;userlist=buddy&amp;u=168913">Добавить dar3dev1l26 в список знакомых</a></td></tr>
+	
+	
+	</table>
+</div>
+<!-- / post 1213145 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1213145 --><!-- post #1594931 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1594931" style="padding:0px 0px 8px 0px">
+	
+
+
+
+<table id="post1594931" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >
+			<!-- status icon and date -->
+
+			<a name="post1594931"><img class="inlineimg" src="images/1070/statusicon/post_old.gif" alt="Старый" border="0" /></a>
+			07.04.2016, 14:56
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+
+
+			#<a href="showpost.php?p=1594931&amp;postcount=4" target="new" rel="nofollow" id="postcount1594931" name="4"><strong>4</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="150" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			<div id="postmenu_1594931">
+				
+			        <a class="bigusername" href="member.php?u=343534">AleK135</a> 
+				<script type="text/javascript"> vbmenu_register("postmenu_1594931", true); </script>
+				
+			</div>
+			
+			
+			
+
+
+
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+
+
+<!--дата регистрации-->
+				<div>Регистрация: 31.03.2016</div>
+	<!--сообщения-->			
+<div>Сообщений: 3</div>
+				
+
+
+<!--Отправить личное сообщение AleK135 -->
+
+
+		<a href="private.php?do=newpm&amp;u=343534" rel="nofollow">Личное сообщение</a>
+	
+
+</div>
+	</td>
+	
+	<td class="alt1" id="td_post_1594931" style="border-right: 1px solid #5C5E5C">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="images/icons/icon1.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C; background-color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_1594931">
+			
+			Я, наверное, сильно опоздал, но если кто-то интересуется, то вот код <br />
+<br />
+<br />
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Код:</div>
+	<pre name="code"><code class="">using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        struct WavHeader
+        {
+            public byte[] riffID;
+            public uint size;
+            public byte[] wavID;
+            public byte[] fmtID;
+            public uint fmtSize;
+            public ushort format;
+            public ushort channels;
+            public uint sampleRate;
+            public uint bytePerSec;
+            public ushort blockSize;
+            public ushort bit;
+            public byte[] dataID;
+            public uint dataSize;
+        }
+        static void Main(string[] args)
+        {
+            WavHeader Header = new WavHeader();
+            List&lt;Int16&gt; lDataList = new List&lt;Int16&gt;();
+
+            using (FileStream fs = new FileStream(&quot;file name&quot;, FileMode.Open, FileAccess.Read))
+            using (BinaryReader br = new BinaryReader(fs))
+            {
+                try
+                {
+                    Header.riffID = br.ReadBytes(4);//1
+                    Header.size = br.ReadUInt32();//2
+                    Header.wavID = br.ReadBytes(4);//3
+                    Header.fmtID = br.ReadBytes(4);//4
+                    Header.fmtSize = br.ReadUInt32();//5
+                    Header.format = br.ReadUInt16();//6
+                    Header.channels = br.ReadUInt16();//7
+                    Header.sampleRate = br.ReadUInt32();//8
+                    Header.bytePerSec = br.ReadUInt32();//9
+                    Header.blockSize = br.ReadUInt16();//10
+                    Header.bit = br.ReadUInt16();//11
+                    Header.dataID = br.ReadBytes(6);//12
+                    Header.dataSize = br.ReadUInt32();//13
+
+                    int n = (int)(Header.dataSize/ Header.channels*8 / Header.bit);
+
+                    for (int i = 0; i &lt; n; i++)
+                    {
+                        Int16 tmp = 0;
+                        tmp = br.ReadInt16();
+                        lDataList.Add(tmp);
+                    }
+                }
+                finally
+                {
+                    if (br != null)
+                    {
+                        br.Close();
+                    }
+                    if (fs != null)
+                    {
+                        fs.Close();
+                    }
+                }
+            }
+            Console.WriteLine(&quot;Открыт&quot;);
+
+            using (FileStream fs = new FileStream(&quot;file name&quot;, FileMode.Create, FileAccess.Write))
+            using (BinaryWriter bw = new BinaryWriter(fs))
+            {
+                try
+                {
+                    bw.Write(Header.riffID);//1
+                    bw.Write(Header.size);//2
+                    bw.Write(Header.wavID);//3
+                    bw.Write(Header.fmtID);//4
+                    bw.Write(Header.fmtSize);//5
+                    bw.Write(Header.format);//6
+                    bw.Write(Header.channels);//7
+                    bw.Write(Header.sampleRate);//8
+                    bw.Write(Header.bytePerSec);//9
+                    bw.Write(Header.blockSize);//10
+                    bw.Write(Header.bit);//11
+                    bw.Write(Header.dataID);//12
+                    bw.Write(Header.dataSize);//13
+
+                    int n = (int)(Header.dataSize / Header.channels * 8 / Header.bit);
+
+                    for (int i = 0; i &lt; n; i++)
+                    {
+                        Int16 tmp = lDataList[i];
+                        bw.Write(tmp);
+                    }
+                    
+                }
+                finally
+                {
+                    if (bw != null)
+                    {
+                        bw.Close();
+                    }
+                    if (fs != null)
+                    {
+                        fs.Close();
+                    }
+                }
+            }
+
+            return;
+        }
+    }
+}</code></pre>
+</div>
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+		<!-- edit note -->
+			<div class="smallfont">
+				<hr size="1" style="color:#5C5E5C; background-color:#5C5E5C" />
+				<em>
+					
+						Последний раз редактировалось Alex11223; 07.04.2016 в <span class="time">16:00</span>.
+					
+					
+				</em>
+			</div>
+		<!-- / edit note -->
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		
+
+<img class="inlineimg" src="images/1070/statusicon/user_offline.gif" alt="AleK135 вне форума" border="0" />
+
+
+
+<!-- выдать карточку на сообщение -->
+
+
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+
+
+<!-- жалоба на сообщение -->
+		<a href="report.php?p=1594931" rel="nofollow"><img class="inlineimg" src="images/1070/buttons/report.gif" alt="Пожаловаться на это сообщение" border="0" />Пожаловаться на сообщение</a>
+
+
+
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=1594931" rel="nofollow"><img src="images/1070/buttons/quote.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=1594931" rel="nofollow" id="qr_1594931" onclick="return false"><img src="images/1070/buttons/quickreply.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+
+
+
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+
+<!-- post 1594931 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1594931_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">AleK135</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=343534">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=343534" rel="nofollow">Отправить личное сообщение для AleK135</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="sendmessage.php?do=mailmember&amp;u=343534" rel="nofollow">Отправить письмо по электронной почте для AleK135</a></td></tr>
+	
+
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=343534" rel="nofollow">Найти ещё сообщения от AleK135</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="profile.php?do=addlist&amp;userlist=buddy&amp;u=343534">Добавить AleK135 в список знакомых</a></td></tr>
+	
+	
+	</table>
+</div>
+<!-- / post 1594931 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1594931 --><div id="lastpost"></div></div>
+
+<!-- start content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+<!-- / start content table -->
+<!-- controls below postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:-5px">
+<tr valign="top">
+	
+		<td class="smallfont"><a href="newreply.php?do=newreply&amp;noquote=1&amp;p=1594931" rel="nofollow"><img src="images/1070/buttons/reply.gif" alt="Ответ" border="0" /></a></td>
+	
+	
+</tr>
+</table>
+<!-- / controls below postbits -->
+
+
+
+
+
+
+
+
+
+
+<!-- lightbox scripts -->
+	<script type="text/javascript" src="clientscript/vbulletin_lightbox.js?v=3811"></script>
+	<script type="text/javascript">
+	<!--
+	vBulletin.register_control("vB_Lightbox_Container", "posts", 1);
+	//-->
+	</script>
+<!-- / lightbox scripts -->
+
+
+
+
+
+<!-- ajax errors table -->
+	<table class="tborder" cellpadding="8" cellspacing="1" border="0" style="display:none; position:absolute" id="ajax_post_errors">
+	<tr>
+		<td class="thead">
+			<span style="float:right"><input type="button" class="button" value=" X " onclick="vB_QuickEditor.hide_errors()" id="ajax_post_errors_closebtn" /></span>
+			Сообщение форума
+		</td>
+	</tr>
+	<tr>
+		<td class="alt2" colspan="2" id="ajax_post_errors_message">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="tfoot" colspan="2" align="center"><a href="#" onclick="vB_QuickEditor.abort(); return false;">Отменить изменения</a></td>
+	</tr>
+	</table>
+<!-- / ajax errors table -->
+
+<!-- scripts for quick reply and quick edit -->
+	<!-- Editor Scripts -->
+<script type="text/javascript" src="clientscript/vbulletin_textedit.js?v=3811"></script>
+<script type="text/javascript">
+<!--
+var fontoptions = new Array("Arial", "Arial Black", "Arial Narrow", "Book Antiqua", "Century Gothic", "Comic Sans MS", "Courier New", "Fixedsys", "Franklin Gothic Medium", "Garamond", "Georgia", "Impact", "Lucida Console", "Lucida Sans Unicode", "Microsoft Sans Serif", "Palatino Linotype", "System", "Tahoma", "Times New Roman", "Trebuchet MS", "Verdana");
+var sizeoptions = new Array(1, 2, 3, 4, 5, 6, 7);
+var smilieoptions = {  };
+
+var istyles = { "pi_button_down" : [ "#9E9E9C", "#000000", "0px", "1px solid #316AC5" ], "pi_button_hover" : [ "#D4D2CC", "#000000", "0px", "1px solid #316AC5" ], "pi_button_normal" : [ "#D4D2CC", "#000000", "1px", "none" ], "pi_button_selected" : [ "#D4D2CC", "#000000", "0px", "1px solid #316AC5" ], "pi_menu_down" : [ "#9E9E9C", "#000000", "0px", "1px solid #316AC5" ], "pi_menu_hover" : [ "#D4D2CC", "#9E9E9C", "0px", "1px solid #316AC5" ], "pi_popup_down" : [ "#9E9E9C", "#000000", "0px", "1px solid #316AC5" ], "pi_menu_normal" : [ "#FFFFFF", "#000000", "0px", "1px solid #FFFFFF" ] };
+var ltr = 'left';
+
+var smiliewindow_x = 240;
+var smiliewindow_y = 280;
+
+var ignorequotechars = 1;
+var allowbasicbbcode = true;
+
+// vB Phrases
+vbphrase["wysiwyg_please_wait"]          = "Пожалуйста, подождите, пока загрузится визуальный редактор...";
+vbphrase["wysiwyg_initialized"]          = "Визуальный редактор запущен для %1$s за %2$s сек.";
+vbphrase["wysiwyg_command_invalid"]      = "Неверная или нереализуемая команда.";
+vbphrase["moz_must_select_text"]         = "В Mozilla вам необходимо выделить часть текста, чтобы данная функция заработала.";
+vbphrase["moz_edit_config_file"]         = "Вам необходимо изменить файл настроек Mozilla, чтобы выполнить это действие.";
+vbphrase["enter_tag_option"]             = "Пожалуйста, введите опцию для BB кода %1$s:";
+vbphrase["must_select_text_to_use"]      = "Вам необходимо выделить часть текста, чтобы данная функция заработала.";
+vbphrase["browser_is_safari_no_wysiwyg"] = "Браузер Safari не поддерживает визуальный редактор.";
+vbphrase["enter_option_x_tag"]           = "Введите опцию для BB кода [%1$s]:";
+vbphrase["enter_text_to_be_formatted"]   = "Введите форматируемый текст";
+vbphrase["enter_link_text"]              = "Введите текст отображаемый как ссылка (не обязательно):";
+vbphrase["enter_list_type"]              = "Какой вид списка вы хотите создать? Введите '1', для создания нумерованного списка, введите 'a', для алфавитного списка, или оставьте пустым, для маркированного списка:";
+vbphrase["enter_list_item"]              = "Введите элемент\r\n(оставьте список пустым или нажмите 'Отмена', чтобы завершить ввод):";
+vbphrase["must_enter_subject"]           = "Вы должны ввести заголовок/название темы!";
+vbphrase["message_too_short"]            = "Ваше сообщение слишком короткое. Оно должно быть не менее %1$s символов.";
+vbphrase["enter_link_url"]               = "Введите URL для данной ссылки:";
+vbphrase["enter_image_url"]              = "Укажите URL вашего изображения:";
+vbphrase["enter_email_link"]             = "Введите адрес электронной почты для данной ссылки:";
+vbphrase["complete_image_verification"]  = "Вы не прошли проверку ввода текста с изображения";
+vbphrase["click_quick_reply_icon"]       = "Нажмите в сообщении на иконку 'Быстрый ответ' для активации этой опции.";
+vbphrase["insert_all"]                   = "Вставить все";
+
+//-->
+</script>
+<!-- / Editor Scripts -->
+	
+		<script type="text/javascript" src="clientscript/vbulletin_quick_edit.js?v=3811"></script>
+		<script type="text/javascript">
+		<!--
+		vB_AJAX_QuickEdit_Init('posts');
+		//-->
+		</script>
+	
+<!-- / scripts for quick reply and quick edit -->
+
+
+
+
+<!-- quick reply -->
+	<br />
+	<script type="text/javascript" src="clientscript/vbulletin_quick_reply.js?v=3811"></script>
+	<form action="newreply.php?do=postreply&amp;t=233097" method="post" name="vbform" onsubmit="return qr_prepare_submit(this, 3);" id="qrform">
+	<table class="tborder" cellpadding="8" cellspacing="1" border="0" width="100%" align="center">
+	<thead>
+		<tr>
+			<td class="tcat" colspan="2">
+				<a style="float:right" href="#top" onclick="return toggle_collapse('quickreply');"><img id="collapseimg_quickreply" src="images/1070/buttons/collapse_tcat.gif" alt="" border="0" /></a>
+				Быстрый ответ
+			</td>
+		</tr>
+	</thead>
+	<tbody id="qr_error_tbody" style="display:none">
+	<tr>
+		<td class="thead">При отправке были допущены следующие ошибки</td>
+	</tr>
+	<tr>
+		<td class="alt1" id="qr_error_td"></td>
+	</tr>
+	<tr>
+		<td class="tfoot" align="center"><span class="smallfont"><a href="#" onclick="return qr_hide_errors()">Ок</a></span></td>
+	</tr>
+	</tbody>
+	<tbody id="collapseobj_quickreply" style="">
+	<tr>
+		<td class="panelsurround" align="center">
+			<div class="panel">
+
+
+
+<div style="margin-top:8px">
+				<input type="hidden" name="fromquickreply" value="1" />
+				<input type="hidden" name="s" value="" />
+				<input type="hidden" name="securitytoken" value="1623669815-0bd5cef2f1be2d730bfb2569a489004b31f48e32" />
+				<input type="hidden" name="do" value="postreply" />
+				<input type="hidden" name="t" value="233097" id="qr_threadid" />
+				<input type="hidden" name="p" value="who cares" id="qr_postid" />
+				<input type="hidden" name="specifiedpost" value="0" id="qr_specifiedpost" />
+				<input type="hidden" name="parseurl" value="1" />
+				<input type="hidden" name="loggedinuser" value="313297" />
+			</div>
+
+
+
+				<div align="left" style="max-width:740px; width:auto !important; width:740px">
+					<div class="smallfont">Сообщение:</div>
+					<div id="vB_Editor_QR" class="vBulletin_editor">
+		<script type="text/javascript">
+		<!--
+			var threaded_mode = 0;
+			var require_click = 0;
+			var is_last_page = 1; // leave for people with cached JS files
+			var allow_ajax_qr = 1;
+			var ajax_last_post = 1460015807;
+		// -->
+		</script>
+		
+<div id="vB_Editor_QR_controls" class="controlbar">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+	
+		<td><img src="images/1070/editor/separator.gif" width="6" height="20" alt="" /></td>
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_bold"><img src="images/1070/editor/bold.gif" width="21" height="20" alt="Полужирный" /></div></td>
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_italic"><img src="images/1070/editor/italic.gif" width="21" height="20" alt="Курсив" /></div></td>
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_underline"><img src="images/1070/editor/underline.gif" width="21" height="20" alt="Подчёркнутый" /></div></td>
+
+                <td><div class="imagebutton" id="vB_Editor_QR_cmd_wrap0_s"><img src="images/1070/editor/strike.gif" width="21" height="20" alt="Зачёркнутый" /></div></td>
+
+
+	
+
+
+
+
+				<td><img src="images/1070/editor/separator.gif" width="6" height="20" alt="" /></td>
+				
+				<td><div class="imagebutton" id="vB_Editor_QR_cmd_justifyleft"><img src="images/1070/editor/justifyleft.gif" width="21" height="20" alt="Выровнять по левому краю" /></div></td>
+				<td><div class="imagebutton" id="vB_Editor_QR_cmd_justifycenter"><img src="images/1070/editor/justifycenter.gif" width="21" height="20" alt="Выровнять по центру" /></div></td>
+				<td><div class="imagebutton" id="vB_Editor_QR_cmd_justifyright"><img src="images/1070/editor/justifyright.gif" width="21" height="20" alt="Выровнять по правому краю" /></div></td>
+				
+			
+
+
+				<td><div class="imagebutton" id="vB_Editor_QR_cmd_insertorderedlist"><img src="images/1070/editor/insertorderedlist.gif" width="21" height="20" alt="Нумерованный список" /></div></td>
+				<td><div class="imagebutton" id="vB_Editor_QR_cmd_insertunorderedlist"><img src="images/1070/editor/insertunorderedlist.gif" width="21" height="20" alt="Несортированный список" /></div></td>
+			
+
+<td><img src="images/1070/editor/separator.gif" width="6" height="20" alt="" /></td>
+
+
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_createlink"><img src="images/1070/editor/createlink.gif" width="21" height="20" alt="Вставить ссылку" /></div></td>
+	
+
+
+		<td><img src="images/1070/editor/separator.gif" width="6" height="20" alt="" /></td>
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_wrap0_quote"><img src="images/1070/editor/quote.gif" width="21" height="20" alt="Вставить BB код цитаты [QUOTE] вокруг выделенного текста" /></div></td>
+	
+
+<td><div class="imagebutton" id="vB_Editor_QR_cmd_wrap0_code"><span style="cursor: default; user-select: none; -webkit-user-select: none; -ms-user-select: none;">[CODE]</span></div></td>
+			
+
+
+
+				<td><img src="images/1070/editor/separator.gif" width="6" height="20" alt="" /></td>
+			
+			
+				<td><div class="imagebutton" id="vB_Editor_QR_popup_fontsize" title="Размеры">
+					<table cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td class="popup_feedback"><div id="vB_Editor_QR_size_out" style="width:25px">&nbsp;</div></td>
+						<td class="popup_pickbutton"><img src="images/1070/editor/menupop.gif" width="11" height="16" alt="" /></td>
+					</tr>
+					</table>
+				</div></td>
+			
+	
+		<td><img src="images/1070/editor/separator.gif" width="6" height="20" alt="" /></td>
+		<td><div class="imagebutton" id="vB_Editor_QR_popup_forecolor" title="Цвета">
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td id="vB_Editor_QR_color_out"><img src="images/1070/editor/color.gif" width="21" height="16" alt="" /><br /><img src="clear.gif" id="vB_Editor_QR_color_bar" alt="" style="background-color:black" width="21" height="4" /></td>
+				<td class="alt_pickbutton"><img src="images/1070/editor/menupop.gif" alt="" width="11" height="16" /></td>
+			</tr>
+			</table>
+		</div></td>
+	
+	
+		<td><img src="images/1070/editor/separator.gif" width="6" height="20" alt="" /></td>
+	
+
+			
+			
+
+				<td><div class="imagebutton" id="vB_Editor_QR_cmd_undo"><img src="images/1070/editor/undo.gif" width="21" height="20" alt="Отменить" /></div></td>
+				<td><div class="imagebutton" id="vB_Editor_QR_cmd_redo"><img src="images/1070/editor/redo.gif" width="21" height="20" alt="Повторить" /></div></td>
+
+
+
+
+<td><input type="submit" class="button" value="Загрузить файлы" accesskey="x" title="(Alt + X)" name="preview" tabindex="3" id="qr_preview" onclick="clickedelm = this.value" /></td>
+
+	<td width="100%">&nbsp;</td>
+	
+		<td>
+			<div class="imagebutton" id="vB_Editor_QR_cmd_resize_0_99"><img src="images/1070/editor/resize_0.gif" width="21" height="9" alt="Уменьшить размер" /></div>
+			<div class="imagebutton" id="vB_Editor_QR_cmd_resize_1_99"><img src="images/1070/editor/resize_1.gif" width="21" height="9" alt="Увеличить размер" /></div>
+		</td>
+	
+	</tr>
+	</table>
+</div>
+
+
+<div class="controlbar" style="padding-right:8px">
+	<fieldset style="border:0px; padding:0px; margin:0px">
+	
+	<textarea name="message" id="vB_Editor_QR_textarea" rows="10" cols="60" style="width:100%; height:100px" tabindex="1" dir="ltr"></textarea>
+	
+	</fieldset>
+	<!--width:740px-->
+</div>
+
+<input type="hidden" name="wysiwyg" id="vB_Editor_QR_mode" value="0" />
+<input type="hidden" name="styleid" value="0" />
+
+<script type="text/javascript">
+<!--
+vB_Editor['vB_Editor_QR'] = new vB_Text_Editor('vB_Editor_QR', 0, '59', '1');
+var QR_EditorID = 'vB_Editor_QR';
+//-->
+</script>
+	</div>
+
+					<fieldset hidden class="fieldset" style="margin:3px 0px 0px 0px">
+						<legend>Опции</legend>
+						<div style="padding:3px">
+							
+							<label for="qr_quickreply"><input type="checkbox" name="quickreply" value="1" id="qr_quickreply" accesskey="w" tabindex="4" />Вставить цитату в ответ?</label>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+
+			<div style="margin-top:8px">
+				
+				<input type="submit" class="button" value="Отправить быстрый ответ" accesskey="s" title="(Alt + S)" name="sbutton" tabindex="2" id="qr_submit" onclick="clickedelm = this.value" />
+			
+			</div>
+
+			<div align="center" id="qr_posting_msg" style="display:none; margin-top:6px">
+				<img style="vertical-align: middle;" src="images/1070/misc/progress.gif" alt="Отправка быстрого ответа. Пожалуйста, подождите..." />&nbsp;<strong>Отправка быстрого ответа. Пожалуйста, подождите...</strong>
+			</div>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	</form>
+
+	
+		<!-- Mozilla work around for focusing on QR in WYSIWYG mode -->
+		<div id="qr_scroll"></div>
+	
+
+	<script type="text/javascript">
+	<!--
+		// initialize quick reply
+		qr_init();
+	//-->
+	</script>
+<!-- / quick reply -->
+
+
+
+
+
+
+
+
+
+<!-- popup menu contents -->
+<br />
+
+<!-- thread tools menu -->
+<div class="vbmenu_popup" id="threadtools_menu" style="display:none">
+<form action="postings.php?t=233097&amp;pollid=" method="post" name="threadadminform">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Опции темы<a name="goto_threadtools"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="images/1070/buttons/printer.gif" alt="Версия для печати" /> <a href="printthread.php?t=233097" accesskey="3" rel="nofollow">Версия для печати</a></td>
+	</tr>
+	
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="images/1070/buttons/sendtofriend.gif" alt="Отправить по электронной почте" /> <a href="sendmessage.php?do=sendtofriend&amp;t=233097" rel="nofollow">Отправить по электронной почте</a></td>
+	</tr>
+	
+	
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="images/1070/buttons/subscribe.gif" alt="Подписка" />
+		
+			<a href="subscription.php?do=addsubscription&amp;t=233097" rel="nofollow">Подписаться на эту тему</a>
+		
+		</td>
+	</tr>
+	
+	
+	
+	</table>
+</form>
+</div>
+<!-- / thread tools menu -->
+
+<!-- **************************************************** -->
+
+
+<!-- thread search menu -->
+<div class="vbmenu_popup" id="threadsearch_menu" style="display:none">
+<form action="search.php?do=process&amp;searchthreadid=233097" method="post">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Поиск в этой теме<a name="goto_threadsearch"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option" title="nohilite">
+			<input type="hidden" name="s" value="" />
+			<input type="hidden" name="securitytoken" value="1623669815-0bd5cef2f1be2d730bfb2569a489004b31f48e32" />
+			<input type="hidden" name="do" value="process" />
+			<input type="hidden" name="searchthreadid" value="233097" />
+			<input type="text" class="bginput" name="query" size="25" /><input type="submit" class="button" value="Вперёд"  /><br />
+		</td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><a href="search.php?searchthreadid=233097">Расширенный поиск</a></td>
+	</tr>
+	</table>
+</form>
+</div>
+<!-- / thread search menu -->
+
+
+<!-- **************************************************** -->
+
+
+
+<!-- / popup menu contents -->
+
+
+
+<br />
+
+<table class="tborder" cellpadding="8" cellspacing="1" border="0" width="100%" align="center">
+<thead>
+	<tr>
+		<td class="tcat" width="100%" colspan="5">
+			<a style="float:right" href="#top" onclick="return toggle_collapse('similarthreads')"><img id="collapseimg_similarthreads" src="images/1070/buttons/collapse_tcat.gif" alt="" border="0" /></a>
+			Похожие темы<a name="similarthreads"></a>
+		</td>
+	</tr>
+</thead>
+<tbody id="collapseobj_similarthreads" style="">
+<tr class="thead" align="center">
+	<td class="thead" width="40%">Тема</td>
+	<td class="thead" width="15%" nowrap="nowrap">Автор</td>
+	<td class="thead" width="20%">Раздел</td>
+	<td class="thead" width="5%">Ответов</td>
+	<td class="thead" width="20%">Последнее сообщение</td>
+</tr>
+<tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=139008" title="Необходимо в wav файле  искать последовательность 16-ых символов заданной длины (это как аргумент) и удалять ее, если ее длина не превосходит...">работа с wav-файлом</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">vadim_gluzker</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">C# (си шарп)</span></td>
+	<td class="alt2" align="center"><span class="smallfont">2</span></td>
+	<td class="alt1" align="right"><span class="smallfont">24.02.2011 <span class="time">04:36</span></span></td>
+</tr>
+<tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=132762" title="нужно изменить биты вав файла таким образом чтоб он после этого проигрывался. Конечно проигрывалась аброкодабра , но проигрывалась. 
+ 
+Вот маленький...">работа с wav на низком уровне</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">vsrmis</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Мультимедиа в Delphi</span></td>
+	<td class="alt2" align="center"><span class="smallfont">10</span></td>
+	<td class="alt1" align="right"><span class="smallfont">15.01.2011 <span class="time">05:13</span></span></td>
+</tr>
+<tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=129104" title="Здравствуйте! 
+Пишу программку, которая должна пользователю выдавать голосовые сообщения и команды. 
+Никак не пойму как проиграть при нажатии кнопки...">играть сначала 1.wav потом 2.wav</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">mma</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Мультимедиа в Delphi</span></td>
+	<td class="alt2" align="center"><span class="smallfont">9</span></td>
+	<td class="alt1" align="right"><span class="smallfont">24.12.2010 <span class="time">00:04</span></span></td>
+</tr>
+<tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=127719" title="Кто-нить с этим игрался?(открыть и проанализировать...) 
+Может у кого, что дельное есть на данную тему..? 
+Примерчик 
+Описание формата">Работа с .wav</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">dampirik</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Общие вопросы  .NET</span></td>
+	<td class="alt2" align="center"><span class="smallfont">8</span></td>
+	<td class="alt1" align="right"><span class="smallfont">17.12.2010 <span class="time">04:07</span></span></td>
+</tr>
+<tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=50650" title="Здравствуйте! Подскажите, пожалуйста, библиотечку на Delphi/C++/C# (утилитку коммандной строки, как вариант), для конвертации из &quot;тяжёлого&quot; wav в...">Конвертация аудиофайлов WAV -&gt; WAV</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">namestnik</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Помощь студентам</span></td>
+	<td class="alt2" align="center"><span class="smallfont">2</span></td>
+	<td class="alt1" align="right"><span class="smallfont">28.05.2009 <span class="time">02:05</span></span></td>
+</tr>
+
+</tbody>
+</table>
+
+<br />
+
+<center class="css-adaptive">
+<table cellpadding="2" width="100%"><tr>
+
+<td width="50%" align="center">
+<iframe width="444" height="333" src="https://www.youtube.com/embed/dcIht4u4VAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+
+
+<td width="50%" align="center">
+<iframe width="444" height="333" src="https://www.youtube.com/embed/3Wz8i4avZZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td>
+
+</tr>
+</table>
+</center>
+<br>
+
+
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- /content area table -->
+
+<form action="index.php" method="get" style="clear:left">
+
+<table cellpadding="8" cellspacing="0" border="0" width="100%" class="page" align="center">
+<tr>
+	
+	
+	<td class="tfoot" align="right" width="100%">
+		<div class="smallfont">
+			<strong>
+<a href="https://programmersforum.ru/showthread.php?p=1822808">Реклама на форуме</a> -
+				<a href="https://programmersforum.ru/sendmessage.php" rel="nofollow" accesskey="9">Обратная связь</a>
+				 -
+<a href="misc.php?do=showrules">Правила</a> -
+<a href="http://www.programmersclub.ru/lab" rel="nofollow">Исходники Delphi</a> -
+<a href="http://www.delphibasics.ru/" rel="nofollow">Справочник Delphi</a> -
+				
+				
+				<a href="archive/index.php">Архив</a> -
+				
+				
+				
+				<a href="#top" onclick="self.scrollTo(0, 0); return false;">Вверх</a>
+			</strong>
+		</div>
+	</td>
+</tr>
+</table>
+
+<br />
+
+<div align="center">
+
+	<div class="smallfont" align="center">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	</div>
+</div>
+
+</form>
+
+<script>
+quickquote.init();
+</script>
+
+
+<table cellpadding="5" width="100%"><tr>
+
+<td width="50%" align="center">
+<table cellpadding="5"><tr>
+        <td width="100" align="center">Проекты отопления, <a href="http://respective.ru/">пеллетные котлы</a>, бойлеры, радиаторы<br><a href="http://respective.ru/"><img src="https://programmersforum.ru/respective30072.jpg" alt="интернет магазин respective.ru"></a></td>
+        </tr></table>
+</td>
+
+<td width="50%" align="center">
+<table cellpadding="5"><tr>
+        <td width="100" align="center"><a href="http://emtas.net/">Пеллетный котёл Emtas</a><br><a href="http://emtas.net/"><img src="https://programmersforum.ru/emtas.jpg" alt="котлы EMTAS"></a></td>
+        </tr></table>
+</td>
+
+
+</table>
+
+
+<!-- auto DST correction code -->
+<form action="profile.php?do=dst" method="post" name="dstform">
+	<input type="hidden" name="s" value="" />
+	<input type="hidden" name="securitytoken" value="1623669815-0bd5cef2f1be2d730bfb2569a489004b31f48e32" />
+	<input type="hidden" name="do" value="dst" />
+</form>
+<script type="text/javascript">
+<!--
+	var tzOffset = 6 + 1;
+	var utcOffset = new Date().getTimezoneOffset() / 60;
+	if (Math.abs(tzOffset + utcOffset) == 1)
+	{	// Dst offset is 1 so its changed
+		document.forms.dstform.submit();
+	}
+//-->
+</script>
+<!-- / auto DST correction code -->
+
+
+<script type="text/javascript">
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+</script>
+
+<!-- temp -->
+
+</body>
+</html>

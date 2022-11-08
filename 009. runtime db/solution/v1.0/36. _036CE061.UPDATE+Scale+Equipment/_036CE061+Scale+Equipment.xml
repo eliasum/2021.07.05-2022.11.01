@@ -1,0 +1,2064 @@
+<Configuration key="_036CE061.ControlWorkstation" title="АРМ оператора" description="Автоматизированное рабочее место оператора">
+  <Menu title="Меню" description="Пользовательское меню">
+    <View title="Вид">
+      <Column title="Колонка" />
+      <Row title="Строка" />
+      <Expand title="Развернуть" />
+      <Colapse title="Свернуть" />
+    </View>
+  </Menu>
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" />
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061.Runtime" login="postgres" password="postgres">
+            <Equipment key="_036CE061" title="Установка _036CE061" description="Установка _036CE061">
+              <Automode title="Авторежим" description="Режим автоматизированной проверки изделия на установке">
+                <File select="1" title="Файл" description="Место хранения файла техпроцесса автоматизированного режима">
+                  <Item key="1" title="Техпроцесс" description="Техпроцесс автоматизированного режима" const="Technology\Process.xml" />
+                </File>
+                <Command select="run" title="Команда" description="Команда автоматизированного режима">
+                  <Item key="run" title="Запустить" description="Запустить автоматизированный режим" />
+                  <Item key="abort" title="Прервать" description="Прервать автоматизированный режим" />
+                  <Item key="pause" title="Пауза" description="Притормозить автоматизированный режим" />
+                  <Item key="continue" title="Продолжить" description="Продолжить автоматизированный режим" />
+                  <Item key="designer" title="Редактор" description="Редактировать автоматизированный режим" />
+                </Command>
+                <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                  <Item key="technologydesigner" title="АРМ технолога" description="Автоматизированное рабочее место технолога">
+                    <Toolbox title="Инструментарий" description="Инструментарий для создания и редактирования техпроцесса">
+                      <Item key="automode" title="Авторежим" description="" />
+                      <Item key="equipment" title="Оборудование" description="" />
+                      <Item key="primetive" title="Приметив" description="" />
+                      <Property title="Свойства" description="Свойства активности" />
+                    </Toolbox>
+                    <Process title="Техпроцесс" description="Техпроцесс для автоматизированного режима">
+                      <Item key="designer" title="Дизанер" description="Дизанер техпроцесса" />
+                      <Item key="xaml" title="XAML" description="Техпроцесс, как текст с разметкой в формате XAML" />
+                    </Process>
+                    <Debugger title="Отладчик" description="Отладчик техпроцесса для автоматизированного режима">
+                      <Item key="jurnal" title="Журнал отладчика" description="Журнал отладчика техпроцесса" />
+                    </Debugger>
+                  </Item>
+                </Widget>
+              </Automode>
+              <Termodat title="" description="" order="">
+                <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                  <Command title="Команда" select="0001" description="Команда управления температурой для ручного режима" order="">
+                    <Item key="0001" title="Выдержка" description="Поддержание заданной температуры в течение заданного времени">
+                      <Temperature title="Температура" description="Значение температуры" type="float" value="" default="0226" format="F1" symbol="t " unit="℃">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Increment value="0.5" title="Шаг значения" description="Шаг значения уставки" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                            <Maximum const="300" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Temperature>
+                      <Time title="Время" description="Время выдержки" type="integer" value="" default="33" format="F1" symbol="time " unit="мин">
+                        <Increment value="0.5" title="Шаг значения" description="Шаг значения времени" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                            <Maximum const="5" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Time>
+                    </Item>
+                    <Item key="0003" title="Общий Стоп" description="Остановка программ на всех каналах"/>
+                    <Item key="0005" title="Нагрев" description="Увеличение температуры до заданного значения с заданной скоростью">
+                      <Temperature title="Температура" description="Значение температуры" type="float" value="" default="44" format="F1" symbol="t " unit="℃">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Increment value="0.5" title="Шаг значения" description="Шаг значения уставки" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Temperature>
+                      <Rate title="Скорость" description="Скорость нагрева" type="float" value="" default="37" format="F1" symbol="r " unit="℃/мин">
+                        <Increment value="0.5" title="Шаг значения" description="Шаг значения скорости" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Rate>
+                    </Item>
+                    <Item key="0006" title="Охлаждение" description="Уменьшение температуры до заданного значения с заданной скоростью">
+                      <Temperature title="Температура" description="Значение температуры" type="float" value="" default="11" format="F1" symbol="t " unit="℃">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Increment value="0.5" title="Шаг значения" description="Шаг значения уставки" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                        <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" select="2" readonly="false" />
+                      </Temperature>
+                      <Rate title="Скорость" description="Скорость охлаждения" type="float" value="" default="55" format="F1" symbol="r " unit="℃/мин">
+                        <Increment value="0.5" title="Шаг значения" description="Шаг значения скорости" />
+                        <Limit title="Предел" description="Предельное значение">
+                          <Item key="1">
+                            <Minimum const="0" title="Минимум" description="Максимально предельное значение" />
+                            <Maximum const="60" title="Максимум" description="Максимально предельное значение" />
+                          </Item>
+                        </Limit>
+                      </Rate>
+                    </Item>
+                    <Command title="Посылка команды">
+                      <Item key="1" title="Исполнить" description="" />
+                      <Item key="2" title="Отменить" description="" />
+                    </Command>
+                  </Command>
+                </Widget>
+              </Termodat>
+              <Slot title="Позиция" description="Позиция для посадочного места изделия">
+                <Item key="1" title="Поз.№ 1" description="Позиция № 1 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Command title="Команда" select="" description="Команда управления источником питания" order="">
+                      <Item key="set" title="Напряжение" />
+                      <Item key="get" title="Проверить ток" />
+                    </Command>
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Amperage"/>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Voltage"/>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Voltage"/>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Voltage"/>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Voltage"/>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Voltage"/>
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Voltage"/>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Voltage"/>
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Voltage"/>
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                        <Communicator XPath="//Board/Item[@key='_045СЕ108']/Adress/Item[@key='01']/Channel/Item[@key='1']/Voltage"/>
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="2" title="Поз.№ 2" description="Позиция № 2 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="3" title="Поз.№ 3" description="Позиция № 3 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="4" title="Поз.№ 4" description="Позиция № 4 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="5" title="Поз.№ 5" description="Позиция № 5 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="6" title="Поз.№ 6" description="Позиция № 6 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="7" title="Поз.№ 7" description="Позиция № 7 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="8" title="Поз.№ 8" description="Позиция № 8 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="9" title="Поз.№ 9" description="Позиция № 9 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="10" title="Поз.№ 10" description="Позиция № 10 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="11" title="Поз.№ 11" description="Позиция № 11 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="12" title="Поз.№ 12" description="Позиция № 12 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="13" title="Поз.№ 13" description="Позиция № 13 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="14" title="Поз.№ 14" description="Позиция № 14 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="15" title="Поз.№ 15" description="Позиция № 15 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="16" title="Поз.№ 16" description="Позиция № 16 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="17" title="Поз.№ 17" description="Позиция № 17 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="18" title="Поз.№ 18" description="Позиция № 18 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="19" title="Поз.№ 19" description="Позиция № 19 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="20" title="Поз.№ 20" description="Позиция № 20 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="21" title="Поз.№ 21" description="Позиция № 21 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="22" title="Поз.№ 22" description="Позиция № 22 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="23" title="Поз.№ 23" description="Позиция № 23 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="24" title="Поз.№ 24" description="Позиция № 24 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="25" title="Поз.№ 25" description="Позиция № 25 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="26" title="Поз.№ 26" description="Позиция № 26 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="27" title="Поз.№ 27" description="Позиция № 27 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="28" title="Поз.№ 28" description="Позиция № 28 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="29" title="Поз.№ 29" description="Позиция № 29 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Item key="30" title="Поз.№ 30" description="Позиция № 30 посадочного места изделия">
+                  <Product title="Изделие" description="Проверяемое изделие">
+                    <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+                    <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+                  </Product>
+                  <Supply title="Источник питания" description="Источник питания для изделия">
+                    <Item key="photocathode" title="Фотокатод" description="Фотокатод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate1" title="МКП1" description="Микроканальная пластина изделия 1">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate12" title="МКП1-2" description="Микроканальная пластина изделия 1-2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="microchannelplate2" title="МКП2" description="Микроканальная пластина изделия 2">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Item key="anode" title="Анод" description="Анод изделия">
+                      <Amperage title="Ток" description="Значение тока" symbol="I =" unit="[А]" value="" type="float" format="F1">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Amperage>
+                      <Voltage title="Напряжение" description="Значение напряжения" symbol="U =" unit="[В]" value="" type="integer" format="N0" default="0">
+                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                      </Voltage>
+                    </Item>
+                    <Chart title="График" description="График заданного параметра">
+                      <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0">
+                        <Pen title="Перо">
+                          <Item key="../../../../Amperage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                          <Item key="../../../../Voltage">
+                            <Color title="Цвет" value="IndianRed" />
+                            <Visability title="Видимость" value="True" />
+                            <Thickness title="Толщина" value="0.5" />
+                          </Item>
+                        </Pen>
+                      </Widget>
+                    </Chart>
+                  </Supply>
+                </Item>
+                <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" column="7" row="0" />
+              </Slot>
+            </Equipment>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

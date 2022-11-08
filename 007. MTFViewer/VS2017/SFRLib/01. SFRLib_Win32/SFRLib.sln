@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SFRLib", "SFRLib\SFRLib.vcxproj", "{96076B3F-4F5C-40EA-AAE6-80E1D43D5032}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96076B3F-4F5C-40EA-AAE6-80E1D43D5032}.Debug|Win32.ActiveCfg = Debug|Win32
+		{96076B3F-4F5C-40EA-AAE6-80E1D43D5032}.Debug|Win32.Build.0 = Debug|Win32
+		{96076B3F-4F5C-40EA-AAE6-80E1D43D5032}.Release|Win32.ActiveCfg = Release|Win32
+		{96076B3F-4F5C-40EA-AAE6-80E1D43D5032}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

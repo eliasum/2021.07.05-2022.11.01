@@ -1,0 +1,39 @@
+<Checkup>
+  <Equipment key="_036CE061" title="Установка _036CE061" description="Установка _036CE061">
+    <Slot title="Позиция" description="Позиция для посадочного места изделия">
+      <Item key="1" title="Поз.№ 1" description="Позиция № 1 посадочного места изделия">
+        <Product title="Изделие" description="Проверяемое изделие">
+          <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+          <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+        </Product>
+        <Supply title="Источник питания" description="Источник питания для изделия">
+          <Journal>
+            <Item key="message" fix="10:19" value="Supply OK1" />
+          </Journal>
+        </Supply>
+      </Item>
+      <Item key="2" title="Поз.№ 2" description="Позиция № 2 посадочного места изделия">
+        <Product title="Изделие" description="Проверяемое изделие">
+          <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+          <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+        </Product>
+        <Supply title="Источник питания" description="Источник питания для изделия">
+          <Journal>
+            <Item key="message" fix="10:20" value="Supply OK2" />
+          </Journal>
+        </Supply>
+      </Item>
+      <Item key="3" title="Поз.№ 3" description="Позиция № 3 посадочного места изделия">
+        <Product title="Изделие" description="Проверяемое изделие">
+          <SerialNumber title="Серийный №" description="Серийный номер изделия" value="" />
+          <Info title="Примечание" description="Дополнительная информация для изделия" value="" />
+        </Product>
+        <Supply title="Источник питания" description="Источник питания для изделия">
+          <Journal>
+            <Item key="message" fix="10:21" value="Supply OK3" />
+          </Journal>
+        </Supply>
+      </Item>
+    </Slot>
+  </Equipment>
+</Checkup>

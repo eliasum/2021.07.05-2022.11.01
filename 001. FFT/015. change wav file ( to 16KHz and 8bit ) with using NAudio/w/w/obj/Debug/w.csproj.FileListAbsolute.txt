@@ -1,0 +1,10 @@
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\bin\Debug\w.exe.config
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\bin\Debug\w.exe
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\bin\Debug\w.pdb
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\bin\Debug\NAudio.dll
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\bin\Debug\NAudio.xml
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\obj\Debug\w.csprojAssemblyReference.cache
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\obj\Debug\w.csproj.CoreCompileInputs.cache
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\obj\Debug\w.csproj.CopyComplete
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\obj\Debug\w.exe
+D:\Rep\practice\Тестовые задания&собесы\018. Катод\Тестовое задание по цифровой обработке сигнала\solution\code\015. change wav file ( to 16KHz and 8bit ) with using NAudio\w\w\obj\Debug\w.pdb

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary>
+	<Adress title="Адрес" description="Адрес электронной платы"/>
+	<Channel title="Канал" description="Канал электронной платы"/>
+	<Voltage title="Напряжение" value="" symbol="U =" unit="[В]" description="Значение напряжения"/>
+	<Allowance title="Допуск" unit="%" description="Значение допуска для очистки от шума"/>
+</Dictionary>

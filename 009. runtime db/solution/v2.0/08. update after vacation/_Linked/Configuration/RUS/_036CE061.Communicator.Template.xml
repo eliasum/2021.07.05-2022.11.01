@@ -1,0 +1,215 @@
+<Configuration key="_036CE061.Communicator" title="Коммуникатор" description="Коммуникатор для обмена сообщениями между ПО и оборудованием">
+  <Menu title="Меню" description="Пользовательское меню">
+    <View title="Вид">
+      <Column title="Колонка" />
+      <Row title="Строка" />
+      <Expand title="Развернуть" />
+      <Colapse title="Свернуть" />
+    </View>
+  </Menu>
+  <Scale title="Масштаб" description="Масштаб отображения">
+    <Widget scale=".25" x="0" y="0" />
+    <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+      <Item key="database" title="СУБД" description="Система управления базами данных">
+        <Postgres title="PostgreSQL" description="Свободно распостроняемая объектно-реляционная система управления базами данных">
+          <Item key="localhost:5432:_036CE061" login="postgres" password="postgres">
+            <Communication title="Телекоммуникация" description="Технология взаимодействия электронных данных">
+              <Item key="serialport" title="Последовательный порт" description="Последовательный порт RS232">
+                <Modbus title="RS232" description="Последовательный порт">
+                  <Template key="COM1" baudRate="115200" title="{@key}" description="{../@description}">
+                    <Board title="Электронный модуль" description="Электронный модуль оборудования">
+                      <Widget column="0" row="1" />
+                      <Item key="_045CE087" title="045.СЕ.87" description="{../@title}: {@title}">
+                        <Adress>
+                          <Template key="31" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                            <Channel>
+                              <Template key="1,2,4" title="{../@title} № {@key}" description="{../@description} № {@key}" Reaction="200" Locking="E0">
+                                <Voltage type="integer" value="" default="0" increment="1" format="N0" Limit="[0-24]">
+                                  <Widget select="2" readonly="false" />
+                                </Voltage>
+                                <Amperage type="float" value="" const="200" unit="[мА]" format="F1" Holding="50" Limit="[0-500]">
+                                  <Widget select="2" readonly="false" />
+                                </Amperage>
+                              </Template>
+                              <Item key="B" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                                <State type="bool" value="" title="Состояние" info="" />
+                              </Item>
+                              <Widget column="0" row="0" />
+                            </Channel>
+                          </Template>
+                          <Widget column="0" row="0" />
+                        </Adress>
+                        <Version>
+                          <Item key="MP_045СЕ87/05_1ch_22А/1000ìА." />
+                        </Version>
+                      </Item>
+                      <Item key="Termodat" title="Термодат" description="{../@title}: {@title}">
+                        <Adress>
+                          <Template key="0A" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                            <Channel>
+                              <Template key="01" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                                <Termodat title="Регулятор температуры" description="Регулятор температуры «Термодат»">
+                                  <Command title="Команда" select="0003" description="Команда управления температурой для ручного режима">
+                                    <Item key="0001" title="Выдержка" description="Поддержание заданной температуры в течение заданного времени">
+                                      <Sequence>
+                                        <Item key="0" description="Выключить регулирование" const="{../../../../../../../@key}06{../../../../../@key}800000" />
+                                        <Item key="1" description="Номер программы регулирования с которой запускать процесс" const="{../../../../../../../@key}06{../../../../../@key}7B{../../@key}" />
+                                        <Item key="2" description="Номер шага программы, с которого запускать процесс" const="{../../../../../../../@key}06{../../../../../@key}7C0000" />
+                                        <Item key="3" description="Номер редактируемой программы" const="{../../../../../../../@key}06{../../../../../@key}60{../../@key}" />
+                                        <Item key="4" description="Номер редактируемого шага" const="{../../../../../../../@key}06{../../../../../@key}610000" />
+                                        <Item key="5" description="Тип шага: 1 – выдержка" const="{../../../../../../../@key}06{../../../../../@key}620001" />
+                                        <Item key="6" title="Время" description="Параметр 1 (время выдержки)" const="{../../../../../../../@key}06{../../../../../@key}63" />
+                                        <Item key="7" title="Уставка" description="Параметр 2 (целевая уставка в 0,1ºC)" const="{../../../../../../../@key}06{../../../../../@key}64" />
+                                        <Item key="8" description="Включить регулирование" const="{../../../../../../../@key}06{../../../../../@key}800001" />
+                                      </Sequence>
+                                      <Temperature title="Температура" description="Значение температуры" type="float" default="30" format="F1" symbol="T =" unit="[℃]">
+                                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                                        <Increment value="0.1" title="Шаг значения" description="Шаг значения уставки" />
+                                        <Limit title="Предел" description="Предельное значение">
+                                          <Item key="1">
+                                            <Minimum const="20" title="Минимум" description="Максимально предельное значение" />
+                                            <Maximum const="200" title="Максимум" description="Максимально предельное значение" />
+                                          </Item>
+                                        </Limit>
+                                        <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" select="2" readonly="false" />
+                                      </Temperature>
+                                      <Time title="Время" description="Время выдержки" type="integer" default="00:01:00:00" format="F1" symbol="t =" unit="[мин]">
+                                        <Increment value="1" title="Шаг значения" description="Шаг значения времени" />
+                                        <Limit title="Предел" description="Предельное значение">
+                                          <Item key="1">
+                                            <Minimum const="00:00:01:00" title="Минимум" description="Максимально предельное значение" />
+                                            <Maximum const="01:00:00:00" title="Максимум" description="Максимально предельное значение" />
+                                          </Item>
+                                        </Limit>
+                                      </Time>
+                                    </Item>
+                                    <Item key="0003" title="Стоп" description="Остановка программ на каналe">
+                                      <Sequence>
+                                        <Item key="0" description="Стоп программы на канале № {@key}" const="{../../../../../../../@key}06{../../../../../@key}800000" />
+                                      </Sequence>
+                                    </Item>
+                                    <Item key="0005" title="Нагрев" description="Увеличение температуры до заданного значения с заданной скоростью">
+                                      <Sequence>
+                                        <Item key="0" description="Выключить регулирование" const="{../../../../../../../@key}06{../../../../../@key}800000" />
+                                        <Item key="1" description="Номер программы регулирования с которой запускать процесс" const="{../../../../../../../@key}06{../../../../../@key}7B{../../@key}" />
+                                        <Item key="2" description="Номер шага программы, с которого запускать процесс" const="{../../../../../../../@key}06{../../../../../@key}7C0000" />
+                                        <Item key="3" description="Номер редактируемой программы" const="{../../../../../../../@key}06{../../../../../@key}60{../../@key}" />
+                                        <Item key="4" description="Номер редактируемого шага" const="{../../../../../../../@key}06{../../../../../@key}610000" />
+                                        <Item key="5" description="Тип шага: 5 – только нагрев" const="{../../../../../../../@key}06{../../../../../@key}620005" />
+                                        <Item key="6" description="Параметр 1 (скорость (0,1ºC/ч))" const="{../../../../../../../@key}06{../../../../../@key}63" />
+                                        <Item key="7" description="Параметр 2 (целевая уставка в 0,1ºC)" const="{../../../../../../../@key}06{../../../../../@key}64" />
+                                        <Item key="8" description="Включить регулирование" const="{../../../../../../../@key}06{../../../../../@key}800001" />
+                                      </Sequence>
+                                      <Temperature title="Температура" description="Значение температуры" type="float" default="35" format="F1" symbol="T =" unit="[℃]">
+                                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                                        <Increment value="0.1" title="Шаг значения" description="Шаг значения уставки" />
+                                        <Limit title="Предел" description="Предельное значение">
+                                          <Item key="1">
+                                            <Minimum const="20" title="Минимум" description="Максимально предельное значение" />
+                                            <Maximum const="200" title="Максимум" description="Максимально предельное значение" />
+                                          </Item>
+                                        </Limit>
+                                        <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" select="2" readonly="false" />
+                                      </Temperature>
+                                      <Rate title="Скорость" description="Скорость нагрева" type="float" default="1.7" format="F1" symbol="r =" unit="[℃/мин]">
+                                        <Increment value="0.1" title="Шаг значения" description="Шаг значения скорости" />
+                                        <Limit title="Предел" description="Предельное значение">
+                                          <Item key="1">
+                                            <Minimum const="1" title="Минимум" description="Максимально предельное значение" />
+                                            <Maximum const="3" title="Максимум" description="Максимально предельное значение" />
+                                          </Item>
+                                        </Limit>
+                                      </Rate>
+                                    </Item>
+                                    <Item key="0006" title="Охлаждение" description="Уменьшение температуры до заданного значения с заданной скоростью">
+                                      <Sequence>
+                                        <Item key="0" description="Выключить регулирование" const="{../../../../../../../@key}06{../../../../../@key}800000" />
+                                        <Item key="1" description="Номер программы регулирования с которой запускать процесс" const="{../../../../../../../@key}06{../../../../../@key}7B{../../@key}" />
+                                        <Item key="2" description="Номер шага программы, с которого запускать процесс" const="{../../../../../../../@key}06{../../../../../@key}7C0000" />
+                                        <Item key="3" description="Номер редактируемой программы" const="{../../../../../../../@key}06{../../../../../@key}60{../../@key}" />
+                                        <Item key="4" description="Номер редактируемого шага" const="{../../../../../../../@key}06{../../../../../@key}610000" />
+                                        <Item key="5" description="Тип шага: 6 – только охлаждение" const="{../../../../../../../@key}06{../../../../../@key}620006" />
+                                        <Item key="6" description="Параметр 1 (скорость (0,1ºC/ч))" const="{../../../../../../../@key}06{../../../../../@key}63" />
+                                        <Item key="7" description="Параметр 2 (целевая уставка в 0,1ºC)" const="{../../../../../../../@key}06{../../../../../@key}64" />
+                                        <Item key="8" description="Включить регулирование" const="{../../../../../../../@key}06{../../../../../@key}800001" />
+                                      </Sequence>
+                                      <Temperature title="Температура" description="Значение температуры" type="float" default="25" format="F1" symbol="T =" unit="[℃]">
+                                        <Allowance const="1" title="Допуск" description="Значение допуска" symbol="Δ" unit="[%]" />
+                                        <Increment value="0.1" title="Шаг значения" description="Шаг значения уставки" />
+                                        <Limit title="Предел" description="Предельное значение">
+                                          <Item key="1">
+                                            <Minimum const="20" title="Минимум" description="Максимально предельное значение" />
+                                            <Maximum const="200" title="Максимум" description="Максимально предельное значение" />
+                                          </Item>
+                                        </Limit>
+                                        <Widget title="Настройка" description="Настройка виджета пользователя" scale=".25" x="0" y="0" select="2" readonly="false" />
+                                      </Temperature>
+                                      <Rate title="Скорость" description="Скорость охлаждения" type="float" default="1.5" format="F1" symbol="r =" unit="[℃/мин]">
+                                        <Increment value="0.1" title="Шаг значения" description="Шаг значения скорости" />
+                                        <Limit title="Предел" description="Предельное значение">
+                                          <Item key="1">
+                                            <Minimum const="1" title="Минимум" description="Максимально предельное значение" />
+                                            <Maximum const="3" title="Максимум" description="Максимально предельное значение" />
+                                          </Item>
+                                        </Limit>
+                                      </Rate>
+                                    </Item>
+                                  </Command>
+                                  <Status title="Состояние" description="Состояние регулятора температуры">
+                                    <Sequence>
+                                      <Item key="0" description="Обновить текущее значение температуры" const="{../../../../../../@key}03{../../../../@key}700001" />
+                                    </Sequence>
+                                    <Temperature title="Температура" value="" type="float" description="Текущее значение температуры" symbol="T =" format="F1" unit="[℃]" />
+                                  </Status>
+                                </Termodat>
+                              </Template>
+                            </Channel>
+                          </Template>
+                          <Widget column="0" row="0" />
+                        </Adress>
+                        <Version>
+                          <Item key="16F6" />
+                        </Version>
+                      </Item>
+                      <Item key="_045CE108" title="045.СЕ.108" description="{../@title}: {@title}">
+                        <Adress>
+                          <Template key="01-24" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                            <Channel>
+                              <Template key="1,3,5" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                                <Voltage type="integer" value="" default="0" increment="1" format="N0" symbol="U =" Allowance="1" Limit="[0-200]">
+                                  <Widget select="2" readonly="false" />
+                                </Voltage>
+                                <Amperage type="float" value="" unit="[мкА]" format="F1" symbol="I =" Allowance="1" Limit="[0-1,8][1,8-20]">
+                                  <Widget select="2" readonly="true" />
+                                </Amperage>
+                                <Locking const="E" />
+                              </Template>
+                              <Template key="2,4" title="{../@title} № {@key}" description="{../@description} № {@key}">
+                                <Voltage type="integer" value="" default="0" increment="1" format="N0" symbol="U =" Allowance="1" Limit="[0-1200]">
+                                  <Widget select="2" readonly="false" />
+                                </Voltage>
+                                <Amperage type="float" value="" unit="[мкА]" format="F1" symbol="I =" Allowance="1" Limit="[0-9][9-100]">
+                                  <Widget select="2" readonly="true" />
+                                </Amperage>
+                                <Locking const="E" />
+                              </Template>
+                              <Widget column="0" row="0" />
+                            </Channel>
+                          </Template>
+                          <Widget column="0" row="0" />
+                        </Adress>
+                        <Version>
+                          <Item key="CНВ_045СЕ108/1_5-кан." />
+                        </Version>
+                      </Item>
+                    </Board>
+                  </Template>
+                </Modbus>
+              </Item>
+            </Communication>
+          </Item>
+        </Postgres>
+      </Item>
+    </Communication>
+  </Scale>
+</Configuration>

@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="GridItemsControlLib.GridItemsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="3">
+            <StackPanel Orientation="Vertical">
+                <Border BorderBrush="DarkGray" Background="WhiteSmoke" BorderThickness=".5">
+                    <TextBlock Text="Параметр" Margin="3"/>
+                </Border>
+                <ItemsControl ItemsSource="{Binding XPath=Item[last()]/*}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid Columns="1"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="DarkGray" BorderThickness=".5">
+                                <ItemsControl ItemsSource="{Binding XPath=@title}" 
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+            <ItemsControl ItemsSource="{Binding XPath=Item}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="1"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical">
+                            <Border BorderBrush="DarkGray" Background="WhiteSmoke"
+                                    BorderThickness=".5">
+                                <TextBlock Text="{Binding XPath=@title}"
+                                           HorizontalAlignment="Center" Margin="3"/>
+                            </Border>
+                            <Border BorderBrush="DarkGray" BorderThickness=".5">
+                                <ItemsControl ItemsSource="{Binding XPath=./*}" 
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <StackPanel Orientation="Vertical">
+                <Border BorderBrush="DarkGray" Background="WhiteSmoke" BorderThickness=".5">
+                    <TextBlock Text="Ед.изм." Margin="3"/>
+                </Border>
+                <ItemsControl ItemsSource="{Binding XPath=Item[last()]/*}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid Columns="1"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="DarkGray" BorderThickness=".5">
+                                <ItemsControl ItemsSource="{Binding XPath=@unit}" 
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </StackPanel>
+        <ItemsControl ItemsSource="{Binding XPath=./*}"/>
+    </Grid>
+</UserControl>
